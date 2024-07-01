@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background-color: bisque;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+.homeimage{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+background-size: 100% ;
+height: 78vh;
+background-repeat: no-repeat;
+opacity: 0.9;
+}
+
+
+.indicator {
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  border: 1px #666 solid;
+  margin: 0;
+}
+
+.indicator.active {
+  color: #fff;
+  background: #666;
+}
+
+.image{
+background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/Images/gigatorbHome.jpg');
+background-size: cover;
+} 
+.font{
+/* font-family: 'Hanalei Fill'; */
+/* font-family: 'Crimson Pro', serif; */
+font-family: 'Mukta', sans-serif;
+font-weight: lighter;
+}
+
+.animated{
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.bounceInLeft{
+  animation-name: "bounceINLeft";
+}
+@keyframes bounceInLeft{
+  0% ,60%,75%,90%,100%{
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+  } 
+  0%{
+    opacity: 0;
+    transform: translate3d(-3000px,0,0);
+  }
+  60%{
+    opacity: 1;
+    transform: translate3d(25px,0,0);
+  }
+  75%{
+   
+    transform: translate3d(-10px,0,0);
+  }
+  90%{
+    
+    transform: translate3d(5px,0,0);
+  }
+  0%{
+   
+    transform: translateZ(0);
+  }
+}
