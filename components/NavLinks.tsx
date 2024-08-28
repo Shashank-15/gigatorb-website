@@ -9,11 +9,6 @@ const NavLinks = ({onClickHandler}) => {
   
         },
         {
-          title: "Product",
-          link: "/product"
-  
-        },
-        {
           title: "About Us",
           link: "/about"
         },

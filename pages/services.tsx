@@ -5,141 +5,195 @@ import Modal from '../components/Modal';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { Navigation, Autoplay, Virtual } from 'swiper';
 import Link from 'next/link';
 import Head from 'next/head';
 import { useRef } from 'react';
 import { useSelector } from 'react-redux';
 import { IRootState } from '../store';
-import Massage from '../components/Message';
-
-import Grids from '../components/Grids';
-import { Bolt } from '@mui/icons-material';
 
 const Services = () => {
     const dialog: any = useRef();
     const isRtl = useSelector((state: IRootState) => state.themeConfig.direction) === 'rtl' ? true : false;
-    const cards = [
-        {
-            imageUrl: 'testing.png',
-            title: 'Analysis & Planning',
-            text: 'The very first step that we follow while developing apps or working on any project, begins with analysis.',
-        },
-        {
-            imageUrl: 'section-4-2.png',
-            title: 'Design',
-            text: 'Designing helps us understand the engagement of users if the product is user-friendly, intuitive, and reciprocal.',
-        },
-        {
-            imageUrl: 'three.png',
-            title: 'Development',
-            text: 'This is the main part of our process beca-use the product that we deliver depends on the efforts made during this stage.',
-        },
-        {
-            imageUrl: '14.png',
-            title: 'Testing',
-            text: 'Testing is obligatory to an app’s future success; it surrounds a significant section of our overall mobile app development process.',
-        },
-    ];
-    const users = [
-        { name: 'Ankit Kushwaha', avatar: 'AnkitKushwaha.png' },
-        { name: 'Keshav Sharma', avatar: 'Keshav Sharma.jpg' },
-        { name: 'Bhumika Malviya', avatar: 'Bhumika Malviya.jpg' },
-        { name: 'Bhupendra Barfa', avatar: 'Bhupendra Barfa.jpg' },
-        { name: 'Sumit Andariya', avatar: 'Sumit Andariya.jpg' },
-        { name: 'Shubham Pandey', avatar: 'Shubham Pandey.jpg' },
-        { name: 'Sankalp Nagale', avatar: 'Sankalp Nagale.jpg' },
-        { name: 'Ritu Ranabhat', avatar: 'Ritu Ranabhat.jpg' },
-        { name: 'Amit Yadav', avatar: 'Amit Yadav.jpg' },
-        { name: 'Anushree Joshi', avatar: 'Anushree.png' },
-        { name: 'Shivam Gupta', avatar: 'Shivam.png' },
-        { name: 'Sonu Sharma', avatar: 'SonuSharma.png' },
-    ];
+
     return (
         <div>
             <Head>
-                <title>Services... | Plurk – Tailwind CSS Multipurpose Landing Templates</title>
+                <title>Services | Plurk – Tailwind CSS Multipurpose Landing Templates</title>
             </Head>
-            <div
-                className=" mt-[82px] h-screen  h-full bg-cover bg-bottom bg-no-repeat max-md:pt-[106px] lg:pt-[106px]"
-                style={{ backgroundImage: "url('Services.jpg')" }}
-            >
-                <div className="relative">
-                    <div className="container flex justify-center ">
-                        <div className="items-center justify-between py-10 md:flex   md:h-[400px] md:py-0">
-                            <div className="heading relative mb-0 text-center  ltr:md:text-left rtl:md:text-right">
-                                
-                                <br /><br />
+ 
 
-                                <h6 className="text-center  text-xl text-white" style={{ color: 'white', fontSize: 40, fontFamily: 'Philosopher' }}>
-                                    Services
-                                </h6>
-                                <br />
+            <div className="overflow-hidden bg-black pt-[82px] lg:pt-[106px]">
+                <div className="relative">
+                  
+                    <div className="container">
+                         <img className="absolute inset-0 object-cover w-full h-full" src='\assets\images\Gallary\serviceBack.jpg'/>
+                        <div className="relative flex flex-col items-center bg-[url(/assets/images/world-map.png)] bg-cover bg-top bg-no-repeat lg:flex-row">
+                            <div className="flex-1 py-10 text-center text-white ltr:lg:text-left rtl:lg:text-right ">
+                            <h6 className="!text-primary ">Services</h6>
+                                <h4 className="!text-white text-3xl" >Empowering Transformation </h4>
+                                <h4 className="!text-white text-3xl" > through High-Impact Services</h4>
+                                <div>
+                              
+                                </div>
+                                <div className='flex   w-70%  pt-10% '>
+                                <img className="h-20 w-20 animate-spin" src='\assets\images\Gallary\doco.png'/>
+                                </div>
+                            </div>
+                            <div
                                
-                                <h4 className=" text-x md:line-height-5 lg:line-height-6 text-center font-mulish !text-white" style={{ color: 'white', fontSize: 50, fontFamily: 'Philosopher' }}>
-                                    Empowering Transformation{' '}
-                                </h4>
-                                <br />
-                                <br />
-                                <h4
-                                    className="md:line-height-5 lg:line-height-6 text-center !text-white sm:text-5xl"
-                                    style={{ fontSize: '56px', lineHeight: '3rem', fontFamily: 'Philosopher' }}
-                                >
-                                    Through High Impact Services
-                                </h4>
+                                    className="rtl:rotate-y-0 mx-auto h-[500px] w-full max-w-[560px]"
+                                   >
+                                   
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <br />
-            {/* <section className="py-14 lg:py-[100px]">
-                <CounterComponent />
-            </section> */}
 
-            <ProjectSlider title1="Our Projects" title2="Some of our finest work." />
-            <br />
-            <section
-                className="from-white-[55%]  dark:from-white-[5] bg-gradient-to-b to-transparent bg-cover bg-no-repeat py-14 pt-[150px] pb-[100px]"
-                style={{ backgroundImage: "url('bgsetion3-ser.png')" }}
-            >
+
+            <section className="py-14 lg:py-[100px]">
+                <CounterComponent />
+            </section>
+
+            <ProjectSlider title1="Our Project" title2="Some of our finest work." />
+
+            <section className="bg-gradient-to-b from-white/[55%] to-transparent py-14 dark:from-white/5 lg:py-[100px]">
                 <div className="container">
                     <div className="grid items-center gap-5 md:gap-10 lg:grid-cols-2">
                         <div className="heading text-center ltr:lg:text-left rtl:lg:text-right">
-                            <h6 style={{ color: 'black',fontSize:'35px' }}>How We Do It?</h6><br/><br/>
-                            <h4 style={{ color: '#1759D4' ,textTransform:'uppercase',fontSize:'34px'}}>We make your spending stress-free for you to have the perfect control.</h4><br/>
-                            <p className="pt-5 text-xl font-semibold" style={{ color: 'black' }}>
+                            <h6>How We Do It?</h6>
+                            <h4>We make your spending stress-free for you to have the perfect control.</h4>
+                            <p className="pt-5 text-lg font-semibold">
                                 Find out everything you need to know and more about how we create our business process models.
                             </p>
+                        </div>
+                        <div className="grid gap-4 rounded-[32px] sm:grid-cols-2 sm:gap-0">
+                            <div
+                                className="flex h-[200px] gap-4 py-7 px-4 text-white ltr:rounded-tl-[32px] rtl:rounded-tr-[32px]"
+                                style={{ background: 'linear-gradient(130.61deg, #FFBD11 0%, #FF8E00 100%)' }}
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                            >
+                                <div className="pt-1">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clipPath="url(#clip0_290_1513)">
+                                            <path
+                                                opacity="0.5"
+                                                d="M4.2104 20.0002H1.0526C0.773432 20.0002 0.5057 19.8893 0.308299 19.6919C0.110898 19.4945 0 19.2268 0 18.9476V10.5268C0 10.2476 0.110898 9.9799 0.308299 9.7825C0.5057 9.5851 0.773432 9.4742 1.0526 9.4742H4.2104C4.48956 9.4742 4.7573 9.5851 4.9547 9.7825C5.1521 9.9799 5.263 10.2476 5.263 10.5268V18.9476C5.263 19.2268 5.1521 19.4945 4.9547 19.6919C4.7573 19.8893 4.48956 20.0002 4.2104 20.0002ZM18.9468 20.0002H15.789C15.5098 20.0002 15.2421 19.8893 15.0447 19.6919C14.8473 19.4945 14.7364 19.2268 14.7364 18.9476V7.36901C14.7364 7.08984 14.8473 6.82211 15.0447 6.62471C15.2421 6.42731 15.5098 6.31641 15.789 6.31641H18.9468C19.226 6.31641 19.4937 6.42731 19.6911 6.62471C19.8885 6.82211 19.9994 7.08984 19.9994 7.36901V18.9476C19.9994 19.2268 19.8885 19.4945 19.6911 19.6919C19.4937 19.8893 19.226 20.0002 18.9468 20.0002Z"
+                                                fill="white"
+                                            />
+                                            <path
+                                                d="M11.5787 19.9994H8.42089C8.14172 19.9994 7.87399 19.8885 7.67659 19.6911C7.47918 19.4937 7.36829 19.226 7.36829 18.9468V1.0526C7.36829 0.773432 7.47918 0.5057 7.67659 0.308299C7.87399 0.110898 8.14172 0 8.42089 0H11.5787C11.8579 0 12.1256 0.110898 12.323 0.308299C12.5204 0.5057 12.6313 0.773432 12.6313 1.0526V18.9468C12.6313 19.226 12.5204 19.4937 12.323 19.6911C12.1256 19.8885 11.8579 19.9994 11.5787 19.9994Z"
+                                                fill="white"
+                                            />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_290_1513">
+                                                <rect width="20" height="20" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 className="pb-2 text-lg font-extrabold">Analysis & Planning</h3>
+                                    <p className="text-sm font-bold leading-5 opacity-80 line-clamp-6">
+                                        The very first step that we follow while developing apps or working on any project, begins with analysis.
+                                    </p>
+                                </div>
                             </div>
+                            <div
+                                className="flex h-[200px] gap-4 py-7 px-4 text-white ltr:rounded-tr-[32px] rtl:rounded-tl-[32px]"
+                                style={{ background: 'linear-gradient(130.61deg, #FFBD11 0%, #FF8E00 100%)' }}
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                            >
+                                <div className="pt-1">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clipPath="url(#clip0_290_1534)">
+                                            <path
+                                                opacity="0.5"
+                                                d="M12.2371 16.7087L16.7103 12.2366L19.4893 15.0156V19.4888H15.0172L12.2371 16.7087ZM3.2917 7.76334L0.3092 4.7819C0.211179 4.68399 0.133418 4.56771 0.080363 4.43973C0.0273081 4.31174 0 4.17455 0 4.03601C0 3.89746 0.0273081 3.76027 0.080363 3.63229C0.133418 3.5043 0.211179 3.38803 0.3092 3.29012L3.2917 0.308673C3.4894 0.11103 3.75751 0 4.03706 0C4.31662 0 4.58472 0.11103 4.78242 0.308673L7.76598 3.29012L3.2917 7.76334Z"
+                                                fill="white"
+                                            />
+                                            <path
+                                                d="M3.29183 10.7457L5.21902 12.6739L6.71185 11.1811L4.78255 9.25497L6.27327 7.76424L8.20152 9.69143L9.69224 8.20071L7.76611 6.27246L9.25683 4.78174L11.1819 6.71104L12.6737 5.21926L10.7454 3.29207L13.7279 0.310626C13.9256 0.112983 14.1938 0.00195312 14.4733 0.00195312C14.7529 0.00195312 15.021 0.112983 15.2187 0.310626L19.6908 4.7828C19.8885 4.9805 19.9995 5.24861 19.9995 5.52816C19.9995 5.80771 19.8885 6.07582 19.6908 6.27352L6.27327 19.6911C6.07557 19.8887 5.80747 19.9998 5.52791 19.9998C5.24836 19.9998 4.98026 19.8887 4.78255 19.6911L0.310382 15.2189C0.112739 15.0212 0.00170898 14.7531 0.00170898 14.4735C0.00170898 14.194 0.112739 13.9259 0.310382 13.7282L3.29183 10.7457Z"
+                                                fill="white"
+                                            />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_290_1534">
+                                                <rect width="20" height="20" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 className="pb-2 text-lg font-extrabold">Design</h3>
+                                    <p className="text-sm font-bold leading-5 opacity-80 line-clamp-6">
+                                        Designing helps us understand the engagement of users if the product is user-friendly, intuitive, and reciprocal.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                className="flex h-[200px] gap-4 py-7 px-4 text-white ltr:rounded-tl-[32px] rtl:rounded-tr-[32px] ltr:sm:rounded-tl-none ltr:sm:rounded-bl-[32px] rtl:sm:rounded-tr-none rtl:sm:rounded-br-[32px]"
+                                style={{ background: 'linear-gradient(130.61deg, #38EF7D 0%, #11998E 100%)' }}
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                            >
+                                <div className="pt-1">
+                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            opacity="0.5"
+                                            d="M9.26036 16.75C9.68075 16.75 10.0563 16.4871 10.2 16.092L14.477 4.34204C14.7145 3.68981 14.2315 3 13.5374 3H12.7397C12.3193 3 11.9438 3.26292 11.8 3.65796L7.52305 15.408C7.28564 16.0602 7.76863 16.75 8.46273 16.75H9.26036Z"
+                                            fill="white"
+                                        />
+                                        <path
+                                            d="M16.4309 14.0301C16.8214 14.4208 17.4547 14.4209 17.8454 14.0303L21.2929 10.5828C21.6834 10.1923 21.6834 9.55909 21.2929 9.16857L17.8456 5.72128C17.4549 5.33056 16.8213 5.33078 16.4309 5.72178L15.9002 6.25323C15.51 6.64397 15.5104 7.277 15.901 7.66728L17.4036 9.1684C17.7945 9.55893 17.7945 10.1925 17.4037 10.5831L15.9009 12.0852C15.5104 12.4756 15.5102 13.1087 15.9005 13.4993L16.4309 14.0301ZM4.59644 10.5829C4.20554 10.1924 4.20546 9.55886 4.59627 9.16823L6.09906 7.66615C6.48964 7.27575 6.48983 6.64265 6.09948 6.25202L5.56911 5.72128C5.17862 5.33052 4.54527 5.33041 4.15464 5.72103L0.707107 9.16856C0.316583 9.55909 0.316582 10.1923 0.707107 10.5828L4.15439 14.0301C4.54511 14.4208 5.17866 14.4206 5.56911 14.0296L6.09981 13.4981C6.48999 13.1074 6.48962 12.4743 6.09898 12.0841L4.59644 10.5829Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 className="pb-2 text-lg font-extrabold">Development</h3>
+                                    <p className="text-sm font-bold leading-5 opacity-80 line-clamp-6">
+                                        This is the main part of our process beca-use the product that we deliver depends on the efforts made during this stage.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                className="flex h-[200px] gap-4 py-7 px-4 text-white ltr:rounded-tr-[32px] rtl:rounded-tl-[32px] ltr:sm:rounded-tr-none ltr:sm:rounded-br-[32px] rtl:sm:rounded-tl-none rtl:sm:rounded-bl-[32px]"
+                                style={{ background: 'linear-gradient(130.61deg, #56CCF2 0%, #2F80ED 100%)' }}
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
+                            >
+                                <div className="pt-1">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            opacity="0.3"
+                                            d="M9.96489 0.0482068C10.1078 0.0164562 10.2559 0.0164562 10.3987 0.0482068L17.6518 1.66C18.0673 1.75273 18.3636 2.12091 18.3636 2.54727V11.6264C18.3636 13.45 17.4518 15.1536 15.9345 16.1645L10.7365 19.6301C10.4006 19.8541 9.963 19.8541 9.62709 19.6301L4.42909 16.1645C2.91091 15.1527 2 13.45 2 11.6273V2.54727C2 2.12091 2.29636 1.75273 2.71182 1.66L9.96489 0.0482068Z"
+                                            fill="white"
+                                        />
+                                        <path
+                                            d="M14.872 7.20887C14.5168 6.854 13.9413 6.85407 13.5863 7.20904L10.4362 10.3585C10.0456 10.749 9.4125 10.749 9.02201 10.3585L7.80086 9.13732C7.44589 8.78235 6.87038 8.78235 6.51541 9.13732C6.16044 9.49228 6.16044 10.0678 6.51541 10.4228L9.02285 12.9302C9.41337 13.3207 10.0465 13.3207 10.4371 12.9302L14.8722 8.49508C15.2274 8.13988 15.2273 7.56395 14.872 7.20887Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 className="pb-2 text-lg font-extrabold">Testing</h3>
+                                    <p className="text-sm font-bold leading-5 opacity-80 line-clamp-6">
+                                        Testing is obligatory to an app’s future success; it surrounds a significant section of our overall mobile app
+                                        development process.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-           
-            {/* new section  */}
-            <section className=" py-10" style={{ background: 'linear-gradient(to right, #737DFE, #FFCAC9)' }}><br/>
-                <div style={{ margin: 'auto' }} className="mx-auto grid  max-w-6xl  grid-cols-1 gap-4 sm:grid-cols-2  md:mx-0 md:grid-cols-4 ">
-                    {cards.map((card, index) => (
-                        <div
-                            key={index}
-                            className="mx-4 flex h-80 w-64 flex-col items-center justify-center  rounded-lg  transition duration-300 hover:shadow-lg"
-                            style={{ margin: 'auto' }}
-                        >
-                            <div className="imgBox relative h-44 w-44 overflow-hidden rounded-full shadow-lg ">
-                                <img src={card.imageUrl} alt={card.title} className="h-full w-full object-cover" />
-                                <div className="img-blur absolute top-0 left-0 flex h-full w-full items-center justify-center opacity-0 backdrop-blur-3xl transition duration-500">
-                                    {/* <a href="#" className="text-white text-lg font-semibold">Explore &gt;</a> */}
-                                </div>
-                            </div><br/>
-                            <h2 className="title mt-4 text-lg font-bold text-white" style={{  textTransform: 'uppercase', marginBottom:'2px'}}>{card.title}</h2>
-                            <p className="text text-center font-semibold text-md text-black">{card.text}</p>
-                        </div>
-                    ))}
-                </div><br/>
-            </section>
-         
 
-            {/* end new section  */}
-
+          
             <Modal
                 ref={dialog}
                 width="960"
@@ -150,7 +204,7 @@ const Services = () => {
                 closeBtnClass="!top-0 ltr:!right-0 rtl:!right-auto rtl:!left-0 !text-white !text-3xl"
                 modal={false}
             >
-                <div className="dark:bg-gray-dark bg-black !p-4">
+                <div className="bg-black !p-4 dark:bg-gray-dark">
                     <div className="relative">
                         <div className="aspect-video">
                             <iframe
@@ -165,14 +219,14 @@ const Services = () => {
                 </div>
             </Modal>
 
-            <section className="our-teambg- white/50 py-14 dark:bg-transparent lg:py-[70px]" style={{ background: '#1759D4' }}>
+            <section className="bg-white/50 py-14 dark:bg-transparent lg:py-[100px]">
                 <div className="container">
                     <div className="heading text-center">
                         <h4>What Technologies Do We Use?</h4>
                     </div>
                     <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 md:grid-cols-4 lg:grid-cols-6">
                         <div data-aos="fade-up" data-aos-duration="1000">
-                            <div className="group flex items-center justify-center rounded-[32px] bg-white  py-[50px] px-[50px] transition duration-500 hover:scale-105 hover:bg-[#DF2E31] hover:drop-shadow-[0_5px_13px_rgba(60,72,88,0.20)]">
+                            <div className="group flex items-center justify-center rounded-[32px] bg-gray/10 py-[50px] px-[50px] transition duration-500 hover:scale-105 hover:bg-[#DF2E31] hover:drop-shadow-[0_5px_13px_rgba(60,72,88,0.20)]">
                                 <svg
                                     width="60"
                                     height="60"
@@ -203,29 +257,8 @@ const Services = () => {
                                 </svg>
                             </div>
                         </div>
-
-                        {/* <div data-aos="fade-up" data-aos-duration="1000">
-                            <div className="group flex items-center justify-center rounded-[32px] bg-white  py-[50px] px-[50px] transition duration-500 hover:scale-105 hover:bg-[#b3883f] hover:drop-shadow-[0_5px_13px_rgba(60,72,88,0.20)]">
-
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 364 502" id="IconChangeColor" height="60" width="60">
-                    <path d="M277.74 312.9c9.8-6.7 23.4-12.5 23.4-12.5s-38.7 7-77.2 10.2c-47.1 3.9-97.7 4.7-123.1 1.3-60.1-8 33-30.1 33-30.1s-36.1-2.4-80.6 19c-52.5 25.4 130 37 224.5 12.1zm-85.4-32.1c-19-42.7-83.1-80.2 0-145.8C296 53.2 242.84 0 242.84 0c21.5 84.5-75.6 110.1-110.7 162.6-23.9 35.9 11.7 74.4 60.2 118.2zm114.6-176.2c.1 0-175.2 43.8-91.5 140.2 24.7 28.4-6.5 54-6.5 54s62.7-32.4 33.9-72.9c-26.9-37.8-47.5-56.6 64.1-121.3zm-6.1 270.5a12.19 12.19 0 0 1-2 2.6c128.3-33.7 81.1-118.9 19.8-97.3a17.33 17.33 0 0 0-8.2 6.3 70.45 70.45 0 0 1 11-3c31-6.5 75.5 41.5-20.6 91.4zM348 437.4s14.5 11.9-15.9 21.2c-57.9 17.5-240.8 22.8-291.6.7-18.3-7.9 16-19 26.8-21.3 11.2-2.4 17.7-2 17.7-2-20.3-14.3-131.3 28.1-56.4 40.2C232.84 509.4 401 461.3 348 437.4zM124.44 396c-78.7 22 47.9 67.4 148.1 24.5a185.89 185.89 0 0 1-28.2-13.8c-44.7 8.5-65.4 9.1-106 4.5-33.5-3.8-13.9-15.2-13.9-15.2zm179.8 97.2c-78.7 14.8-175.8 13.1-233.3 3.6 0-.1 11.8 9.7 72.4 13.6 92.2 5.9 233.8-3.3 237.1-46.9 0 0-6.4 16.5-76.2 29.7zM260.64 353c-59.2 11.4-93.5 11.1-136.8 6.6-33.5-3.5-11.6-19.7-11.6-19.7-86.8 28.8 48.2 61.4 169.5 25.9a60.37 60.37 0 0 1-21.1-12.8z" id="mainIconPathAttribute" fill="#ffffff"></path>
-                </svg>
-                            </div>
-                        </div>
-                        
                         <div data-aos="fade-up" data-aos-duration="1000">
-                            <div className="group flex items-center justify-center rounded-[32px] bg-white  py-[50px] px-[50px] transition duration-500 hover:scale-105 hover:bg-[#6DB33F] hover:drop-shadow-[0_5px_13px_rgba(60,72,88,0.20)]">
-
-                                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="IconChangeColor" height="60" width="60">
-                                    <path d="M21.8537 1.4158a10.4504 10.4504 0 0 1-1.284 2.2471A11.9666 11.9666 0 1 0 3.8518 20.7757l.4445.3951a11.9543 11.9543 0 0 0 19.6316-8.2971c.3457-3.0126-.568-6.8649-2.0743-11.458zM5.5805 20.8745a1.0174 1.0174 0 1 1-.1482-1.4323 1.0396 1.0396 0 0 1 .1482 1.4323zm16.1991-3.5806c-2.9385 3.9263-9.2601 2.5928-13.2852 2.7904 0 0-.7161.0494-1.4323.1481 0 0 .2717-.1234.6174-.2469 2.8398-.9877 4.1732-1.1853 5.9018-2.0743 3.2349-1.6545 6.4698-5.2844 7.1118-9.0379-1.2347 3.6053-4.9881 6.7167-8.3959 7.9761-2.3459.8643-6.5685 1.7039-6.5685 1.7039l-.1729-.0988c-2.8645-1.4076-2.9632-7.6304 2.2718-9.6306 2.2966-.889 4.4696-.395 6.9637-.9877 2.6422-.6174 5.7043-2.5929 6.939-5.1857 1.3828 4.1732 3.062 10.643.0493 14.6434z" id="mainIconPathAttribute" fill="white"></path>
-                                </svg>
-                            </div>
-                        </div>
-                         */}
-
-
-                        <div data-aos="fade-up" data-aos-duration="1000">
-                            <div className="group flex items-center justify-center rounded-[32px] bg-white  py-[50px] px-[50px] transition duration-500 hover:scale-105 hover:bg-black hover:drop-shadow-[0_5px_13px_rgba(60,72,88,0.20)]">
+                            <div className="group flex items-center justify-center rounded-[32px] bg-gray/10 py-[50px] px-[50px] transition duration-500 hover:scale-105 hover:bg-black hover:drop-shadow-[0_5px_13px_rgba(60,72,88,0.20)]">
                                 <svg
                                     width="60"
                                     height="60"
@@ -262,9 +295,12 @@ const Services = () => {
                                 </svg>
                             </div>
                         </div>
-
+                      
+                     
+                      
+                       
                         <div data-aos="fade-up" data-aos-duration="1000">
-                            <div className="group flex items-center justify-center rounded-[32px] bg-white  py-[50px] px-[50px] transition duration-500 hover:scale-105 hover:bg-[#41D0FD] hover:drop-shadow-[0_5px_13px_rgba(60,72,88,0.20)]">
+                            <div className="group flex items-center justify-center rounded-[32px] bg-gray/10 py-[50px] px-[50px] transition duration-500 hover:scale-105 hover:bg-[#41D0FD] hover:drop-shadow-[0_5px_13px_rgba(60,72,88,0.20)]">
                                 <svg
                                     width="60"
                                     height="60"
@@ -313,7 +349,7 @@ const Services = () => {
                             </div>
                         </div>
                         <div data-aos="fade-up" data-aos-duration="1000">
-                            <div className="group flex items-center justify-center rounded-[32px] bg-white  py-[50px] px-[50px] transition duration-500 hover:scale-105 hover:bg-[#E54C21] hover:drop-shadow-[0_5px_13px_rgba(60,72,88,0.20)]">
+                            <div className="group flex items-center justify-center rounded-[32px] bg-gray/10 py-[50px] px-[50px] transition duration-500 hover:scale-105 hover:bg-[#E54C21] hover:drop-shadow-[0_5px_13px_rgba(60,72,88,0.20)]">
                                 <svg
                                     width="60"
                                     height="60"
@@ -345,7 +381,7 @@ const Services = () => {
                             </div>
                         </div>
                         <div data-aos="fade-up" data-aos-duration="1000">
-                            <div className="group flex items-center justify-center rounded-[32px] bg-white  py-[50px] px-[50px] transition duration-500 hover:scale-105 hover:bg-black hover:drop-shadow-[0_5px_13px_rgba(60,72,88,0.20)]">
+                            <div className="group flex items-center justify-center rounded-[32px] bg-gray/10 py-[50px] px-[50px] transition duration-500 hover:scale-105 hover:bg-black hover:drop-shadow-[0_5px_13px_rgba(60,72,88,0.20)]">
                                 <svg
                                     width="60"
                                     height="60"
@@ -362,7 +398,7 @@ const Services = () => {
                             </div>
                         </div>
                         <div data-aos="fade-up" data-aos-duration="1000">
-                            <div className="group flex items-center justify-center rounded-[32px] bg-white  py-[50px] px-[50px] transition duration-500 hover:scale-105 hover:bg-[#01D8FF] hover:drop-shadow-[0_5px_13px_rgba(60,72,88,0.20)]">
+                            <div className="group flex items-center justify-center rounded-[32px] bg-gray/10 py-[50px] px-[50px] transition duration-500 hover:scale-105 hover:bg-[#01D8FF] hover:drop-shadow-[0_5px_13px_rgba(60,72,88,0.20)]">
                                 <svg
                                     width="60"
                                     height="60"
@@ -382,459 +418,303 @@ const Services = () => {
                                 </svg>
                             </div>
                         </div>
-                    </div>
-                </div><br /><br />
-            </section>
-
-            {/* our team */}
-
-            <section
-                className="bg-[url(/assets/images/service-bg.png)] bg-cover bg-center bg-no-repeat py-14 dark:bg-none lg:py-[60px]"
-                style={{
-                    background: '#e5f1ff',
-                }}
-            >
-                <div className="container ">
-
-                    <div className="heading text-center">
-                        <h6 style={{ color: 'black ', fontStyle: 'Poppins', fontSize: 25 ,marginBottom:'1'}}>Why Choose Our</h6>
-                        <h4 style={{ color: '#1759D4', fontStyle: 'Poppins', fontSize: 52, textTransform: 'uppercase' }}> Expertise </h4>
-                    </div>
-
-                    <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-
-                        <div data-aos="fade-up" data-aos-duration="1000">
-                            <div
-                                className="group rounded-3xl border-2 border-white bg-white p-6 transition duration-500 hover:border-secondary hover:bg-secondary/10 dark:border-white/10 dark:bg-transparent dark:bg-gradient-to-b dark:from-white/[0.04] dark:to-transparent dark:!shadow-none dark:hover:bg-secondary"
-                                style={{
-                                    boxShadow: '-20px 40px 80px rgba(219, 222, 225, 0.4)',
-                                    background: 'linear-gradient(to right, #737DFE, #FFCAC9)',
-                                }}
-                            >
-                                <div
-                                    className="flex h-16 w-16 items-center justify-center rounded-full bg-white transition "
-                                    style={{
-                                        boxShadow: '0px 15px 30px rgba(180, 118, 229, 0.4)',
-                                    }}
-                                >
-                                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            opacity="0.5"
-                                            d="M14.2371 18.7087L18.7103 14.2366L21.4893 17.0156V21.4888H17.0172L14.2371 18.7087ZM5.2917 9.76334L2.3092 6.7819C2.21118 6.68399 2.13342 6.56771 2.08036 6.43973C2.02731 6.31174 2 6.17455 2 6.03601C2 5.89746 2.02731 5.76027 2.08036 5.63229C2.13342 5.5043 2.21118 5.38803 2.3092 5.29012L5.2917 2.30867C5.4894 2.11103 5.75751 2 6.03706 2C6.31662 2 6.58472 2.11103 6.78242 2.30867L9.76598 5.29012L5.2917 9.76334Z"
-                                            fill="#1759D4"
-                                        />
-                                        <path
-                                            d="M5.29177 12.7459L7.21895 14.6742L8.71179 13.1813L6.78249 11.2552L8.27321 9.76449L10.2015 11.6917L11.6922 10.201L9.76605 8.27271L11.2568 6.78199L13.1818 8.71128L14.6736 7.2195L12.7454 5.29232L15.7279 2.31087C15.9256 2.11323 16.1937 2.0022 16.4732 2.0022C16.7528 2.0022 17.0209 2.11323 17.2186 2.31087L21.6908 6.78304C21.8884 6.98074 21.9994 7.24885 21.9994 7.5284C21.9994 7.80795 21.8884 8.07606 21.6908 8.27376L8.27321 21.6913C8.07551 21.889 7.8074 22 7.52785 22C7.2483 22 6.98019 21.889 6.78249 21.6913L2.31032 17.2192C2.11268 17.0215 2.00165 16.7533 2.00165 16.4738C2.00165 16.1942 2.11268 15.9261 2.31032 15.7284L5.29177 12.7459Z"
-                                            fill="#1759D4"
-                                        />
-                                    </svg>
-
-                                </div>
-                                <Link
-                                    href="/services-detail"
-                                    className="my-8 inline-block text-[20px] font-extrabold text-white dark:text-white dark:group-hover:text-black"
-                                >
-                                    Prioritizing Client Growth
-                                </Link>
-                                <p className="mb-10 text-md font-semibold transition line-clamp-9 dark:group-hover:text-white" style={{ color: 'black' }}>
-                                    Customer growth is a crucial focus area. Our company not only aims to acquire new clients but also seeks to nurture and
-                                    expand its existing customer base. We imply a long-term commitment to customer satisfaction and partnership.
-                                </p>
-                                
-                            </div>
-                        </div>
-
-                        <div data-aos="fade-up" data-aos-duration="1000">
-                            <div
-                                className="group rounded-3xl border-2 border-white bg-white p-6 transition duration-500 hover:border-secondary hover:bg-secondary/20 dark:border-white/10 dark:bg-transparent dark:bg-gradient-to-b dark:from-white/[0.04] dark:to-transparent dark:!shadow-none dark:hover:bg-secondary"
-                                style={{
-                                    boxShadow: '-20px 30px 70px rgba(219, 222, 225, 0.4)',
-                                    background: 'linear-gradient(to right, #737DFE, #FFCAC9)',
-                                }}
-                            >
-                                <div
-                                    className="flex h-16 w-16 items-center justify-center rounded-full bg-white transition"
-                                    style={{
-                                        boxShadow: '0px 15px 30px rgba(180, 118, 229, 0.4)',
-                                    }}
-                                >
-                                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            opacity="0.5"
-                                            d="M10.1658 20C10.5862 20 10.9617 19.7371 11.1054 19.342L15.8374 6.34204C16.0749 5.68981 15.5919 5 14.8978 5H13.8341C13.4137 5 13.0382 5.26292 12.8945 5.65796L8.16245 18.658C7.92504 19.3102 8.40804 20 9.10214 20H10.1658Z"
-                                            fill="#1759D4"
-                                        />
-                                        <path
-                                            d="M17.9889 17.0964C18.3794 17.4871 19.0127 17.4873 19.4034 17.0966L23.2929 13.2071C23.6834 12.8166 23.6834 12.1834 23.2929 11.7929L19.4036 7.90359C19.0129 7.51287 18.3793 7.5131 17.9889 7.90409L17.2814 8.61254C16.8913 9.00328 16.8916 9.63632 17.2823 10.0266L19.0501 11.7927C19.441 12.1832 19.441 12.8168 19.0502 13.2074L17.2822 14.9746C16.8916 15.365 16.8914 15.9981 17.2818 16.3888L17.9889 17.0964ZM4.94994 13.2073C4.55904 12.8167 4.55896 12.1832 4.94977 11.7925L6.71781 10.0253C7.10839 9.63494 7.10858 9.00184 6.71823 8.61121L6.01111 7.90359C5.62062 7.51283 4.98726 7.51272 4.59664 7.90334L0.707106 11.7929C0.316582 12.1834 0.316582 12.8166 0.707107 13.2071L4.59639 17.0964C4.98711 17.4871 5.62066 17.4869 6.01111 17.0959L6.71856 16.3874C7.10874 15.9967 7.10837 15.3637 6.71773 14.9734L4.94994 13.2073Z"
-                                            fill="#1759D4"
-                                        />
-                                    </svg>
-                                </div>
-                                <Link
-                                    href="/services-detail"
-                                    className="my-8 inline-block text-[20px] font-extrabold text-white dark:text-white dark:group-hover:text-black"
-                                >
-                                    Contributing to Societal Betterment
-                                </Link>
-
-                                <p className="mb-4 text-md font-semibold transition line-clamp-9 dark:group-hover:text-black" style={{ color: 'black' }}>
-                                    Our company aims not only to profitable but also to make a positive impact on
-                                    society. This involves ethical business practicess, community involvement, or even the development of IT solutions that
-                                    address societal issues.
-                                </p>
-                                
-                            </div>
-                        </div>
-
-                        <div data-aos="fade-up" data-aos-duration="1000">
-                            <div
-                                className="group rounded-3xl border-2 border-white bg-white p-6 transition duration-500 hover:border-secondary hover:bg-secondary/20 dark:border-white/10 dark:bg-transparent dark:bg-gradient-to-b dark:from-white/[0.04] dark:to-transparent dark:!shadow-none dark:hover:bg-secondary"
-                                style={{
-                                    boxShadow: '-20px 30px 70px rgba(219, 222, 225, 0.4)',
-                                    background: 'linear-gradient(to right, #737DFE, #FFCAC9)',
-                                }}
-                            >
-                                <div
-                                    className="flex h-16 w-16 items-center justify-center rounded-full bg-white transition "
-                                    style={{
-                                        boxShadow: '0px 15px 30px rgba(180, 118, 229, 0.4)',
-                                    }}
-                                >
-                                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            opacity="0.5"
-                                            d="M6.21053 20H3.05263C2.77346 20 2.50572 19.8891 2.30831 19.6917C2.1109 19.4943 2 19.2265 2 18.9474V10.5263C2 10.2471 2.1109 9.97941 2.30831 9.782C2.50572 9.58459 2.77346 9.47369 3.05263 9.47369H6.21053C6.4897 9.47369 6.75744 9.58459 6.95485 9.782C7.15226 9.97941 7.26316 10.2471 7.26316 10.5263V18.9474C7.26316 19.2265 7.15226 19.4943 6.95485 19.6917C6.75744 19.8891 6.4897 20 6.21053 20ZM20.9474 20H17.7895C17.5103 20 17.2426 19.8891 17.0452 19.6917C16.8477 19.4943 16.7368 19.2265 16.7368 18.9474V7.36843C16.7368 7.08925 16.8477 6.82151 17.0452 6.6241C17.2426 6.4267 17.5103 6.3158 17.7895 6.3158H20.9474C21.2265 6.3158 21.4943 6.4267 21.6917 6.6241C21.8891 6.82151 22 7.08925 22 7.36843V18.9474C22 19.2265 21.8891 19.4943 21.6917 19.6917C21.4943 19.8891 21.2265 20 20.9474 20Z"
-                                            fill="#1759D4"
-                                        />
-                                        <path
-                                            d="M13.5789 20H10.421C10.1419 20 9.87412 19.8891 9.67672 19.6917C9.47931 19.4943 9.36841 19.2265 9.36841 18.9474V1.05263C9.36841 0.773456 9.47931 0.505715 9.67672 0.308309C9.87412 0.110902 10.1419 0 10.421 0H13.5789C13.8581 0 14.1259 0.110902 14.3233 0.308309C14.5207 0.505715 14.6316 0.773456 14.6316 1.05263V18.9474C14.6316 19.2265 14.5207 19.4943 14.3233 19.6917C14.1259 19.8891 13.8581 20 13.5789 20Z"
-                                            fill="#1759D4"
-                                        />
-                                    </svg>
-                                </div>
-                                <Link
-                                    href="/services-detail"
-                                    className="my-8 inline-block text-[20px] font-extrabold text-white dark:text-white dark:group-hover:text-black"
-                                >
-                                    Innovative Service Provider
-                                </Link>
-
-                                <p className="mb-10 text-md font-semibold transition line-clamp-9 dark:group-hover:text-black" style={{ color: 'black' }}>
-                                    Innovation is vital in the rapidly evolving IT industry. Our company seeks to be at the forefront of technological
-                                    advancements and to offer innovative solutions that address emerging challenges and opportunities.
-                                </p>
-                                
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-            <section
-                className="py-14 dark:!bg-none lg:py-[10px]"
-                style={{
-                    background: '#e5f1ff',
-                }}
-            >
-                <div className="relative my-14 mx-auto border-[10px] border-transparent bg-black py-14 dark:border-black dark:bg-gray-dark lg:my-[100px] lg:py-[100px] xl:max-w-[1440px] xl:rounded-3xl">
-                    <div className="container">
-                        <div className="items-end gap-4 lg:flex xl:gap-0">
-                            <div className="lg:w-1/2">
-                                <div className="heading mb-16 text-center ltr:lg:text-left rtl:lg:text-right">
-                                    <h6>What Makes us Different?</h6>
-                                    <h4 className="leading-normal !text-white lg:!leading-[50px]">We bring solutions to make life easier for our clients.</h4>
-                                </div>
-                                <div className="grid gap-x-7 gap-y-12 sm:grid-cols-2" data-aos={isRtl ? 'fade-left' : 'fade-right'} data-aos-duration="1000">
-                                    <div className="flex transition">
-                                        <div>
-                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clipPath="url(#clip0_36_337)">
-                                                    <path
-                                                        opacity="0.5"
-                                                        d="M19.2867 23.9285V25.119C19.2867 25.7505 19.0358 26.3561 18.5893 26.8027C18.1427 27.2492 17.5371 27.5001 16.9056 27.5001H12.1435C11.512 27.5001 10.9063 27.2492 10.4598 26.8027C10.0133 26.3561 9.76239 25.7505 9.76239 25.119V23.9285H19.2867Z"
-                                                        fill="#B476E5"
-                                                    />
-                                                    <path
-                                                        d="M9.69213 21.5473C9.33855 20.0318 7.74323 18.7924 7.08844 17.9757C5.96718 16.5748 5.26448 14.8857 5.06127 13.1028C4.85807 11.32 5.16263 9.51606 5.93988 7.89876C6.71712 6.28146 7.93542 4.91663 9.45445 3.96148C10.9735 3.00632 12.7314 2.49971 14.5258 2.5C16.3202 2.50029 18.078 3.00746 19.5967 3.9631C21.1154 4.91874 22.3333 6.28396 23.11 7.90151C23.8867 9.51906 24.1907 11.3231 23.9869 13.1059C23.7831 14.8886 23.0799 16.5776 21.9582 17.9781C21.3034 18.7936 19.7105 20.033 19.3569 21.5473H9.69094H9.69213ZM15.715 12.029V7.26094L10.3576 14.4101H13.334V19.1722L18.6914 12.029H15.715Z"
-                                                        fill="#B476E5"
-                                                    />
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_36_337">
-                                                        <rect width="30" height="30" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </div>
-                                        <div className="ltr:pl-3 rtl:pr-3">
-                                            <h4 className="mb-2 text-lg font-bold text-white">Budget Friendly</h4>
-                                            <p className="font-semibold">
-                                                You will receive a guaranteed price for your project before commencement, allowing you to customize it by adding
-                                                or eliminating features based on your budget
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="flex transition">
-                                        <div>
-                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clipPath="url(#clip0_36_379)">
-                                                    <path
-                                                        d="M7.38901 21.9074C8.8422 21.9074 10.0284 20.7213 10.0284 19.268C10.0284 17.8148 8.84225 16.6287 7.38901 16.6287C5.93576 16.6287 4.74963 17.8148 4.74963 19.268C4.74963 20.7212 5.90621 21.9074 7.38901 21.9074Z"
-                                                        fill="#B476E5"
-                                                    />
-                                                    <path
-                                                        d="M9.64281 22.5896C8.99038 23.0344 8.21938 23.2717 7.38902 23.2717C6.55865 23.2717 5.78771 23.0048 5.13522 22.5896C3.86013 23.3014 3 24.6655 3 26.2372V26.7709C3 27.364 3.47454 27.8386 4.06761 27.8386H9.73188V27.6013C9.73188 26.2075 10.2656 24.9324 11.0962 23.9537C10.7104 23.3901 10.2062 22.9158 9.64276 22.5896L9.64281 22.5896Z"
-                                                        fill="#B476E5"
-                                                    />
-                                                    <path
-                                                        d="M20.9714 19.268C20.9714 20.7212 22.1575 21.9074 23.6107 21.9074C25.064 21.9074 26.2501 20.7213 26.2501 19.268C26.2501 17.8148 25.064 16.6287 23.6107 16.6287C22.128 16.6287 20.9714 17.815 20.9714 19.268Z"
-                                                        fill="#B476E5"
-                                                    />
-                                                    <path
-                                                        d="M25.8646 22.5893C25.2122 23.0341 24.4412 23.2714 23.6109 23.2714C22.7805 23.2714 21.9797 23.0045 21.3571 22.5596C20.764 22.8858 20.2894 23.3306 19.9039 23.894C20.7638 24.8727 21.2681 26.1478 21.2681 27.5416V27.7789H26.9324C27.5255 27.7789 28 27.3044 28 26.7113V26.1776C27.9998 24.6652 27.1397 23.3308 25.8646 22.5894L25.8646 22.5893Z"
-                                                        fill="#B476E5"
-                                                    />
-                                                    <path
-                                                        d="M12.8456 20.6318C12.8456 22.085 14.0318 23.2712 15.485 23.2712C16.9383 23.2712 18.1244 22.085 18.1244 20.6318C18.1244 19.1786 16.9383 17.9924 15.485 17.9924C14.0318 17.9924 12.8456 19.1786 12.8456 20.6318Z"
-                                                        fill="#B476E5"
-                                                    />
-                                                    <path
-                                                        d="M17.7388 23.9536C17.0864 24.3984 16.3154 24.6356 15.485 24.6356C14.6547 24.6356 13.8837 24.3688 13.2312 23.9536C11.9561 24.6654 11.096 26.0295 11.096 27.6012V28.1349C11.096 28.728 11.5706 29.2025 12.1636 29.2025H18.8065C19.3996 29.2025 19.8741 28.728 19.8741 28.1349V27.6012C19.8739 26.0295 19.014 24.6654 17.7387 23.9536H17.7388Z"
-                                                        fill="#B476E5"
-                                                    />
-                                                    <path
-                                                        opacity="0.5"
-                                                        d="M11.0663 9.15515C11.3036 10.6379 12.5787 11.7945 14.1209 11.7945C14.625 11.7945 15.07 11.676 15.4852 11.4683C15.9003 11.676 16.3451 11.7945 16.8495 11.7945C18.3916 11.7945 19.6965 10.6676 19.904 9.15515C20.9123 8.65103 21.5945 7.613 21.5945 6.39726C21.5945 5.18132 20.9125 4.17307 19.904 3.63937C19.6667 2.15658 18.3916 1 16.8495 1C16.3453 1 15.9004 1.11853 15.4852 1.32623C15.07 1.11853 14.6253 1 14.1209 1C12.5787 1 11.2738 2.12698 11.0663 3.63937C10.0581 4.1435 9.37585 5.18153 9.37585 6.39726C9.37606 7.613 10.0581 8.65106 11.0663 9.15515ZM18.5989 5.3888C19.1625 5.3888 19.6072 5.83356 19.6072 6.39705C19.6072 6.96055 19.1624 7.4053 18.5989 7.4053C18.0354 7.4053 17.5907 6.96055 17.5907 6.39705C17.5907 5.83356 18.0354 5.3888 18.5989 5.3888ZM15.485 5.3888C16.0485 5.3888 16.4933 5.83356 16.4933 6.39705C16.4933 6.96055 16.0485 7.4053 15.485 7.4053C14.9215 7.4053 14.4768 6.96055 14.4768 6.39705C14.4768 5.83356 14.9215 5.3888 15.485 5.3888ZM12.3711 5.3888C12.9346 5.3888 13.3793 5.83356 13.3793 6.39705C13.3793 6.96055 12.9346 7.4053 12.3711 7.4053C11.8076 7.4053 11.3629 6.96055 11.3629 6.39705C11.3629 5.83356 11.8076 5.3888 12.3711 5.3888Z"
-                                                        fill="#B476E5"
-                                                    />
-                                                    <path
-                                                        d="M9.25737 15.9762C9.73192 15.9762 10.1173 15.5906 10.1173 15.1163C10.1173 14.6417 9.7317 14.2563 9.25737 14.2563C8.78283 14.2563 8.39746 14.6419 8.39746 15.1163C8.39746 15.5908 8.78305 15.9762 9.25737 15.9762Z"
-                                                        fill="#B476E5"
-                                                    />
-                                                    <path
-                                                        opacity="0.5"
-                                                        d="M11.3036 12.0911C10.7105 12.0911 10.2064 12.5656 10.2064 13.1883C10.2064 13.7813 10.6809 14.2855 11.3036 14.2855C11.9265 14.2855 12.4008 13.811 12.4008 13.1883C12.3712 12.5656 11.8967 12.0911 11.3036 12.0911Z"
-                                                        fill="#B476E5"
-                                                    />
-                                                    <path
-                                                        d="M20.8527 15.1163C20.8527 15.5908 21.2383 15.9762 21.7126 15.9762C22.1872 15.9762 22.5726 15.5906 22.5726 15.1163C22.5726 14.6417 22.187 14.2563 21.7126 14.2563C21.2383 14.2563 20.8527 14.6417 20.8527 15.1163Z"
-                                                        fill="#B476E5"
-                                                    />
-                                                    <path
-                                                        opacity="0.5"
-                                                        d="M19.6665 12.0911C19.0734 12.0911 18.5693 12.5656 18.5693 13.1883C18.5693 13.7813 19.0438 14.2855 19.6665 14.2855C20.2596 14.2855 20.7637 13.811 20.7637 13.1883C20.7637 12.5656 20.2892 12.0911 19.6665 12.0911Z"
-                                                        fill="#B476E5"
-                                                    />
-                                                    <path
-                                                        opacity="0.5"
-                                                        d="M15.4851 12.5063C14.892 12.5063 14.3879 12.9809 14.3879 13.6036C14.3879 14.1966 14.8624 14.7008 15.4851 14.7008C16.0782 14.7008 16.5823 14.2262 16.5823 13.6036C16.5823 13.0105 16.0782 12.5063 15.4851 12.5063Z"
-                                                        fill="#B476E5"
-                                                    />
-                                                    <path
-                                                        d="M15.485 15.353C15.0105 15.353 14.6251 15.7386 14.6251 16.2129C14.6251 16.6875 15.0107 17.0729 15.485 17.0729C15.9596 17.0729 16.345 16.6873 16.345 16.2129C16.345 15.7386 15.9596 15.353 15.485 15.353Z"
-                                                        fill="#B476E5"
-                                                    />
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_36_379">
-                                                        <rect width="30" height="30" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </div>
-                                        <div className="ltr:pl-3 rtl:pr-3">
-                                            <h4 className="mb-2 text-lg font-bold text-white">Creative Minds</h4>
-                                            <p className="font-semibold">
-                                                Our youthful team employs a process-driven strategy to develop digital products tailored to the specific
-                                                business requirements of our partners
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="flex transition">
-                                        <div>
-                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clipPath="url(#clip0_36_392)">
-                                                    <path
-                                                        opacity="0.5"
-                                                        fillRule="evenodd"
-                                                        clipRule="evenodd"
-                                                        d="M14.2364 27.9997V24.9966C12.4567 25.1078 11.1218 23.6617 11.1218 21.9935C11.1218 20.3249 12.4567 18.9904 14.2364 19.1015V16.0984H8.67477C8.89731 15.6535 9.3422 15.0973 9.3422 14.5412C9.3422 12.3167 6.00534 12.3167 6.00534 14.5412C6.00534 15.0975 6.33905 15.6535 6.56161 16.0984H1V27.1102C1 27.5551 1.44487 27.9999 1.88974 27.9999H14.2365L14.2364 27.9997Z"
-                                                        fill="#B476E5"
-                                                    />
-                                                    <path
-                                                        fillRule="evenodd"
-                                                        clipRule="evenodd"
-                                                        d="M28.6959 16.0981H25.2477C25.3588 17.8778 24.0242 19.3238 22.3557 19.3238C20.576 19.3238 19.2412 17.8778 19.3526 16.0981H15.4595V20.7698C15.0146 20.6586 14.4584 20.3249 14.0135 20.3249C11.9001 20.3249 11.9001 23.6618 14.0135 23.6618C14.4584 23.6618 15.0146 23.4392 15.4595 23.2169V27.9997H27.8063C28.2511 27.9997 28.696 27.5549 28.696 27.11V16.0982L28.6959 16.0981Z"
-                                                        fill="#B476E5"
-                                                    />
-                                                    <path
-                                                        fillRule="evenodd"
-                                                        clipRule="evenodd"
-                                                        d="M28.6731 14.9015V3.88974C28.6731 3.44487 28.2283 3 27.672 3H15.4367V5.89196C17.1052 5.66942 18.6624 7.00423 18.6624 8.78392C18.6624 10.5636 17.1052 11.8985 15.4367 11.6759V14.9016H20.9983C20.8871 15.3464 20.5534 15.9027 20.5534 16.3476C20.5534 18.5722 24.0017 18.5722 24.0017 16.3476C24.0017 15.9027 23.668 15.3465 23.4454 14.9016L28.6731 14.9015Z"
-                                                        fill="#B476E5"
-                                                    />
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_36_392">
-                                                        <rect width="30" height="30" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </div>
-                                        <div className="ltr:pl-3 rtl:pr-3">
-                                            <h4 className="mb-2 text-lg font-bold text-white">Full Transparency</h4>
-                                            <p className="font-semibold">
-                                                Anticipate transparent communication and full visibility at every stage of your product development journey
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="flex transition">
-                                        <div>
-                                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clipPath="url(#clip0_36_401)">
-                                                    <path
-                                                        opacity="0.5"
-                                                        d="M9.68219 19.8007L10.8868 17.8733C11.9699 18.5518 13.2226 18.9106 14.5006 18.9086C15.7787 18.9106 17.0313 18.5518 18.1144 17.8733L19.319 19.8007C17.8749 20.7054 16.2047 21.184 14.5006 21.1814C12.7965 21.184 11.1263 20.7054 9.68219 19.8007Z"
-                                                        fill="#B476E5"
-                                                    />
-                                                    <path
-                                                        d="M24.7284 10.9537C25.3312 10.9537 25.9093 11.1932 26.3355 11.6194C26.7618 12.0457 27.0012 12.6238 27.0012 13.2265V17.7722C27.0012 18.375 26.7618 18.9531 26.3355 19.3794C25.9093 19.8056 25.3312 20.0451 24.7284 20.0451H23.5215C23.2445 22.2421 22.1752 24.2625 20.5143 25.7272C18.8534 27.1918 16.715 28 14.5006 28V25.7272C16.309 25.7272 18.0433 25.0088 19.322 23.7301C20.6007 22.4513 21.3191 20.717 21.3191 18.9086V12.0901C21.3191 10.2817 20.6007 8.54743 19.322 7.26871C18.0433 5.98999 16.309 5.27162 14.5006 5.27162C12.6922 5.27162 10.9579 5.98999 9.67919 7.26871C8.40047 8.54743 7.6821 10.2817 7.6821 12.0901V20.0451H4.27284C3.67004 20.0451 3.09194 19.8056 2.6657 19.3794C2.23946 18.9531 2 18.375 2 17.7722V13.2265C2 12.6238 2.23946 12.0457 2.6657 11.6194C3.09194 11.1932 3.67004 10.9537 4.27284 10.9537H5.47972C5.75704 8.75689 6.82646 6.73677 8.48733 5.27238C10.1482 3.808 12.2864 3 14.5006 3C16.7149 3 18.853 3.808 20.5139 5.27238C22.1748 6.73677 23.2442 8.75689 23.5215 10.9537H24.7284Z"
-                                                        fill="#B476E5"
-                                                    />
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_36_401">
-                                                        <rect width="30" height="30" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </div>
-                                        <div className="ltr:pl-3 rtl:pr-3">
-                                            <h4 className="mb-2 text-lg font-bold text-white">Agile Development</h4>
-                                            <p className="font-semibold">Accelerate Your Time-to-Market: Embrace Agile, Iterative, CI/CD Development</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                           
-                            <div className="top-1/2 mx-auto mt-10 ltr:right-5 rtl:left-5 md:w-[45%] lg:mt-0 xl:absolute xl:-translate-y-1/2" style={{ borderRadius: 60 }}>
-                                <img src="https://lh3.googleusercontent.com/p/AF1QipOUcWmOrsHZUyS-gS4z95HT7l9SFpNVpdj0CfJM=s680-w680-h510" alt="box-img" className="h-full w-full transition-transform duration-300 transform hover:scale-110 rtl:rotate-y-180" style={{ borderRadius: 60 }} />
-                            </div>
-                        </div>
+                    
                     </div>
                 </div>
             </section>
 
-            
 
-<section className="bg-white py-14 -mt-32 dark:bg-transparent lg:py-[100px]" style={{ background: '#e5f1ff' }}>
-                <div className="container">
-                    <div className="heading text-center">
-                        <h6 style={{ color: 'black',fontSize:24,marginBottom:'-2px',marginLeft:'24px' }}>Meet Our Team</h6>
-                        <h4 style={{ color: '#1759D4' ,fontSize:'34',marginLeft:'24px',marginBottom:'-16px'}}>Creative Minds</h4>
-                    </div>
-                  
-                    <div className="w-90 ml-17 mx-auto  mt-8 grid grid-cols-1 justify-around gap-9 pl-[95px] md:grid-cols-2 lg:grid-cols-4 ">
-    
-                        <div className="img-card w-40 rounded-xl text-center" style={{marginRight:'24px'}}>
-                            <img src="Nidhi Pandey.png" alt="" className="rounded-xl" />
-                            <h3 style={{ color: '#1759D4', fontWeight: '700' }}>COO/CO-FOUNDER</h3>
-                            <p style={{ fontWeight: '700', color: 'black' }}>Nidhi Pandey</p>
-                        </div>
-                        <div className="img-card w-40 rounded-xl text-center mr-14">
-                            <img src="Mask Group 171.jpg" alt="" className="rounded-xl" />
-                            <h3 style={{ color: '#1759D4', fontWeight: '700' }}>SENIOR HR</h3>
-                            <p style={{ fontWeight: '700', color: 'black' }}>Divya Singh</p>
-                        </div>
-                        <div className="img-card w-44 rounded-xl text-center mr-14">
-                            <img src="Shashank Sohani.jpg" alt="" className="rounded-xl" />
-                            <h3 style={{ color: '#1759D4', fontWeight: '700' }}></h3>
-                            <p style={{ fontWeight: '700', color: 'black' }}>Shashank Sohani</p>
-                        </div>
-                        <div className="img-card w-44 rounded-xl text-center mr-14">
-                            <img src="Amar rathod.png" alt="" className="rounded-xl" />
-                            <h3 style={{ color: '#1759D4', fontWeight: '700' }}></h3>
-                            <p style={{ fontWeight: '700', color: 'black' }}>Amar Rathod</p>
-                        </div>
-                   
-                        {users.map((user, index) => (
-                            <div key={index} className="card overflow-hidden  w-40 rounded-xl text-center">
-                                <div className='w-[10rem] h-[11rem] card overflow-hidden rounded-xl'>
-                                <img src={user.avatar} alt={`${user.name}'s avatar`} className="rounded-xl" />
-                                </div>
-                                <p style={{ fontWeight: '700', color: 'black',marginTop:'4px' }}>{user.name}</p>
+            <Testimonial />
+
+            <section className="relative overflow-x-hidden border-t-2 border-transparent px-4 py-14 dark:border-gray/20 lg:py-[100px]">
+                <div className="items-center justify-center gap-10 lg:flex">
+                    <div className="text-center" data-aos={isRtl ? 'fade-left' : 'fade-right'} data-aos-duration="1000">
+                        <img src="/assets/images/services-form-txt.png" alt="services-form-txt" className="mx-auto mb-10 sm:pt-4 xl:mx-0" />
+                        <form action="" className="relative z-[1] text-center lg:pt-[50px]">
+                            <div className="relative inline-block w-full sm:w-auto">
+                                <input
+                                    type="email"
+                                    placeholder="Email Address"
+                                    className="w-full rounded-3xl py-4 font-bold leading-5 outline-none ltr:pl-4 ltr:pr-[110px] rtl:pr-4 rtl:pl-[110px] dark:bg-gray-dark sm:w-[540px] sm:py-6 ltr:sm:pl-[30px] ltr:sm:pr-[140px] rtl:sm:pr-[30px] rtl:sm:pl-[140px]"
+                                />
+                                <button
+                                    type="submit"
+                                    className="absolute top-0 h-full bg-secondary px-4 font-extrabold uppercase text-white ltr:right-0 ltr:rounded-r-3xl rtl:left-0 rtl:rounded-l-3xl sm:px-7"
+                                >
+                                    submit
+                                </button>
                             </div>
-                        ))}
+                        </form>
                     </div>
+                    <div className="mt-10 lg:mt-0" data-aos={isRtl ? 'fade-right' : 'fade-left'} data-aos-duration="1000">
+                        <svg
+                            width="320"
+                            height="282"
+                            viewBox="0 0 320 282"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="mx-auto my-8 w-[90%] sm:w-auto"
+                        >
+                            <path
+                                d="M254.182 123.52L203.127 119.709C198.183 119.334 193.219 120.151 188.656 122.091L175.076 127.872C173.249 131.184 171.005 134.248 168.397 136.989C161.845 143.977 136.719 156.969 123.457 159.701C120.332 160.256 117.111 159.694 114.361 158.113C108.352 162.928 102.056 167.373 95.5072 171.426C95.5072 171.426 107.911 206.717 154.095 186.768L190.829 170.854L182.782 190.136C183.005 201.158 183.069 215.611 182.337 225.245C190.961 227.868 200.16 227.956 208.832 225.497C212.297 201.991 214.937 164.889 205.968 150.88L249.86 150.467C255.391 140.518 254.904 134.861 254.182 123.52Z"
+                                fill="#B476E5"
+                            ></path>
+                            <path
+                                d="M172.633 109.862L177.977 86.3878C178.096 85.8739 178.003 85.3342 177.724 84.8875C177.443 84.4406 176.996 84.1235 176.482 84.0054C175.968 83.8876 175.427 83.9785 174.98 84.2585C174.532 84.5386 174.215 84.9845 174.097 85.4984L167.799 113.166"
+                                fill="#B476E5"
+                            ></path>
+                            <path
+                                d="M172.633 109.862L177.977 86.3878C178.096 85.8739 178.003 85.3342 177.724 84.8875C177.443 84.4406 176.996 84.1235 176.482 84.0054C175.968 83.8876 175.427 83.9785 174.98 84.2585C174.532 84.5386 174.215 84.9845 174.097 85.4984L167.799 113.166C168.591 116.084 170.719 119.996 172.633 109.862Z"
+                                fill="#B476E5"
+                            ></path>
+                            <path
+                                d="M168.499 20.9169C168.499 24.8561 167.329 28.7067 165.138 31.982C162.946 35.2574 159.832 37.8102 156.189 39.3177C152.545 40.8252 148.535 41.2196 144.667 40.451C140.799 39.6826 137.245 37.7857 134.457 35.0003C131.668 32.2148 129.768 28.6659 128.999 24.8024C128.23 20.9389 128.625 16.9343 130.134 13.295C131.643 9.65572 134.199 6.54505 137.478 4.35659C140.758 2.16813 144.613 1 148.557 1C153.845 1.00318 158.916 3.10253 162.655 6.83696C166.393 10.5714 168.495 15.6356 168.499 20.9169Z"
+                                fill="#B476E5"
+                            ></path>
+                            <path
+                                d="M272.632 126.031C268.973 134.696 263.804 142.644 257.366 149.506C260.896 150.046 264.427 150.843 267.448 151.316C270.595 149.945 273.546 148.163 276.223 146.015C284.593 139.281 301.834 130.926 305.61 126.161C298.772 125.173 282.043 125.84 272.632 126.031Z"
+                                fill="#47BDFF"
+                            ></path>
+                            <path
+                                d="M207.937 244.834C199.124 241.511 190.97 236.649 183.861 230.475C183.447 234.002 182.811 237.56 182.43 240.609C183.921 243.702 185.814 246.586 188.059 249.186C195.089 257.254 204.09 274.154 208.983 277.775C209.75 270.914 208.479 254.237 207.937 244.834Z"
+                                fill="#47BDFF"
+                            ></path>
+                            <path
+                                d="M98.7515 144.136C98.1154 144.454 97.4475 144.739 96.7796 145.025C93.6602 141.364 90.7292 137.548 87.9982 133.59C88.2844 134.259 97.0625 153.221 111.629 160.368C112.583 159.606 113.505 158.875 114.364 158.144C108.922 155.19 103.268 149.472 98.7515 144.136Z"
+                                fill="#47BDFF"
+                            ></path>
+                            <path d="M182.398 174.472C182.398 174.472 182.684 181.174 182.843 190.1L190.826 170.851L182.398 174.472Z" fill="#47BDFF"></path>
+                            <path
+                                d="M96.7478 60.7848C96.7478 60.7848 91.1787 50.3641 78.0785 56.7189C64.9784 63.0736 67.5194 88.6112 67.5194 88.6112C67.5194 88.6112 55.8772 94.1702 49.6753 103.541C40.0703 118.058 44.9063 139.976 74.7742 139.976C73.3503 133.718 72.8574 127.286 73.3112 120.885C74.1063 109.608 78.2091 99.2844 81.8348 88.7065C86.4582 75.0324 85.4656 76.1258 87.0826 71.1085C83.2325 67.4555 87.8141 63.0719 89.8814 66.628C90.7569 68.0658 90.9661 68.1226 91.6658 68.3416C95.4556 69.527 102.332 70.8494 106.062 69.6156C106.067 69.5186 106.385 60.7848 96.7478 60.7848Z"
+                                fill="#47BDFF"
+                            ></path>
+                            <path
+                                d="M89.6872 93.1215L86.2843 84.6084C87.4194 86.1276 88.757 87.4848 90.2599 88.6426C89.9802 90.1228 89.789 91.6185 89.6872 93.1215Z"
+                                fill="#47BDFF"
+                            ></path>
+                            <path
+                                d="M134.69 237.37C134.911 238.445 134.807 239.56 134.392 240.575C133.978 241.59 133.271 242.459 132.362 243.074C131.452 243.688 130.381 244.019 129.283 244.025C128.185 244.03 127.11 243.711 126.194 243.108C125.278 242.504 124.562 241.641 124.136 240.632C123.71 239.62 123.594 238.507 123.802 237.43C124.01 236.353 124.534 235.362 125.305 234.583C126.077 233.804 127.063 233.27 128.139 233.05C128.853 232.899 129.59 232.893 130.307 233.03C131.025 233.167 131.708 233.443 132.317 233.846C132.926 234.247 133.45 234.765 133.857 235.37C134.264 235.976 134.548 236.654 134.69 237.37Z"
+                                fill="#47BDFF"
+                            ></path>
+                            <path
+                                d="M168.499 20.9169C168.499 24.8561 167.329 28.7067 165.137 31.9821C162.946 35.2574 159.832 37.8101 156.188 39.3177C152.545 40.8252 148.535 41.2196 144.667 40.451C140.799 39.6826 137.245 37.7857 134.457 35.0003C131.668 32.2148 129.768 28.6659 128.999 24.8024C128.229 20.9389 128.624 16.9343 130.134 13.295C131.643 9.65572 134.199 6.54505 137.478 4.35659C140.758 2.16813 144.613 1 148.557 1C153.845 1.00318 158.915 3.10253 162.655 6.83696C166.393 10.5714 168.495 15.6356 168.499 20.9169Z"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                            ></path>
+                            <path
+                                d="M212.103 186.067L228.546 194.357C231.921 196.054 235.833 196.345 239.421 195.167C243.012 193.988 245.987 191.435 247.694 188.068L266.522 150.839"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M278.449 127.269L290.058 104.335C291.757 100.964 292.048 97.0577 290.868 93.4729C289.688 89.8879 287.132 86.917 283.76 85.2119L167.571 26.584M101.709 102.88L135.419 36.1878"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M290.599 92.5821L193.561 108.211L157.692 38.6367"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M140.392 191.371C133.153 199.321 124.384 205.732 114.61 210.223C104.836 214.715 94.2565 217.194 83.5022 217.514C72.7479 217.833 62.0394 215.986 52.0153 212.082C41.9913 208.178 32.8572 202.298 25.1578 194.793C17.4584 187.287 11.3514 178.31 7.20105 168.396C3.05076 158.482 0.942231 147.834 1.0012 137.089C1.06018 126.343 3.28546 115.72 7.54432 105.852C11.8032 95.9836 18.0084 87.0734 25.7897 79.6523"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M89.6867 95.7573C89.5973 93.3497 89.802 90.94 90.296 88.5817C94.1728 91.1714 97.3767 89.5614 99.7286 86.211C102.745 81.3349 104.294 75.6948 104.19 69.9639"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M87.998 133.591C90.728 137.549 93.6577 141.365 96.7761 145.026C101.788 142.928 106.405 139.991 110.429 136.343C113.409 133.64 116.083 130.619 118.403 127.333C112.915 120.166 107.83 112.7 103.17 104.97C100.901 101.2 97.4947 98.2448 93.4399 96.5273C91.7007 95.8524 89.8227 95.6125 87.9695 95.8285C86.5932 96.1891 85.1515 96.221 83.7604 95.9219C82.3696 95.6228 81.0688 95.0009 79.9631 94.1064"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M254.436 125.998C258.762 126.157 267.349 126.125 272.597 126.03C268.948 134.692 263.79 142.64 257.364 149.504C255.742 149.25 252.307 148.901 250.749 148.806"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M305.608 126.157C307.421 126.411 308.586 126.826 308.725 127.396C309.606 131.004 290.701 139.768 282.2 146.614C279.728 148.63 276.963 150.259 273.998 151.442C271.835 151.839 269.616 151.797 267.47 151.315C270.622 149.948 273.576 148.166 276.255 146.014C284.601 139.293 301.825 130.954 305.608 126.157Z"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M272.632 126.03C282.047 125.839 298.776 125.172 305.609 126.157C301.824 130.922 284.593 139.284 276.221 146.01C273.545 148.162 270.593 149.946 267.443 151.315C264.422 150.839 260.891 150.044 257.361 149.504C263.801 142.643 268.971 134.695 272.632 126.03Z"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M207.555 225.869C207.269 230.634 207.555 237.654 207.937 244.865C199.135 241.535 190.995 236.673 183.892 230.507C184.083 228.887 184.21 227.267 184.242 225.742"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M208.986 277.775C208.795 279.614 208.449 280.768 207.873 280.952C204.326 282.08 194.828 263.389 187.677 255.158C185.558 252.759 183.82 250.049 182.524 247.122C182.059 244.977 182.026 242.76 182.429 240.602C183.915 243.698 185.809 246.582 188.058 249.178C195.089 257.282 204.088 274.154 208.986 277.775Z"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M207.936 244.833C208.477 254.236 209.749 270.914 208.986 277.769C204.088 274.148 195.066 257.267 188.062 249.18C185.814 246.582 183.92 243.698 182.432 240.604C182.814 237.554 183.45 233.995 183.864 230.469C190.971 236.645 199.123 241.508 207.936 244.833Z"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M111.632 160.368C97.0654 153.221 88.2873 134.257 87.9977 133.59"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M98.7515 144.136C103.271 149.472 108.932 155.217 114.368 158.179C117.125 159.741 120.343 160.291 123.464 159.736C136.738 157.061 161.852 144.012 168.403 137.024C180.268 124.368 179.294 114.726 178.263 98.6194C177.844 92.0757 177.021 92.2329 176.037 95.2756C174.572 99.8164 172.724 110.824 171.202 115.161C171.06 115.597 170.767 115.969 170.375 116.209C169.204 116.878 168.465 115.415 167.864 113.35C167.227 111.158 166.771 108.239 166.179 106.495C165.139 103.421 163.018 100.619 162.68 109.64C162.483 114.945 162.469 124.082 156.701 127.429C152.212 129.984 147.533 132.193 142.707 134.036C137.715 135.989 132.485 137.271 127.155 137.848C124.26 138.002 120.38 134.703 116.691 129.589"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M172.633 109.861L177.976 86.3868C178.095 85.8729 178.003 85.3332 177.724 84.8865C177.442 84.4396 176.996 84.1225 176.482 84.0045C175.968 83.8866 175.427 83.9775 174.98 84.2576C174.531 84.5376 174.215 84.9835 174.096 85.4974L167.799 113.165"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M182.407 174.502C187.369 172.374 190.834 170.851 190.834 170.851L182.843 190.1"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M114.367 158.176C108.359 162.976 102.061 167.401 95.5071 171.426C84.8217 163.977 77.4015 152.721 74.7738 139.975"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M175.051 127.872L189.967 121.551C193.661 119.992 197.672 119.328 201.671 119.613L254.182 123.52C255.364 134.496 255.223 140.809 249.857 150.457L206.028 150.87"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M96.7477 60.7838C96.7477 60.7838 91.1786 50.3631 78.0784 56.7179C64.9782 63.0726 67.5193 88.6103 67.5193 88.6103C67.5193 88.6103 55.8771 94.1692 49.6752 103.54C40.0702 118.057 44.9062 139.975 74.7741 139.975C73.3502 133.718 72.8573 127.285 73.3111 120.884C74.1062 109.607 78.209 99.2834 81.8347 88.7056C82.6616 86.2596 84.6335 80.2877 85.3014 77.8084C85.9057 75.4912 86.1919 73.8695 87.0825 71.1076C83.2324 67.4546 87.814 63.0709 89.8813 66.627C90.7936 68.1317 90.971 68.0447 91.9703 68.3741C94.4444 69.1866 101.11 71.0307 106.07 69.5444C106.066 69.5494 106.385 60.7838 96.7477 60.7838Z"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M33.9636 66.246C22.6885 71.6778 12.08 78.3937 2.34976 86.2598C2.07591 86.43 1.84746 86.6639 1.68402 86.9416C1.52058 87.2193 1.42704 87.5324 1.41141 87.8541C1.39575 88.1757 1.45851 88.4966 1.59425 88.7886C1.72999 89.0809 1.93468 89.3359 2.19074 89.5316L9.44224 95.2811C13.8363 89.5249 19.7938 84.6598 25.7798 79.6342C21.1723 85.5872 17.1371 91.9607 13.7275 98.67L21.5297 104.843C21.7814 105.042 22.0776 105.178 22.3931 105.24C22.7086 105.301 23.0342 105.286 23.3427 105.196C23.6512 105.106 23.9336 104.943 24.1659 104.721C24.3983 104.499 24.5741 104.225 24.6783 103.921L36.9533 68.6066C37.0965 68.2107 37.1116 67.7797 36.9963 67.3748C36.8808 66.9699 36.6407 66.6114 36.3101 66.3505C35.9794 66.0893 35.5748 65.9387 35.1536 65.92C34.7326 65.9012 34.3161 66.0153 33.9636 66.246Z"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M249.602 5.70256C243.273 2.55613 236.181 7.04005 237.199 13.6439L234.241 16.374L238.312 16.6917C241.906 22.7589 251.034 23.0147 254.023 17.0411C254.937 14.9513 254.984 12.5853 254.156 10.4605C253.327 8.33574 251.69 6.6251 249.602 5.70256Z"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M287.259 189.242C286.298 188.746 285.248 188.443 284.172 188.351C283.094 188.259 282.008 188.38 280.977 188.707C279.947 189.035 278.99 189.562 278.164 190.259C277.337 190.956 276.656 191.809 276.159 192.768C276.159 192.768 270.784 203.252 266.268 202.933L288.722 214.527C285.828 211.033 290.789 200.33 290.789 200.33C291.286 199.37 291.591 198.322 291.681 197.245C291.773 196.169 291.653 195.085 291.325 194.056C290.997 193.026 290.469 192.071 289.771 191.245C289.073 190.419 288.22 189.739 287.259 189.242Z"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M281.184 210.653C280.679 211.631 279.803 212.366 278.754 212.701C277.704 213.033 276.566 212.936 275.587 212.432C274.608 211.927 273.871 211.052 273.536 210.004C273.203 208.956 273.3 207.819 273.806 206.841"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path d="M311.749 67.8984L305.801 88.3553" stroke="#7780A1" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round"></path>
+                            <path d="M319 81.0817L298.518 75.1416" stroke="#7780A1" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round"></path>
+                            <path
+                                d="M182.875 214.75C191.909 216.235 201.112 216.403 210.195 215.252"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M242.033 122.694C243.466 132.224 241.922 141.963 237.612 150.584"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M134.691 237.37C134.911 238.445 134.807 239.56 134.392 240.575C133.978 241.59 133.271 242.459 132.362 243.074C131.452 243.688 130.381 244.019 129.283 244.025C128.185 244.03 127.111 243.711 126.194 243.108C125.278 242.504 124.562 241.641 124.136 240.632C123.71 239.62 123.595 238.507 123.803 237.43C124.011 236.353 124.534 235.362 125.306 234.583C126.078 233.804 127.064 233.27 128.139 233.05C128.853 232.899 129.591 232.893 130.308 233.03C131.025 233.167 131.708 233.443 132.317 233.846C132.926 234.247 133.45 234.765 133.857 235.37C134.265 235.976 134.548 236.654 134.691 237.37Z"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M132.178 219.993C134.31 218.002 136.986 216.686 139.867 216.215C142.748 215.742 145.704 216.133 148.362 217.338C151.02 218.544 153.261 220.51 154.8 222.988C156.34 225.464 157.11 228.342 157.012 231.257C156.914 234.171 155.953 236.989 154.251 239.358C152.548 241.727 150.181 243.538 147.448 244.563C144.715 245.588 141.739 245.78 138.896 245.116C136.054 244.452 133.472 242.961 131.478 240.831C128.806 237.974 127.378 234.176 127.51 230.267C127.641 226.36 129.32 222.665 132.178 219.993Z"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M95.5071 171.426C95.5071 171.426 107.911 206.717 154.095 186.769L182.407 174.502C182.759 187.847 183.499 210.432 182.374 225.235C190.998 227.858 200.195 227.946 208.867 225.489C212.334 201.981 215.014 164.874 206.037 150.87C194.406 132.726 158.648 144.358 158.648 144.358"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                            <path
+                                d="M90.2964 88.5822C88.7639 87.4911 87.4176 86.1605 86.3091 84.6416L89.6871 93.1213"
+                                stroke="#7780A1"
+                                strokeWidth="0.75"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            ></path>
+                        </svg>
+                    </div>
+                </div>
+                <div className="absolute bottom-20 ltr:left-0 rtl:right-0">
+                    <svg width="171" height="216" viewBox="0 0 171 216" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.06" d="M160.487 10.9038L47.9038 205.904L-64.6795 10.9038L160.487 10.9038Z" stroke="#7780A1" strokeWidth="20"></path>
+                    </svg>
                 </div>
             </section>
-
-            {/* our team end  */}
-
-            <div
-                className="section-3 w-full overflow-hidden bg-white  pt-28 md:h-auto lg:h-[600px]"
-                style={{ backgroundImage: 'url("bg-3.png")', backgroundSize: 'cover', width: '100%' }}
-            >
-                <div
-                    className="mx-auto flex h-12 w-4/5 items-center justify-center rounded-2xl bg-blue-600 shadow-xl md:w-1/4"
-                    style={{ backgroundColor: '#1759D4' }}
-                >
-                    <h1 className="text-lg font-semibold text-white">We are proud of our team</h1>
-                </div>
-
-                <div className="mx-auto mt-5 flex w-4/5 flex-col gap-5 md:mt-0 md:flex-row">
-                    <div className="mx-auto mt-10 h-32 w-full rounded-xl bg-blue-600 text-center md:w-3/5 lg:w-1/5" style={{ backgroundColor: '#1759D4' }}>
-                        <div className="icon mx-auto flex w-12 justify-center pt-8 pb-2  text-lg">
-                            <img src="MicrosoftTeams-image (22).png" alt="icon" />
-                            <h1 className="ml-2 text-3xl font-semibold text-white">15%</h1>
-                        </div>
-                        <p className="text-md font-semibold text-white">Sales & Marketing</p>
-                    </div>
-
-                    <div
-                        className="mx-auto mt-5 h-32 w-full rounded-xl bg-blue-600 text-center md:mt-10 md:w-3/5 lg:w-1/5"
-                        style={{ backgroundColor: '#1759D4' }}
-                    >
-                        <div className="icon mx-auto flex w-12 justify-center pt-8 pb-2 text-lg">
-                            <img src="/graphic-designer copy.png" alt="icon" className="w-full" />
-                            <h1 className="ml-2 text-3xl font-semibold text-white">25%</h1>
-                        </div>
-                        <p className="text-md font-semibold text-white">Design & Strategy</p>
-                    </div>
-                </div>
-
-                <div className="mx-auto mt-5 flex w-4/5 flex-col gap-5 md:flex-row">
-                    <div className="mx-auto mt-5 h-32 w-full rounded-xl bg-blue-600 text-center md:mt-10 md:w-1/5" style={{ backgroundColor: '#1759D4' }}>
-                        <div className="icon mx-auto flex w-12 justify-center   pt-8 pb-2 text-lg">
-                            <img src="/development copy.png" alt="icon" className="inline" />
-                            <h1 className="ml-2 text-3xl font-semibold text-white">40%</h1>
-                        </div>
-                        <p className="text-md font-semibold text-white">Development</p>
-                    </div>
-
-                    <div className="mx-auto mt-5 w-full rounded-xl text-center md:mt-10 md:w-2/5">
-                        <div className="m-4 mx-auto h-[90%] overflow-hidden rounded-xl border border-black text-center">
-                            <img
-                                src="/images/gigatorb.jpg"
-                                alt="zoom"
-                                className="duration-2000 h-full w-full transform-gpu transition-transform ease-in-out hover:scale-125"
-                            />
-                        </div>
-                    </div>
-
-                    <div className="mx-auto mt-5 h-32 w-full rounded-xl text-center md:mt-10 md:w-1/5" style={{ backgroundColor: '#1759D4' }}>
-                        <div className="icon mx-auto flex w-12 justify-center pt-8 pb-2 text-lg">
-                            <img src="/coronavirus.png" className="h-full w-full" alt="icon" />
-                            <h1 className="ml-2 text-3xl font-semibold text-white">20%</h1>
-                        </div>
-                        <p className="text-md font-semibold text-white">Testing</p>
-                    </div>
-                </div>
-            </div>
-	
-            
-
-            <Massage />
         </div>
     );
 };

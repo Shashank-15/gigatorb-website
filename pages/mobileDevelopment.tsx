@@ -17,27 +17,27 @@ const Application = () => {
                 <title>Mobile Development | Gigatorb</title>
             </Head>
             <section className="relative">
-                <div className="h-[340px] w-full md:h-auto mt-59" style={{marginTop:'100px'}}> 
+                <div className="h-[340px] w-full md:h-auto">
                     <img src="/assets/images/application/application_bg.jpg" className="h-full w-full object-cover object-top" alt="" />
                 </div>
                 <div className="absolute left-1/2 top-[58px] w-full -translate-x-1/2 text-center text-white lg:top-[98px] xl:top-28">
-                    <h2 className="text-4xl font-black italic sm:text-4xl md:text-xl xl:text-[70px]">a place where</h2>
-                    <p className="mx-auto inline-flex max-w-[280px] items-center justify-center bg-[url(/assets/images/application/label-bg.png)] bg-[length:100%_100%] bg-center bg-no-repeat px-3 py-2 text-xs font-bold uppercase md:h-14 md:p-5 md:text-xl lg:mt-5 lg:text-2xl xl:mt-8 xl:h-[90px] xl:px-10 xl:text-[30px]">
+                    <h2 className="text-4xl font-black italic sm:text-6xl md:text-6xl xl:text-[150px]">a place where</h2>
+                    <p className="mx-auto inline-flex max-w-[345px] items-center justify-center bg-[url(/assets/images/application/label-bg.png)] bg-[length:100%_100%] bg-center bg-no-repeat px-3 py-2 text-xs font-bold uppercase md:h-14 md:p-5 md:text-xl lg:mt-5 lg:text-2xl xl:mt-8 xl:h-[90px] xl:px-10 xl:text-[40px]">
                         ideas grow
                     </p>
                 </div>
             </section>
-            <section className="mt-14 mb-10 md:mt-28">
+            <section className="mt-14 mb-10 md:mt-20">
                 <div className="container">
-                    <div className="heading mb-12 text-center md:!mb-[90px] lg:max-w-[624px] ltr:lg:text-left rtl:lg:text-right">
-                        <h4>
-                         <span className=" p-1 text-[#1759D4]" style={{fontSize:'50px'}}>Our Process</span> 
+                    <div className="heading mb-12 text-center md:!mb-[90px] lg:max-w-[584px] ltr:lg:text-left rtl:lg:text-right">
+                        <h4 className="!font-black">
+                        Our <span className="bg-secondary p-1 text-white">Process</span> 
                         </h4>
-                        <p className="mt-5 text-lg font-medium text-white">
+                        <p className="mt-5 text-lg font-medium">
                         In a world that's increasingly mobile-driven, we excel at crafting innovative and user-centric mobile applications to bring your ideas to life.                        </p>
                     </div>
-                    <div className="grid grid-cols-1 gap-[30px] sm:grid-cols-2 lg:grid-cols-3 " data-aos="fade-up" data-aos-duration="1000">
-                        <div className="hover:text-white rounded-[10px] border-2 border-transparent bg-white p-[30px] shadow-[-20px_30px_70px_rgba(219,222,225,0.4)] duration-200 hover:border-2 hover:border-[#1759D4] hover:bg-secondary/20 dark:bg-gray-dark dark:shadow-none ">
+                    <div className="grid grid-cols-1 gap-[30px] sm:grid-cols-2 lg:grid-cols-3" data-aos="fade-up" data-aos-duration="1000">
+                        <div className="rounded-[10px] border-2 border-transparent bg-white p-[30px] shadow-[-20px_30px_70px_rgba(219,222,225,0.4)] duration-200 hover:border-2 hover:border-secondary hover:bg-secondary/20 dark:bg-gray-dark dark:shadow-none">
                             <span>
                               
                                 <svg width="52" height="50" viewBox="0 0 52 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,11 +60,11 @@ const Application = () => {
                                         />
                                     </svg>
                             </span>
-                            <h3 className="mt-7 text-[26px] font-extrabold  ">Consultation</h3>
+                            <h3 className="mt-7 text-[22px] font-extrabold text-black dark:text-white">Consultation</h3>
                             <p className="mt-4 text-lg font-semibold">We start by understanding your app concept, goals, and target audience to develop a tailored strategy.</p>
                         </div>
                         <div className="mt-0 lg:-mt-7">
-                            <div className="hover:text-white rounded-[10px] border-2 border-transparent bg-white p-[30px] shadow-[-20px_30px_70px_rgba(219,222,225,0.4)] duration-200 hover:border-2 hover:border-[#1759D4] hover:bg-secondary/20 dark:bg-gray-dark dark:shadow-none">
+                            <div className="rounded-[10px] border-2 border-transparent bg-white p-[30px] shadow-[-20px_30px_70px_rgba(219,222,225,0.4)] duration-200 hover:border-2 hover:border-secondary hover:bg-secondary/20 dark:bg-gray-dark dark:shadow-none">
                                 <span>
                                    
                                     <svg width="44" height="40" viewBox="0 0 44 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -88,12 +88,12 @@ const Application = () => {
                                     />
                                 </svg>
                                 </span>
-                                <h3 className="mt-7 text-[26px] font-extrabold dark:text-[#1759D4]">Design</h3>
+                                <h3 className="mt-7 text-[22px] font-extrabold text-black dark:text-white">Design</h3>
                                 <p className="mt-4 text-lg font-semibold">Our designers create wireframes and prototypes that bring your app's design and user experience to life.</p>
                             </div>
                         </div>
                         <div className="mt-0 lg:-mt-14">
-                            <div className="hover:text-white rounded-[10px] border-2 border-transparent bg-white p-[30px] shadow-[-20px_30px_70px_rgba(219,222,225,0.4)] duration-200 hover:border-2 hover:border-[#1759D4] hover:bg-secondary/20 dark:bg-gray-dark dark:shadow-none">
+                            <div className="rounded-[10px] border-2 border-transparent bg-white p-[30px] shadow-[-20px_30px_70px_rgba(219,222,225,0.4)] duration-200 hover:border-2 hover:border-secondary hover:bg-secondary/20 dark:bg-gray-dark dark:shadow-none">
                                 <span>
                                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -121,11 +121,11 @@ const Application = () => {
                                         />
                                     </svg>
                                 </span>
-                                <h3 className="mt-7 text-[26px] font-extrabold dark:text-[#1759D4]">Development</h3>
+                                <h3 className="mt-7 text-[22px] font-extrabold text-black dark:text-white">Development</h3>
                                 <p className="mt-4 text-lg font-semibold">We employ cutting-edge tools and best practices to create mobile apps that are both highly functional and scalable.</p>
                             </div>
                         </div>
-                        <div className="hover:text-white rounded-[10px] border-2 border-transparent bg-white p-[30px] shadow-[-20px_30px_70px_rgba(219,222,225,0.4)] duration-200 hover:border-2 hover:border-[#1759D4] hover:bg-secondary/20 dark:bg-gray-dark dark:shadow-none">
+                        <div className="rounded-[10px] border-2 border-transparent bg-white p-[30px] shadow-[-20px_30px_70px_rgba(219,222,225,0.4)] duration-200 hover:border-2 hover:border-secondary hover:bg-secondary/20 dark:bg-gray-dark dark:shadow-none">
                             <span>
                                 <svg width="62" height="60" viewBox="0 0 62 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -141,11 +141,11 @@ const Application = () => {
                                     />
                                 </svg>
                             </span>
-                            <h3 className="mt-7 text-[26px] font-extrabold dark:text-[#1759D4]">Testing</h3>
-                            <p className="mt-4 text-lg font-semibold">We conduct thorough testing to identify and fix any issues, ensuring a smooth user experience.</p>
+                            <h3 className="mt-7 text-[22px] font-extrabold text-black dark:text-white">Testing</h3>
+                            <p className="mt-4 text-lg font-semibold">We conduct thorough testing to identify and fix any issues, ensuring a smooth user experience..</p>
                         </div>
                         <div className="mt-0 lg:-mt-4">
-                            <div className="hover:text-white rounded-[10px] border-2 border-transparent bg-white p-[30px] shadow-[-20px_30px_70px_rgba(219,222,225,0.4)] duration-200 hover:border-2 hover:border-[#1759D4] hover:bg-secondary/20 dark:bg-gray-dark dark:shadow-none">
+                            <div className="rounded-[10px] border-2 border-transparent bg-white p-[30px] shadow-[-20px_30px_70px_rgba(219,222,225,0.4)] duration-200 hover:border-2 hover:border-secondary hover:bg-secondary/20 dark:bg-gray-dark dark:shadow-none">
                                 <span>
                                 <svg width="52" height="50" viewBox="0 0 52 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -194,12 +194,12 @@ const Application = () => {
                                     </svg>
                                   
                                 </span>
-                                <h3 className="mt-7 text-[26px] font-extrabold dark:text-[#1759D4]">Launch</h3>
-                                <p className="mt-4 text-lg font-semibold">Once your app is perfect, we assist with the launch, making it available to your audience on app stores.</p>
+                                <h3 className="mt-7 text-[22px] font-extrabold text-black dark:text-white">Launch</h3>
+                                <p className="mt-4 text-lg font-semibold">Once your app is perfect, we assist with the launch, making it available to your audience on app stores</p>
                             </div>
                         </div>
                         <div className="mt-0 lg:-mt-11">
-                            <div className="hover:text-white rounded-[10px] border-2 border-transparent bg-white p-[30px] shadow-[-20px_30px_70px_rgba(219,222,225,0.4)] duration-200 hover:border-2 hover:border-[#1759D4] hover:bg-secondary/20 dark:bg-gray-dark dark:shadow-none">
+                            <div className="rounded-[10px] border-2 border-transparent bg-white p-[30px] shadow-[-20px_30px_70px_rgba(219,222,225,0.4)] duration-200 hover:border-2 hover:border-secondary hover:bg-secondary/20 dark:bg-gray-dark dark:shadow-none">
                                 <span>
                                     <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -221,15 +221,15 @@ const Application = () => {
                                         />
                                     </svg>
                                 </span>
-                                <h3 className="mt-7 text-[26px] font-extrabold dark:text-[#1759D4]">Maintenance</h3>
-                                <p className="mt-4 text-lg font-semibold">We offer ongoing maintenance and updates to keep your app secure, up-to-date, and optimized for performance.</p>
+                                <h3 className="mt-7 text-[22px] font-extrabold text-black dark:text-white">Maintenance</h3>
+                                <p className="mt-4 text-lg font-semibold">We offer ongoing maintenance and updates to keep your app secure, up-to-date, and optimized for performance</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="relative overflow-x-hidden bg-[#e7f1ff]  pt-20 dark:bg-gray-dark">
+            <section className="relative overflow-x-hidden bg-[#F9F1FF] pt-20 dark:bg-gray-dark">
                 <span className="absolute right-0 top-1/2 -translate-y-1/2">
                     <svg width="147" height="300" viewBox="0 0 147 300" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="0.2">
@@ -282,10 +282,10 @@ const Application = () => {
                         </div>
                         <div className="order-1 xl:order-2">
                             <div className="heading !mb-8 text-center ltr:lg:text-left rtl:lg:text-right">
-                                <h4 className="!font-[#1759D4] text-[#1759D4]">
-                                 <span className="b p-1 text-[#1759D4]">Why Choose Us</span> 
+                                <h4 className="!font-black">
+                                Why Choose <span className="bg-secondary p-1 text-white">Us</span> 
                                 </h4>
-                                <p className="mt-5 text-lg font-black font-medium ">
+                                <p className="mt-5 text-lg font-medium">
                                 Our skilled mobile developers ensure industry-standard, user-centric app development for iOS and Android</p>
                             </div>
                             <div className="grid grid-cols-2 text-center">
@@ -530,11 +530,11 @@ const Application = () => {
                                     />
                                 </svg>
                             </span>
-                            <div className="heading relative text-4xl text-center lg:max-w-[540px] ltr:lg:text-left rtl:lg:text-right">
-                                <h4>
-                                  <span className="text-[#1759D4] p-1">Our Services</span>
+                            <div className="heading relative text-center lg:max-w-[540px] ltr:lg:text-left rtl:lg:text-right">
+                                <h4 className="!text-white">
+                                Our  <span className="bg-secondary p-1">Services</span>
                                 </h4>
-                                <h6 className="mt-5 !font-medium !text-white">
+                                <h6 className="mt-5 !font-medium !text-gray">
                                     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                                 </h6>
                                 <span className="absolute right-0 top-0">
@@ -567,7 +567,7 @@ const Application = () => {
                                 <img src="/assets/images/application/text.png" alt="" />
                             </div>
                             <div className="grid grid-cols-1 gap-[14px] sm:grid-cols-3">
-                                <div className="rounded-[10px] bg-white py-[30px] px-5" data-aos="fade-up" data-aos-duration="1000">
+                                <div className="rounded-[10px] bg-gray-dark py-[30px] px-5" data-aos="fade-up" data-aos-duration="1000">
                                     <span>
                                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clipPath="url(#clip0_1250_13345)">
@@ -595,15 +595,14 @@ const Application = () => {
                                             </defs>
                                         </svg>
                                     </span>
-                                    <h3 className="mt-2.5 text-lg font-extrabold text-black">iOS App Development</h3>
+                                    <h3 className="mt-2.5 text-lg font-extrabold text-white">iOS App Development</h3>
                                     <p className="mt-2.5 text-sm font-semibold leading-7">
                                     We craft high-quality, feature-rich iOS applications tailored to the Apple ecosystem
                                     </p>
                                 </div>
-                                
                                 <div className="sm:-mt-5" data-aos="fade-up" data-aos-duration="1000">
-                                <div className="rounded-[10px] bg-white py-[30px] px-5" data-aos="fade-up" data-aos-duration="1000">
-                                    <span>
+                                    <div className="rounded-[10px] bg-white py-[30px] px-5">
+                                        <span>
                                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M11.9755 7.02706C12.4315 6.20905 12.6595 5.80005 13.0004 5.80005C13.3413 5.80005 13.5693 6.20905 14.0253 7.02706L14.1432 7.23869C14.2728 7.47115 14.3376 7.58737 14.4386 7.66406C14.5396 7.74075 14.6654 7.76921 14.9171 7.82615L15.1462 7.87798C16.0316 8.07833 16.4744 8.1785 16.5797 8.51723C16.6851 8.85596 16.3832 9.20891 15.7796 9.91482L15.6234 10.0974C15.4518 10.298 15.3661 10.3983 15.3275 10.5224C15.2889 10.6465 15.3019 10.7803 15.3278 11.048L15.3514 11.2916C15.4427 12.2335 15.4883 12.7044 15.2125 12.9137C14.9368 13.1231 14.5222 12.9322 13.6931 12.5505L13.4787 12.4517C13.2431 12.3432 13.1253 12.289 13.0004 12.289C12.8755 12.289 12.7577 12.3432 12.5221 12.4517L12.3076 12.5505C11.4786 12.9322 11.064 13.1231 10.7882 12.9137C10.5125 12.7044 10.5581 12.2335 10.6494 11.2916L10.673 11.048C10.6989 10.7803 10.7119 10.6465 10.6733 10.5224C10.6347 10.3983 10.5489 10.298 10.3774 10.0974L10.2212 9.91482C9.61756 9.20891 9.31573 8.85596 9.42106 8.51723C9.5264 8.1785 9.96914 8.07833 10.8546 7.87798L11.0837 7.82615C11.3353 7.76921 11.4612 7.74075 11.5622 7.66406C11.6632 7.58737 11.728 7.47115 11.8576 7.23869L11.9755 7.02706Z"
@@ -649,7 +648,7 @@ const Application = () => {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="rounded-[10px] bg-white py-[30px] px-5" data-aos="fade-up" data-aos-duration="1000">
+                                <div className="rounded-[10px] bg-gray-dark py-[30px] px-5" data-aos="fade-up" data-aos-duration="1000">
                                     <span>
                                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -672,7 +671,7 @@ const Application = () => {
                                             />
                                         </svg>
                                     </span>
-                                    <h3 className="mt-2.5 text-lg font-extrabold text-black">Android App Development</h3>
+                                    <h3 className="mt-2.5 text-lg font-extrabold text-white">Android App Development</h3>
                                     <p className="mt-2.5 text-sm font-semibold leading-7">
                                     Our Android app developers create scalable, robust apps that cater to the diverse Android user base.
                                     </p>

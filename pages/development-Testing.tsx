@@ -23,10 +23,10 @@ const RealEstate = () => {
                 <section className="overflow-hidden bg-black bg-[url(/assets/images/realestate/realestate_img.png)] bg-cover bg-center bg-no-repeat pt-[82px] lg:pt-[106px]">
                     <div className="container pt-12 pb-16 md:pt-24">
                         <div className="relative">
-                            <div className="w-full mt-14 mb-10 text-center ltr:lg:text-left rtl:lg:text-right xl:max-w-[767px]">
+                            <div className="w-full text-center ltr:lg:text-left rtl:lg:text-right xl:max-w-[767px]">
                           
                                 <h2 className="py-5 text-4xl font-extrabold text-white md:py-0 md:text-6xl md:leading-[90px]">
-                                Manual and Automation  <span className="text-3xl  text-[#1759D4] md:text-[50px]">Testing</span> Services
+                                Manual and Automation  <span className="text-3xl italic text-primary md:text-[50px]">Testing</span> Services
                                 </h2>
                                 <p className="pt-4 text-base font-semibold">
                                 We specialize in ensuring the quality, reliability, and performance of your software products through meticulous testing processes
@@ -34,9 +34,21 @@ const RealEstate = () => {
                              
                               
                             </div>
-                           
+                            {/* <div
+                                className="relative -bottom-16 z-[1] order-2 mx-auto w-full max-w-[350px] ltr:right-10 rtl:left-10 lg:absolute lg:order-1 lg:max-w-[424px]"
+                                data-aos={isRtl ? 'fade-right' : 'fade-left'}
+                                data-aos-duration="1000"
+                                data-aos-offset="0"
+                            >
+                                <img
+                                    src="/assets/images/realestate/realestate_img1.png"
+                                    alt=""
+                                    className="z-1 relative h-full w-full bg-gray-dark object-cover p-3"
+                                />
+                                <span className="absolute -top-5 -bottom-5 -z-[1] w-full border-[3px] border-[#B476E5] ltr:-right-6 rtl:-left-6 ltr:xl:-right-8 rtl:xl:-left-8"></span>
+                            </div> */}
                             <span className="absolute -bottom-16 order-1 w-full max-w-[350px] ltr:left-[51%] rtl:right-[55%] lg:order-2 lg:max-w-[400px] xl:ltr:left-[55%]">
-                                <svg width="28" height="85" viewBox="0 0 28 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="28" height="100" viewBox="0 0 28 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g filter="url(#filter0_d_6_1064)">
                                         <path
                                             d="M15.2353 3.76093V0H12.7648V3.76096L9.42133 1.94045L8.53853 4.47644L12.7648 6.7776V9.26383L8.05629 6.70011L7.17349 9.23607L12.7648 12.2805V14.8873L7.0162 11.7572L6.1334 14.2932L12.7648 17.9039V20.5437L5.73354 16.7152L4.85076 19.2511L12.7648 23.5602V25.9648L4.88278 21.6731L4 24.209L12.7648 28.9815V30.9321L4.88278 26.6405L4 29.1765L12.7648 33.9488V36.5842L4.88278 32.2926L4 34.8285L12.7648 39.6008V41.5918L4.88278 37.3002L4 39.8361L12.7648 44.6084V46.7977L4.88278 42.506L4 45.0419L12.7648 49.8142V52.4001L4.88278 48.1085L4 50.6444L12.7648 55.4167V58.3002L4.88278 54.0085L4 56.5444L12.7648 61.3167V63.4563L4.88278 59.1647L4 61.7007L12.7648 66.473V69.2242L5.67185 65.3621L4.78907 67.8982L12.7648 72.2409V74.2328L6.88461 71.031L6.00181 73.567L12.7648 77.2493V79.5856L8.98224 77.526L8.09944 80.0619L12.7648 82.6022V100H15.2353V82.6022L19.9006 80.0619L19.0178 77.526L15.2353 79.5856V77.2493L21.9982 73.567L21.1154 71.031L15.2353 74.2328V72.2409L23.2109 67.8982L22.3281 65.3621L15.2353 69.2242V66.473L24 61.7007L23.1172 59.1647L15.2353 63.4563V61.3167L24 56.5444L23.1172 54.0084L15.2353 58.3002V55.4167L24 50.6444L23.1172 48.1085L15.2353 52.4001V49.8142L24 45.0419L23.1172 42.506L15.2353 46.7977V44.6084L24 39.8361L23.1172 37.3L15.2353 41.5918V39.6008L24 34.8285L23.1172 32.2926L15.2353 36.5842V33.9488L24 29.1763L23.1172 26.6405L15.2353 30.9321V28.9813L24 24.209L23.1172 21.6731L15.2353 25.9648V23.5602L23.1493 19.2511L22.2665 16.7152L15.2353 20.5435V17.9039L21.8666 14.2932L20.9838 11.7572L15.2353 14.8872V12.2805L20.8265 9.23607L19.9437 6.70009L15.2353 9.26381V6.77756L19.4615 4.47642L18.5787 1.94045L15.2353 3.76093Z"
@@ -76,7 +88,7 @@ const RealEstate = () => {
 
                 <div className="bg-[url(/assets/images/realestate/line.png)] bg-[length:1052px] bg-top bg-repeat-y">
                    
-                         <section className="relative overflow-hidden bg-gradient-to-t  from-white/[55%] to-transparent px-5 pt-32 pb-24 dark:from-white/[0.02] lg:pb-[300px]"style={{background:'#e7f1ff'}}>
+                         <section className="relative overflow-hidden bg-gradient-to-t from-white/[55%] to-transparent px-5 pt-12 pb-24 dark:from-white/[0.02] lg:pb-[200px]">
                         <span className="absolute bottom-0 hidden ltr:right-0 rtl:left-0 sm:block">
                             <svg width="102" height="235" viewBox="0 0 102 235" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g opacity="0.2">
@@ -159,20 +171,20 @@ const RealEstate = () => {
                                 </defs>
                             </svg>
                         </span>
-                        <div className="relative pb-[2rem] mx-auto max-w-[1440px] bg-gray/5 pt-12 dark:bg-gray/[0.05] lg:max-h-[1200px]" style={{background: '#08111f'}}>
+                        <div className="relative mx-auto max-w-[1440px] bg-gray/5 pt-12 dark:bg-gray/[0.05] lg:max-h-[400px]">
                             <div className="container">
                                 <div className="heading mb-0 text-center ltr:lg:text-left rtl:lg:text-right">
-                                    <h6 className=" bg-secondary/10 px-2.5 py-2 !text-[#1759D4] text-center">Our Services</h6>
-                                    <h4 className='text-center'>
-                                     <span className="text-[#1759D4]"> Customized Testing Solutions</span> 
+                                    <h6 className="inline-block bg-secondary/10 px-2.5 py-2 !text-secondary">Our Services</h6>
+                                    <h4 className="!font-black">
+                                    Customized <span className="text-secondary"> Testing </span> Solutions
                                     </h4>
                                 </div>
                                 <p className="mt-2.5 text-center text-lg font-medium ltr:lg:text-left rtl:lg:text-right">
                                 Our team of experienced testers possesses in-depth knowledge of testing methodologies and tools, ensuring thorough and accurate testing
                                 </p>
                                 <div className="mt-8 grid grid-cols-1 gap-[30px] sm:grid-cols-2 lg:grid-cols-3" data-aos="fade-up" data-aos-duration="1000">
-                                    <div className="group border-2 border-white bg-white p-[30px] duration-200 hover:border-[#1759D4]/80  dark:border-[rgba(119,128,161,0.15)] dark:bg-black dark:hover:border-[#1759D4]">
-                                        <span className="flex h-[60px] w-[60px] items-center justify-center bg-primary/10 text-primary ">
+                                    <div className="group border-2 border-white bg-white/50 p-[30px] duration-200 hover:border-secondary/80 hover:bg-secondary/20 dark:border-[rgba(119,128,161,0.15)] dark:bg-black dark:hover:border-secondary">
+                                        <span className="flex h-[60px] w-[60px] items-center justify-center bg-primary/10 text-primary group-hover:bg-black group-hover:text-white dark:group-hover:bg-secondary">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <g clipPath="url(#clip0_22_590)">
                                                     <path
@@ -192,8 +204,8 @@ const RealEstate = () => {
                                         <h5 className="mt-7 text-[22px] font-bold leading-7 text-black dark:text-white">Manual Testing Excellence</h5>
                                         <p className="mt-4 text-lg font-medium">We offer manual testing services that meticulously evaluate your software's functionality, usability, and compatibility across platforms</p>
                                     </div>
-                                    <div className="group border-2 border-white bg-white p-[30px] duration-200   dark:border-[rgba(119,128,161,0.15)] dark:bg-black dark:hover:border-[#1759D4]">
-                                        <span className="flex h-[60px] w-[60px] items-center justify-center bg-primary/10 text-primary ">
+                                    <div className="group border-2 border-white bg-white/50 p-[30px] duration-200 hover:border-secondary/80 hover:bg-secondary/20 dark:border-[rgba(119,128,161,0.15)] dark:bg-black dark:hover:border-secondary">
+                                        <span className="flex h-[60px] w-[60px] items-center justify-center bg-primary/10 text-primary group-hover:bg-black group-hover:text-white dark:group-hover:bg-secondary">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <g clipPath="url(#clip0_18_167)">
                                                     <path
@@ -215,8 +227,8 @@ const RealEstate = () => {
                                         Our automation testing expertise streamlines repetitive testing tasks, saving time and reducing human error in the testing process
                                         </p>
                                     </div>
-                                    <div className="group border-2 border-white bg-white p-[30px] duration-200 hover:border-[#1759D4]/80  dark:border-[rgba(119,128,161,0.15)] dark:bg-black dark:hover:border-[#1759D4]">
-                                        <span className="flex h-[60px] w-[60px] items-center justify-center bg-primary/10 text-primary ">
+                                    <div className="group border-2 border-white bg-white/50 p-[30px] duration-200 hover:border-secondary/80 hover:bg-secondary/20 dark:border-[rgba(119,128,161,0.15)] dark:bg-black dark:hover:border-secondary">
+                                        <span className="flex h-[60px] w-[60px] items-center justify-center bg-primary/10 text-primary group-hover:bg-black group-hover:text-white dark:group-hover:bg-secondary">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M19.2558 1H16.4651C16.1569 1 15.907 1.24989 15.907 1.55814V1.6239L19.8139 4.74947V1.55814C19.8139 1.24989 19.564 1 19.2558 1Z"
@@ -281,55 +293,272 @@ const RealEstate = () => {
                     <section className="relative py-12 lg:py-24">
                  <div className="container relative">
                     <div className="heading text-center">
-                        <h4 className="!text-[#1759D4]">Java and Spring Boot Expertise</h4>
+                        <h4 className="!text-primary">Java and Spring Boot Expertise</h4>
                         <p className="mt-2.5 text-base font-semibold">Our team of experienced developers is well-versed in Java and Spring Boot technologies</p>
                     </div>
                     <div className="mt-10 grid grid-cols-1 gap-[30px] sm:grid-cols-2 lg:grid-cols-4" data-aos="zoom-in" data-aos-duration="1000">
-                        <div className="hover:text-white group rounded-2xl border-2 border-dashed border-gray-dark/20 bg-white p-[30px] pl-5 duration-200 hover:border-[#1759D4] hover:bg-secondary/20 dark:border-white/20 dark:bg-gray-dark dark:hover:bg-secondary/20">
+                        <div className="group rounded-2xl border-2 border-dashed border-gray-dark/20 bg-white p-[30px] pl-5 duration-200 hover:border-secondary hover:bg-secondary/20 dark:border-white/20 dark:bg-gray-dark dark:hover:bg-secondary/20">
                             <span className="flex h-[60px] w-[60px] items-center justify-center rounded-ful">
                               <img src="\assets\images\Gallary\Gartoon-Team-Gartoon-Apps-Rasmol.svg" alt="" />
                             </span>
-                            <h3 className="mt-5 text-xl font-bold dark:text-[#1759D4]">Custom Backend Development</h3>
-                            <p className="mt-2.5 text-base font-medium leading-8"> Experts in custom backend solutions RESTful APIs, microservices, and tailored solutions.</p>
+                            <h3 className="mt-5 text-xl font-bold text-black dark:text-white">Custom Backend Development</h3>
+                            <p className="mt-2.5 text-base font-medium leading-8"> Experts in custom backend solutions RESTful APIs, microservices, and tailored solutions</p>
                         </div>
-                        <div className="hover:text-white group rounded-2xl border-2 border-dashed border-gray-dark/20 bg-white p-[30px] pl-5 duration-200 hover:border-[#1759D4] hover:bg-secondary/20 dark:border-white/20 dark:bg-gray-dark dark:hover:bg-secondary/20">
+                        <div className="group rounded-2xl border-2 border-dashed border-gray-dark/20 bg-white p-[30px] pl-5 duration-200 hover:border-secondary hover:bg-secondary/20 dark:border-white/20 dark:bg-gray-dark dark:hover:bg-secondary/20">
                             <span className="flex h-[60px] w-[60px] items-center justify-center rounded-full ">
                             <img src="\assets\images\Gallary\Gartoon-Team-Gartoon-Apps-Ubuntu-tweak.svg" alt="" />
                             </span>
-                            <h3 className="mt-5 text-xl font-bold dark:text-[#1759D4]">Microservices Architecture</h3>
+                            <h3 className="mt-5 text-xl font-bold text-black dark:text-white">Microservices Architecture</h3>
                             <p className="mt-2.5 text-base font-medium leading-8">For complex projects, we employ microservices to enhance flexibility, maintainability, and fault tolerance by modularizing the backend.</p>
                         </div>
-                        <div className="hover:text-white group rounded-2xl border-2 border-dashed border-gray-dark/20 bg-white p-[30px] pl-5 duration-200 hover:border-[#1759D4] hover:bg-secondary/20 dark:border-white/20 dark:bg-gray-dark dark:hover:bg-secondary/20">
+                        <div className="group rounded-2xl border-2 border-dashed border-gray-dark/20 bg-white p-[30px] pl-5 duration-200 hover:border-secondary hover:bg-secondary/20 dark:border-white/20 dark:bg-gray-dark dark:hover:bg-secondary/20">
                             <span className="flex h-[60px] w-[60px] items-center justify-center rounded-full ">
                             <img src="\assets\images\Gallary\Gartoon-Team-Gartoon-Apps-Kdevelop.svg" alt="" />
 
                             </span>
-                            <h3 className="mt-5 text-xl font-bold dark:text-[#1759D4]">API Development</h3><br/>
-                            <p className="mt-2.5 text-base font-medium leading-8">API experts for seamless communication, with clear documentation for easy integration with third-party services and mobile apps.</p>
+                            <h3 className="mt-5 text-xl font-bold text-black dark:text-white">API Development</h3>
+                            <p className="mt-2.5 text-base font-medium leading-8">API experts for seamless communication, with clear documentation for easy integration with third-party services and mobile apps</p>
                         </div>
-                        <div className="hover:text-white group rounded-2xl border-2 border-dashed border-gray-dark/20 bg-white p-[30px] pl-5 duration-200 hover:border-[#1759D4] hover:bg-secondary/20 dark:border-white/20 dark:bg-gray-dark dark:hover:bg-secondary/20">
+                        <div className="group rounded-2xl border-2 border-dashed border-gray-dark/20 bg-white p-[30px] pl-5 duration-200 hover:border-secondary hover:bg-secondary/20 dark:border-white/20 dark:bg-gray-dark dark:hover:bg-secondary/20">
                             <span className="flex h-[60px] w-[60px] items-center justify-center rounded-full ">
                             <img src="\assets\images\Gallary\Gartoon-Team-Gartoon-Misc-Stock-Insert-Chart.svg" alt="" />
 
                             </span>
-                            <h3 className="mt-5 text-xl font-bold dark:text-[#1759D4]">Database Integration</h3>
-                            <p className="mt-2.5 text-base font-medium leading-8">We seamlessly integrate SQL and NoSQL databases for peak data performance and integrity.</p>
+                            <h3 className="mt-5 text-xl font-bold text-black dark:text-white">Database Integration</h3>
+                            <p className="mt-2.5 text-base font-medium leading-8">We seamlessly integrate SQL and NoSQL databases for peak data performance and integrity</p>
                         </div>
                     </div>
                     
                 </div>
             </section>
-                              <section className="relative bg-white py-12 dark:bg-black lg:py-24"style={{background:'#e7f1ff'}}>
-                       
-                        <div className="container" >
+                              <section className="relative bg-white py-12 dark:bg-black lg:py-24">
+                        {/* <span className="absolute bottom-0 hidden max-w-[120px] ltr:right-0 rtl:left-0 sm:block xl:max-w-[250px]">
+                            <svg className="h-full w-full" width="300" height="229" viewBox="0 0 300 229" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M122.411 2.08716L81.1719 30.5425H90.7378L127.421 5.04356L122.411 2.08716Z" fill="#08111F" />
+                                <path
+                                    d="M220.307 30.5257V229.008L86.0305 227.798V29.3331L123.773 3.22941L124.042 3.04463L125.454 2.07037L125.538 2.00317L125.639 2.08716L167.434 30.5257H220.307Z"
+                                    fill="#47BDFF"
+                                />
+                                <path
+                                    d="M220.307 30.5256V229.008L167.484 227.798C167.619 191.599 167.871 52.4299 167.568 33.8684C167.535 31.7183 167.501 30.5424 167.434 30.5256H220.307Z"
+                                    fill="#B476E5"
+                                />
+                                <path
+                                    d="M188.095 64.8266H177.47V49.5071C177.47 46.5675 179.858 44.199 182.783 44.199C185.725 44.199 188.095 46.5843 188.095 49.5071V64.8266Z"
+                                    fill="#FFD181"
+                                />
+                                <path
+                                    d="M210.96 133.731H200.335V118.411C200.335 115.472 202.722 113.103 205.647 113.103C208.589 113.103 210.96 115.489 210.96 118.411V133.731Z"
+                                    fill="#FFD181"
+                                />
+                                <g opacity="0.5">
+                                    <path
+                                        d="M206.253 44.199C209.195 44.199 211.565 46.5843 211.565 49.5071V64.8266H200.94V49.5071C200.94 46.5675 203.327 44.199 206.253 44.199Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M188.18 98.5229H177.555V83.2034C177.555 80.2637 179.942 77.8953 182.867 77.8953C185.809 77.8953 188.18 80.2805 188.18 83.2034V98.5229Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M210.96 98.5229H200.335V83.2034C200.335 80.2637 202.722 77.8953 205.647 77.8953C208.589 77.8953 210.96 80.2805 210.96 83.2034V98.5229Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M188.18 133.731H177.555V118.411C177.555 115.472 179.942 113.103 182.867 113.103C185.809 113.103 188.18 115.489 188.18 118.411V133.731Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M188.18 168.334H177.555V153.015C177.555 150.075 179.942 147.707 182.867 147.707C185.809 147.707 188.18 150.092 188.18 153.015V168.334Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M210.96 168.334H200.335V153.015C200.335 150.075 202.722 147.707 205.647 147.707C208.589 147.707 210.96 150.092 210.96 153.015V168.334Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M188.18 206.667H177.555V191.347C177.555 188.408 179.942 186.039 182.867 186.039C185.809 186.039 188.18 188.424 188.18 191.347V206.667Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M210.96 206.667H200.335V191.347C200.335 188.408 202.722 186.039 205.647 186.039C208.589 186.039 210.96 188.424 210.96 191.347V206.667Z"
+                                        fill="white"
+                                    />
+                                </g>
+                                <g opacity="0.5">
+                                    <path
+                                        d="M110.038 62.4078H99.4126V47.0882C99.4126 44.1486 101.8 41.7802 104.725 41.7802C107.667 41.7802 110.038 44.1654 110.038 47.0882V62.4078Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M146.94 61.9541H136.315V46.6346C136.315 43.695 138.702 41.3265 141.627 41.3265C144.57 41.3265 146.94 43.7118 146.94 46.6346V61.9541Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M110.038 97.011H99.4126V81.6915C99.4126 78.7519 101.8 76.3834 104.725 76.3834C107.667 76.3834 110.038 78.7687 110.038 81.6915V97.011Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M146.94 96.5574H136.315V81.2379C136.315 78.2983 138.702 75.9298 141.627 75.9298C144.57 75.9298 146.94 78.3151 146.94 81.2379V96.5574Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M110.038 134.789H99.4126V119.47C99.4126 116.53 101.8 114.161 104.725 114.161C107.667 114.161 110.038 116.547 110.038 119.47V134.789Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M146.94 134.336H136.315V119.016C136.315 116.076 138.702 113.708 141.627 113.708C144.57 113.708 146.94 116.093 146.94 119.016V134.336Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M110.038 168.653H99.4126V153.334C99.4126 150.394 101.8 148.026 104.725 148.026C107.667 148.026 110.038 150.411 110.038 153.334V168.653Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M146.94 168.2H136.315V152.88C136.315 149.941 138.702 147.572 141.627 147.572C144.57 147.572 146.94 149.957 146.94 152.88V168.2Z"
+                                        fill="white"
+                                    />
+                                </g>
+                                <path
+                                    d="M135.693 204.248V228.067H112.61V204.248C112.61 197.965 117.704 192.876 123.975 192.876H124.311C130.582 192.876 135.676 197.965 135.676 204.248H135.693Z"
+                                    fill="white"
+                                />
+                                <path d="M122.109 2.00317L166.004 33.8685H226.611L181.724 3.14542L122.109 2.00317Z" fill="#08111F" />
+                                <path
+                                    opacity="0.2"
+                                    d="M295.561 67.2269L295.561 67.2269L295.557 67.2285C293.716 68.082 292.233 69.5441 291.359 71.3857L291.358 71.3884L290.057 74.1502L288.783 71.3799L288.783 71.3799L288.781 71.3765C287.927 69.5362 286.464 68.0548 284.621 67.1817L284.618 67.1804L281.856 65.8818L284.627 64.61L284.627 64.61L284.63 64.6084C286.472 63.7548 287.954 62.2928 288.828 60.4512L288.83 60.4485L290.13 57.6867L291.404 60.457L291.406 60.4604C292.26 62.3007 293.724 63.7821 295.566 64.6552L295.569 64.6565L298.331 65.9551L295.561 67.2269Z"
+                                    fill="url(#paint0_linear_79_171)"
+                                    fillOpacity="0.5"
+                                    stroke="url(#paint1_linear_79_171)"
+                                    strokeWidth="2"
+                                />
+                                <path
+                                    opacity="0.2"
+                                    d="M256.035 152.778L256.032 152.779C254.191 153.633 252.708 155.095 251.834 156.936L251.833 156.939L250.532 159.701L249.258 156.931L249.258 156.931L249.256 156.927C248.402 155.087 246.938 153.606 245.096 152.732L245.093 152.731L242.331 151.433L245.102 150.161L245.105 150.159C246.946 149.306 248.429 147.844 249.303 146.002L249.304 145.999L250.605 143.238L251.879 146.008L251.881 146.011C252.735 147.851 254.199 149.333 256.041 150.206L256.044 150.207L258.806 151.506L256.035 152.778Z"
+                                    fill="url(#paint2_linear_79_171)"
+                                    fillOpacity="0.5"
+                                    stroke="url(#paint3_linear_79_171)"
+                                    strokeWidth="2"
+                                />
+                                <path
+                                    opacity="0.2"
+                                    d="M15.3734 139.155L15.37 139.156C13.5286 140.01 12.0458 141.472 11.1717 143.314L11.1705 143.316L9.86969 146.078L8.59579 143.308L8.59424 143.304C7.73978 141.464 6.27635 139.983 4.43363 139.11L4.43094 139.108L1.66904 137.81L4.43945 136.538L4.43946 136.538L4.44279 136.536C6.28426 135.683 7.76704 134.221 8.64108 132.379L8.64235 132.376L9.94312 129.615L11.217 132.385L11.2186 132.388C12.073 134.229 13.5365 135.71 15.3792 136.583L15.3819 136.584L18.1438 137.883L15.3734 139.155Z"
+                                    fill="url(#paint4_linear_79_171)"
+                                    fillOpacity="0.5"
+                                    stroke="url(#paint5_linear_79_171)"
+                                    strokeWidth="2"
+                                />
+                                <path
+                                    opacity="0.2"
+                                    d="M210.61 11.2065L210.606 11.2081C208.765 12.0617 207.282 13.5237 206.408 15.3653L206.407 15.368L205.106 18.1298L203.832 15.3595L203.831 15.3561C202.976 13.5159 201.513 12.0344 199.67 11.1613L199.667 11.16L196.905 9.86139L199.676 8.58957L199.676 8.58958L199.679 8.58804C201.521 7.73446 203.003 6.27237 203.877 4.43084L203.879 4.42815L205.179 1.66637L206.453 4.43665L206.453 4.43665L206.455 4.43999C207.309 6.28027 208.773 7.76171 210.616 8.63485L210.618 8.63611L213.38 9.93473L210.61 11.2065Z"
+                                    fill="url(#paint6_linear_79_171)"
+                                    fillOpacity="0.5"
+                                    stroke="url(#paint7_linear_79_171)"
+                                    strokeWidth="2"
+                                />
+                                <path
+                                    opacity="0.2"
+                                    d="M55.6375 75.2562L55.6342 75.2578C53.7927 76.1113 52.3099 77.5734 51.4359 79.415L51.4346 79.4177L50.1339 82.1795L48.8599 79.4092L48.8599 79.4092L48.8584 79.4058C48.0039 77.5655 46.5405 76.0841 44.6978 75.211L44.6951 75.2097L41.9332 73.9111L44.7036 72.6393L44.707 72.6377C46.5484 71.7841 48.0312 70.3221 48.9052 68.4805L48.9065 68.4778L50.2073 65.716L51.4812 68.4863L51.4827 68.4897C52.3372 70.33 53.8006 71.8114 55.6433 72.6845L55.646 72.6858L58.4079 73.9844L55.6375 75.2562Z"
+                                    fill="url(#paint8_linear_79_171)"
+                                    fillOpacity="0.5"
+                                    stroke="url(#paint9_linear_79_171)"
+                                    strokeWidth="2"
+                                />
+                                <defs>
+                                    <linearGradient
+                                        id="paint0_linear_79_171"
+                                        x1="290.094"
+                                        y1="56.0204"
+                                        x2="290.094"
+                                        y2="75.8165"
+                                        gradientUnits="userSpaceOnUse"
+                                    >
+                                        <stop stopColor="#7780A1" />
+                                        <stop offset="1" stopColor="#7780A1" stopOpacity="0" />
+                                    </linearGradient>
+                                    <linearGradient
+                                        id="paint1_linear_79_171"
+                                        x1="290.094"
+                                        y1="56.0204"
+                                        x2="290.094"
+                                        y2="75.8165"
+                                        gradientUnits="userSpaceOnUse"
+                                    >
+                                        <stop stopColor="#7780A1" />
+                                        <stop offset="1" stopColor="#7780A1" stopOpacity="0" />
+                                    </linearGradient>
+                                    <linearGradient
+                                        id="paint2_linear_79_171"
+                                        x1="250.569"
+                                        y1="141.571"
+                                        x2="250.569"
+                                        y2="161.367"
+                                        gradientUnits="userSpaceOnUse"
+                                    >
+                                        <stop stopColor="#7780A1" />
+                                        <stop offset="1" stopColor="#7780A1" stopOpacity="0" />
+                                    </linearGradient>
+                                    <linearGradient
+                                        id="paint3_linear_79_171"
+                                        x1="250.569"
+                                        y1="141.571"
+                                        x2="250.569"
+                                        y2="161.367"
+                                        gradientUnits="userSpaceOnUse"
+                                    >
+                                        <stop stopColor="#7780A1" />
+                                        <stop offset="1" stopColor="#7780A1" stopOpacity="0" />
+                                    </linearGradient>
+                                    <linearGradient id="paint4_linear_79_171" x1="9.9064" y1="127.948" x2="9.9064" y2="147.744" gradientUnits="userSpaceOnUse">
+                                        <stop stopColor="#7780A1" />
+                                        <stop offset="1" stopColor="#7780A1" stopOpacity="0" />
+                                    </linearGradient>
+                                    <linearGradient id="paint5_linear_79_171" x1="9.9064" y1="127.948" x2="9.9064" y2="147.744" gradientUnits="userSpaceOnUse">
+                                        <stop stopColor="#7780A1" />
+                                        <stop offset="1" stopColor="#7780A1" stopOpacity="0" />
+                                    </linearGradient>
+                                    <linearGradient id="paint6_linear_79_171" x1="205.143" y1="0" x2="205.143" y2="19.7961" gradientUnits="userSpaceOnUse">
+                                        <stop stopColor="#7780A1" />
+                                        <stop offset="1" stopColor="#7780A1" stopOpacity="0" />
+                                    </linearGradient>
+                                    <linearGradient id="paint7_linear_79_171" x1="205.143" y1="0" x2="205.143" y2="19.7961" gradientUnits="userSpaceOnUse">
+                                        <stop stopColor="#7780A1" />
+                                        <stop offset="1" stopColor="#7780A1" stopOpacity="0" />
+                                    </linearGradient>
+                                    <linearGradient
+                                        id="paint8_linear_79_171"
+                                        x1="50.1706"
+                                        y1="64.0497"
+                                        x2="50.1706"
+                                        y2="83.8458"
+                                        gradientUnits="userSpaceOnUse"
+                                    >
+                                        <stop stopColor="#7780A1" />
+                                        <stop offset="1" stopColor="#7780A1" stopOpacity="0" />
+                                    </linearGradient>
+                                    <linearGradient
+                                        id="paint9_linear_79_171"
+                                        x1="50.1706"
+                                        y1="64.0497"
+                                        x2="50.1706"
+                                        y2="83.8458"
+                                        gradientUnits="userSpaceOnUse"
+                                    >
+                                        <stop stopColor="#7780A1" />
+                                        <stop offset="1" stopColor="#7780A1" stopOpacity="0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span> */}
+                        <div className="container">
                             <div className="heading mb-0 w-full text-center lg:max-w-[478px] ltr:lg:text-left rtl:lg:text-right">
-                                <h6 className="inline-block bg-secondary/10 px-2.5 py-2 !text-[#1759D4]">Why Choose</h6>
-                                <h4 className="!font-black" style={{color:'black'}}>
-                                    WHY OUR CLIENTS <span className="text-[#1759D4]">CHOOSE US?</span>
+                                <h6 className="inline-block bg-secondary/10 px-2.5 py-2 !text-secondary">Why Us</h6>
+                                <h4 className="!font-black">
+                                    WHY OUR CLIENTS <span className="text-secondary">CHOOSE US?</span>
                                 </h4>
                             </div>
-                            <p className="mt-2.5 w-full text-center text-lg font-bold font-large lg:max-w-[478px] ltr:lg:text-left rtl:lg:text-right">
-                            We tailor our testing strategies to meet your unique project requirements, ensuring that your software meets industry standards and user expectations.                            </p>
+                            <p className="mt-2.5 w-full text-center text-lg font-medium lg:max-w-[478px] ltr:lg:text-left rtl:lg:text-right">
+                            We tailor our testing strategies to meet your unique project requirements, ensuring that your software meets industry standards and user expectations                            </p>
                             <div className="mt-12 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3" data-aos="fade-up" data-aos-duration="1000">
                                 <div className="flex gap-5">
                                     <div>
@@ -363,8 +592,8 @@ const RealEstate = () => {
                                         </span>
                                     </div>
                                     <div>
-                                        <h5 className="text-lg font-bold dark:text-white" style={{color:'black'}}>Manual Testing</h5>
-                                        <p className="mt-2 text-md font-bold">Thoroughly evaluate your software's functionality, user experience, and compatibility through manual testing.</p>
+                                        <h5 className="text-lg font-bold dark:text-white">Manual Testing</h5>
+                                        <p className="mt-2 text-sm font-semibold">Thoroughly evaluate your software's functionality, user experience, and compatibility through manual testing</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-5">
@@ -396,8 +625,8 @@ const RealEstate = () => {
                                         </span>
                                     </div>
                                     <div>
-                                        <h5 className="text-lg font-bold dark:text-white" style={{color:'black'}}>Automation Testing</h5>
-                                        <p className="mt-2 text-md font-bold">Optimize testing efficiency by automating repetitive test cases, ensuring faster and more consistent results</p>
+                                        <h5 className="text-lg font-bold dark:text-white">Automation Testing</h5>
+                                        <p className="mt-2 text-sm font-semibold">Optimize testing efficiency by automating repetitive test cases, ensuring faster and more consistent results</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-5">
@@ -422,8 +651,8 @@ const RealEstate = () => {
                                         </span>
                                     </div>
                                     <div>
-                                        <h5 className="text-lg font-bold dark:text-white" style={{color:'black'}}>Functional Testing</h5>
-                                        <p className="mt-2 text-md font-bold">Validate that your software meets its functional requirements and performs as expected.</p>
+                                        <h5 className="text-lg font-bold dark:text-white">Functional Testing</h5>
+                                        <p className="mt-2 text-sm font-semibold">Validate that your software meets its functional requirements and performs as expected.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-5">
@@ -448,8 +677,8 @@ const RealEstate = () => {
                                         </span>
                                     </div>
                                     <div>
-                                        <h5 className="text-lg font-bold dark:text-white" style={{color:'black'}}>Regression Testing</h5>
-                                        <p className="mt-2 text-md font-bold">Detect and mitigate issues that may arise after software updates or code changes.</p>
+                                        <h5 className="text-lg font-bold dark:text-white">Regression Testing</h5>
+                                        <p className="mt-2 text-sm font-semibold">Detect and mitigate issues that may arise after software updates or code changes.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-5">
@@ -474,8 +703,8 @@ const RealEstate = () => {
                                         </span>
                                     </div>
                                     <div>
-                                        <h5 className="text-lg font-bold dark:text-white" style={{color:'black'}}>Performance Testing</h5>
-                                        <p className="mt-2 text-md font-bold">Assess the scalability and reliability of your software under various loads and conditions.</p>
+                                        <h5 className="text-lg font-bold dark:text-white">Performance Testing</h5>
+                                        <p className="mt-2 text-sm font-semibold">Assess the scalability and reliability of your software under various loads and conditions.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-5">
@@ -500,16 +729,247 @@ const RealEstate = () => {
                                         </span>
                                     </div>
                                     <div>
-                                        <h5 className="text-lg font-bold dark:text-white" style={{color:'black'}}>Security Testing</h5>
-                                        <p className="mt-2 text-md font-bold">Identify and address vulnerabilities to protect your software and user data.</p>
+                                        <h5 className="text-lg font-bold dark:text-white">Security Testing</h5>
+                                        <p className="mt-2 text-sm font-semibold">Identify and address vulnerabilities to protect your software and user data.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-                   
+                    <section>
+                        <div className="container">
+                            <div className="relative py-12 lg:py-24">
+                                <span className="absolute -bottom-3 hidden max-w-[320px] ltr:-left-44 rtl:-right-44 rtl:rotate-y-180 sm:block lg:max-w-full ltr:lg:-left-[360px] rtl:lg:-right-[360px]">
+                                    <img src="assets/images/realestate/testimonials.svg" alt="" className="dark:hidden" />
+                                    <img src="assets/images/realestate/testimonials-dark.svg" alt="" className="hidden dark:block" />
+                                </span>
+                                <div className="flex flex-col items-center justify-between gap-[73px] lg:flex-row">
+                                    <div>
+                                        <div className="heading mb-0 text-center ltr:lg:text-left rtl:lg:text-right">
+                                            <h6 className="inline-block bg-secondary/10 px-2.5 py-2 !text-secondary">Testimonials</h6>
+                                            <h4 className="!font-black">
+                                            Voices <span className="text-secondary">of</span> Satisfaction
+                                            </h4>
+                                        </div>
+                                    
+                                   
+                                    </div>
+                                    <div className="relative mx-auto w-full max-w-[445px] bg-white drop-shadow-[6px_6px_0px_rgba(119,128,161,0.3)] dark:bg-black">
+                                        <Swiper
+                                            modules={[Navigation, Autoplay]}
+                                            slidesPerView="auto"
+                                            spaceBetween={30}
+                                            loop={true}
+                                            speed={1000}
+                                            autoplay={{ delay: 3000, disableOnInteraction: false }}
+                                            navigation={{
+                                                nextEl: '.testimonial-button-next',
+                                                prevEl: '.testimonial-button-prev',
+                                            }}
+                                            dir={isRtl ? 'rtl' : 'ltr'}
+                                            key={isRtl ? 'true' : 'false'}
+                                        >
+                                            <SwiperSlide>
+                                                <div className="flex justify-between gap-7 p-7">
+                                                    <div className="flex items-center gap-2.5">
+                                                        <div className="flex h-14 w-14 items-end justify-center overflow-hidden rounded-full border border-[rgba(125,132,150,0.2)] bg-gradient-to-t from-[rgba(125,132,150,0.1)] to-[125,132,150] px-1 pt-2">
+                                                            <img src="assets/images/realestate/customer-avatar.svg" alt="" />
+                                                        </div>
+                                                        <div>
+                                                            <h5 className="text-lg font-bold text-black dark:text-white">Sudo</h5>
+                                                            <p className="text-sm font-bold italic">Client</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="border border-gray/10"></div>
+                                                <div className="p-7">
+                                                  
+                                                    <p className="mt-4 text-base font-semibold leading-7">
+                                                        “Hi Lav - this is awesome !”
+                                                    </p>
+                                                    <div className="text-right">
+                                                        <p className="mt-7 inline-flex bg-[rgba(8,17,31,0.06)] p-2 text-sm font-semibold text-black dark:text-white">
+                                                            Canada
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </SwiperSlide>
+                                        </Swiper>
+
+                                        <div className="absolute top-7 z-10 flex gap-2.5 ltr:right-7 rtl:left-7">
+                                            <Link href="#">
+                                                <button className="testimonial-button-prev flex h-8 w-8 items-center justify-center bg-[rgba(8,17,31,0.08)] text-black duration-200 after:hidden hover:bg-black hover:text-white dark:bg-white/80 dark:hover:bg-secondary">
+                                                    <svg
+                                                        width="9"
+                                                        height="18"
+                                                        viewBox="0 0 9 18"
+                                                        fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        className="rtl:rotate-180"
+                                                    >
+                                                        <path
+                                                            d="M7 16L1 9L2.5 7.25M7 2L5 4.33333"
+                                                            stroke="currentcolor"
+                                                            strokeWidth="2"
+                                                            strokeLinecap="square"
+                                                            strokeLinejoin="round"
+                                                        ></path>
+                                                    </svg>
+                                                </button>
+                                            </Link>
+                                            <Link href="#">
+                                                <button className="testimonial-button-next flex h-8 w-8 items-center justify-center bg-[rgba(8,17,31,0.08)] text-black duration-200 after:hidden hover:bg-black hover:text-white dark:bg-white/80 dark:hover:bg-secondary">
+                                                    <svg
+                                                        width="9"
+                                                        height="18"
+                                                        viewBox="0 0 9 18"
+                                                        fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        className="rtl:rotate-180"
+                                                    >
+                                                        <path
+                                                            d="M2 2L4 4.33333M2 16L8 9L6.5 7.25"
+                                                            stroke="currentcolor"
+                                                            strokeWidth="2"
+                                                            strokeLinecap="square"
+                                                            strokeLinejoin="round"
+                                                        ></path>
+                                                    </svg>
+                                                </button>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-                
+                <section className="relative overflow-hidden bg-black bg-[url(/assets/images/realestate/newsletter_img.png)] bg-cover bg-center bg-no-repeat py-14 lg:py-24">
+                    <div className="container">
+                        <div className="md:flex">
+                            <div
+                                className="relative z-10 mb-8 text-center md:mb-0 ltr:md:text-left rtl:md:text-right"
+                                data-aos={isRtl ? 'fade-left' : 'fade-right'}
+                                data-aos-duration="1000"
+                            >
+                                <span className="absolute -left-[50px] -top-[42px]">
+                                    <svg width="58" height="59" viewBox="0 0 58 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.2">
+                                            <path d="M17.3252 38.325H57.3252" stroke="url(#paint0_linear_963_22629)" strokeWidth="2" strokeDasharray="6 6" />
+                                            <path d="M37.3252 18.325V58.325" stroke="url(#paint1_linear_963_22629)" strokeWidth="2" strokeDasharray="6 6" />
+                                            <path d="M5.5752 22.65L18.0752 1" stroke="url(#paint2_linear_963_22629)" strokeWidth="2" strokeDasharray="6 6" />
+                                            <path d="M1 5.57495L22.65 18.075" stroke="url(#paint3_linear_963_22629)" strokeWidth="2" strokeDasharray="6 6" />
+                                        </g>
+                                        <defs>
+                                            <linearGradient
+                                                id="paint0_linear_963_22629"
+                                                x1="37.3252"
+                                                y1="38.325"
+                                                x2="37.3252"
+                                                y2="39.325"
+                                                gradientUnits="userSpaceOnUse"
+                                            >
+                                                <stop stopColor="white" />
+                                                <stop offset="1" stopColor="white" stopOpacity="0" />
+                                            </linearGradient>
+                                            <linearGradient
+                                                id="paint1_linear_963_22629"
+                                                x1="37.8252"
+                                                y1="18.325"
+                                                x2="37.8252"
+                                                y2="58.325"
+                                                gradientUnits="userSpaceOnUse"
+                                            >
+                                                <stop stopColor="white" />
+                                                <stop offset="1" stopColor="white" stopOpacity="0" />
+                                            </linearGradient>
+                                            <linearGradient
+                                                id="paint2_linear_963_22629"
+                                                x1="11.8252"
+                                                y1="1"
+                                                x2="11.8252"
+                                                y2="22.65"
+                                                gradientUnits="userSpaceOnUse"
+                                            >
+                                                <stop stopColor="white" />
+                                                <stop offset="1" stopColor="white" stopOpacity="0" />
+                                            </linearGradient>
+                                            <linearGradient
+                                                id="paint3_linear_963_22629"
+                                                x1="11.825"
+                                                y1="5.57495"
+                                                x2="11.825"
+                                                y2="18.075"
+                                                gradientUnits="userSpaceOnUse"
+                                            >
+                                                <stop stopColor="white" />
+                                                <stop offset="1" stopColor="white" stopOpacity="0" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <div className="relative">
+                                    <h2 className="relative z-10 text-4xl font-black text-white md:text-6xl">EMAIL NEWSLETTER</h2>
+                                    <h2 className="text-stroke absolute top-1.5 left-1.5 whitespace-nowrap text-4xl font-black text-transparent md:text-6xl">
+                                        EMAIL NEWSLETTER
+                                    </h2>
+                                </div>
+                                <span className="absolute right-20 -top-5">
+                                    <svg width="72" height="36" viewBox="0 0 72 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            opacity="0.2"
+                                            d="M66 36C66 19.4315 52.5685 6 36 6C19.4315 6 6 19.4315 6 36"
+                                            stroke="url(#paint0_linear_963_22675)"
+                                            strokeWidth="11"
+                                        />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_963_22675" x1="36" y1="6" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+                                                <stop stopColor="white" />
+                                                <stop offset="1" stopColor="white" stopOpacity="0" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <p className="text-2xl font-semibold">get updates & more</p>
+                                <div className="mt-10 flex justify-between bg-white py-4 px-5 drop-shadow-[6px_6px_0px_rgba(119,128,161,0.3)] md:mt-16 lg:max-w-[445px]">
+                                    <div className="flex items-center gap-2.5">
+                                        <div>
+                                            <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M24 10.4091C24 14.8446 24 17.0623 22.6527 18.4403C21.3054 19.8182 19.1369 19.8182 14.8 19.8182H10.2C5.86308 19.8182 3.69462 19.8182 2.34731 18.4403C1 17.0623 1 14.8446 1 10.4091C1 5.9736 1 3.75586 2.34731 2.37793C3.69462 1 5.86308 1 10.2 1H14.8C19.1369 1 21.3054 1 22.6527 2.37793C23.4038 3.14616 23.7362 4.17543 23.8833 5.70455"
+                                                    stroke="#08111F"
+                                                    strokeWidth="2"
+                                                    strokeLinecap="square"
+                                                />
+                                                <path
+                                                    d="M19.3999 5.70508L16.9172 7.82104C14.8051 9.62115 13.749 10.5212 12.4999 10.5212C11.7532 10.5212 11.0755 10.1996 10.1999 9.55627M5.59991 5.70508L6.63491 6.58718L7.66991 7.46928"
+                                                    stroke="#08111F"
+                                                    strokeWidth="2"
+                                                    strokeLinecap="square"
+                                                />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <input type="search" placeholder="your email" className="h-14 border-0 text-black outline-0" />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="button" className="btn rounded-none bg-secondary text-white">
+                                            subscribe
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                className="absolute -bottom-6 hidden w-full max-w-[430px] flex-1 ltr:-right-[15%] rtl:-left-[15%] sm:border-y-black md:block lg:-bottom-7 lg:max-w-[480px] ltr:lg:right-0 rtl:lg:left-0 xl:-bottom-8 xl:max-w-[577px] ltr:xl:right-40 rtl:xl:left-40 "
+                                data-aos={isRtl ? 'fade-right' : 'fade-left'}
+                                data-aos-duration="1000"
+                            >
+                                <img src="assets/images/realestate/newsletter.svg" className="rtl:rotate-y-180" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     );

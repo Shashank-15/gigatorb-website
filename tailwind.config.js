@@ -9,6 +9,7 @@ const rotateX = plugin(function ({ addUtilities }) {
 });
 module.exports = {
     content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+    darkMode: 'class',
     theme: {
         container: {
             center: true,
@@ -23,6 +24,7 @@ module.exports = {
         fontFamily: {
             mulish: ['Mulish', 'sans-serif'],
             reey: ['reey', 'sans-serif'],
+            
         },
         colors: {
             transparent: 'transparent',
@@ -33,29 +35,62 @@ module.exports = {
             secondary: '#B476E5',
             gray: {
                 DEFAULT: '#7780A1',
+                dark: '#1C2331',
             },
-            blue: {
-                50: '#E3F2FD',
-                100: '#BBDEFB',
-                200: '#90CAF9',
-                300: '#64B5F6',
-                400: '#42A5F5',
-                500: '#2196F3',
-                DEFAULT: '#2196F3',
-                600: '#1E88E5',
-                700: '#1976D2',
-                800: '#1565C0',
-                900: '#0D47A1',
-                A100: '#82B1FF',
-                A200: '#448AFF',
-                A400: '#2979FF',
-                A700: '#2962FF',
-              },
         },
         extend: {
             animation: {
                 'spin-slow': 'spin 5s linear infinite',
+                 "typing": "typing 2s steps(10) , blink .7s infinite",
+                 "pulse":  "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+                 
             },
+            keyframes: {
+                typing: {
+                  "0%": {
+                    width: "0%",
+                    visibility: "hidden"
+                  },
+                  "100%": {
+                    width: "100%"
+                  }  
+                },
+                blink: {
+                  "50%": {
+                    borderColor: "transparent"
+                  },
+                  "100%": {
+                    borderColor: "white"
+                  }  
+                },
+                pulse : {
+                    "0%" :  {
+                      opacity: "1"
+                    },
+                    "50%" : {
+                      opacity: "0.5"
+                    },
+                    "100%": {
+                        opacity: "1"
+                    }
+                  },
+                  bounce: {
+                    "0%, 20%, 50%, 80%, 100%": {
+                      transform: "translateY(0)",
+                      animationTimingFunction: "cubic-bezier(0, 0, 0.2, 1)",
+                    },
+                    "40%": {
+                      transform: "translateY(-30px)",
+                      animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)",
+                    },
+                    "60%": {
+                      transform: "translateY(-15px)",
+                      animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)",
+                    },
+                  },
+
+              },
+    
             typography: ({ theme }) => ({
                 DEFAULT: {
                     css: {

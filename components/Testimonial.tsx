@@ -5,7 +5,7 @@ import { Autoplay, Navigation } from 'swiper';
 import Link from 'next/link';
 import { useSelector } from 'react-redux';
 import { IRootState } from '../store';
- 
+
 const Testimonial = ({
     showTitle = true,
     type = 'common',
@@ -17,7 +17,7 @@ const Testimonial = ({
             thumbnail: '/assets/images/testimonia.png',
             color:'#FFBD11',
             message:
-                "Nidhi did a great job in helping us build our presence on iOS, Android, and the web. Nidhi's team is skilled and dedicated to delivering a product that exceeds our requirements.",
+                "Lav did a great job in helping us build our presence on iOS, Android, and the web. Lav's team is skilled and dedicated to delivering a product that exceeds our requirements.",
         },
         {
             id: 2,
@@ -41,9 +41,9 @@ const Testimonial = ({
     className = '',
 }) => {
     const isRtl = useSelector((state: IRootState) => state.themeConfig.direction) === 'rtl' ? true : false;
- 
+
     return (
-        <section className={`relative   py-14 dark:bg-transparent lg:py-[100px] ${className}`} style={{background: 'white'}}>
+        <section className={`relative bg-black py-14 dark:bg-transparent lg:py-[100px] ${className}`}>
             {type.toLowerCase() === 'marketing' ? (
                 <Swiper
                     loop={true}
@@ -144,13 +144,14 @@ const Testimonial = ({
                         );
                     })}
                     <div className="bottom-0 z-[1] mt-5 flex items-center justify-end gap-4 ltr:right-28 rtl:left-28 sm:absolute sm:mt-0 sm:justify-end">
-                        <Link href="#" className="text-sm font-extrabold text-white transition hover:text-[#1759D4] dark:hover:text-secondary">
+                        <Link href="#" className="text-sm font-extrabold text-white transition hover:text-secondary dark:hover:text-secondary">
                             {' '}
                             View All{' '}
                         </Link>
+
                         <button
                             type="button"
-                            className="swiper-button-prev2 static mt-0 flex h-10 w-10 items-center justify-center rounded-full bg-white/5 transition after:text-[0px] hover:bg-[#1759D4] rtl:rotate-180"
+                            className="swiper-button-prev2 static mt-0 flex h-10 w-10 items-center justify-center rounded-full bg-white/5 transition after:text-[0px] hover:bg-secondary rtl:rotate-180"
                         >
                             <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -161,10 +162,10 @@ const Testimonial = ({
                                 />
                             </svg>
                         </button>
- 
+
                         <button
                             type="button"
-                            className="swiper-button-next2 static mt-0 flex h-10 w-10 items-center justify-center rounded-full bg-white/5 transition after:text-[0px] hover:bg-[#1759D4] rtl:rotate-180"
+                            className="swiper-button-next2 static mt-0 flex h-10 w-10 items-center justify-center rounded-full bg-white/5 transition after:text-[0px] hover:bg-secondary rtl:rotate-180"
                         >
                             <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -331,10 +332,10 @@ const Testimonial = ({
                             </div>
                         </div>
                     )}
-                    <div className="container flex flex-col justify-center items-center">
+                    <div className="container">
                         <div className={`heading text-center ltr:lg:text-left rtl:lg:text-right ${showTitle ? '' : 'hidden'}`}>
-                            <h6 className='text-black text-center' style={{color :"black", fontSize:'33px'}}>Testimonial</h6>
-                            <h4 className="text-[#1759D4]" style={{color :"#1759D4", fontSize:'50px'}}>Feedback from our clients</h4>
+                            <h6>Testimonial</h6>
+                            <h4 className="!text-white">Feedback from our clients</h4>
                         </div>
                         <div className={`mx-auto ${type.toLowerCase() === 'common' ? 'lg:w-11/12' : ''} `}>
                             <div className="relative sm:py-12 md:py-0">
@@ -356,9 +357,9 @@ const Testimonial = ({
                                         feedbacks.map((feedback: any) => {
                                             return (
                                                 <SwiperSlide key={feedback.id}>
-                                                    <div className="items-center grid sm:grid-cols-3">
-                                                        <div className="col-span-3">
-                                                            <div className="relative rounded-3xl bg-[#1759D4] p-6">
+                                                    <div className="items-center gap-4 sm:grid sm:grid-cols-3">
+                                                        <div className="col-span-6">
+                                                            <div className="relative rounded-3xl bg-white/[0.02] p-6">
                                                                 {/* <img
                                                                     src="/assets/images/blue-quote.png"
                                                                     alt="blue-quote"
@@ -493,21 +494,21 @@ const Testimonial = ({
                                         })}
                                 </Swiper>
                                 <div
-                                    className={` absolute  bottom-10  z-[2] mt-5 flex items-center justify-center gap-4 ${
+                                    className={`bottom-0 z-[1] mt-5 flex items-center justify-center gap-4 ${
                                         type.toLowerCase() === 'common' && 'ltr:right-1/3 rtl:left-1/3 sm:absolute sm:mt-0 sm:justify-end'
                                     } ${type.toLowerCase() === 'modern-saas' && 'ltr:left-0 rtl:right-0 md:absolute md:mt-0 md:justify-end'}`}
                                 >
-                                    {/* <Link href="#" className="text-sm font-extrabold text-white transition hover:text-secondary dark:hover:text-secondary">
+                                    <Link href="#" className="text-sm font-extrabold text-white transition hover:text-secondary dark:hover:text-secondary">
                                         View All
-                                    </Link> */}
+                                    </Link>
                                     <button
                                         type="button"
-                                        className="testimonial-button-prev static ml-12 mt-0 mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-white transition after:hidden after:text-[0px] hover:bg-[#e5f1ff] rtl:rotate-180"
+                                        className="testimonial-button-prev static mt-0 flex h-10 w-10 items-center justify-center rounded-full bg-white/5 transition after:hidden after:text-[0px] hover:bg-secondary rtl:rotate-180"
                                     >
                                         <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M5.95007 1.2002L1.48924 5.3424C1.06317 5.73803 1.06317 6.41236 1.48924 6.80799L5.95007 10.9502"
-                                                stroke="#1759d4"
+                                                stroke="white"
                                                 strokeWidth="2"
                                                 strokeLinecap="round"
                                             />
@@ -515,12 +516,12 @@ const Testimonial = ({
                                     </button>
                                     <button
                                         type="button"
-                                        className="testimonial-button-next static mr-12 mb-4 mt-0 flex h-10 w-10 items-center justify-center rounded-full bg-white transition after:hidden after:text-[0px] hover:bg-[#e5f1ff] rtl:rotate-180"
+                                        className="testimonial-button-next static mt-0 flex h-10 w-10 items-center justify-center rounded-full bg-white/5 transition after:hidden after:text-[0px] hover:bg-secondary rtl:rotate-180"
                                     >
-                                        <svg  width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M1.05005 10.7998L5.51089 6.6576C5.93695 6.26197 5.93695 5.58764 5.51089 5.19201L1.05005 1.0498"
-                                                stroke="#1759d4"
+                                                stroke="white"
                                                 strokeWidth="2"
                                                 strokeLinecap="round"
                                             />
@@ -535,5 +536,5 @@ const Testimonial = ({
         </section>
     );
 };
- 
+
 export default Testimonial;

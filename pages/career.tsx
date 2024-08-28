@@ -37,10 +37,9 @@ const Career = () => {
                             <div className="heading relative mb-0 text-center ltr:md:text-left rtl:md:text-right">
                                 <h6>Career</h6>
                                 <h4 className="!text-white">
-                                Unlock Your Potential in the<span className="text-primary"> Digital </span>World !
+                                    Unlock Your Potential in the<span className="text-primary"> Digital </span>World !
                                 </h4>
-                                <h6 className='!text-white'>We drive to push boundaries and transform your ideas into reality accelerating growth.</h6>
-
+                                <h6 className="!text-white">We drive to push boundaries and transform your ideas into reality accelerating growth.</h6>
                             </div>
                             <div className="relative mt-6 md:mt-0" data-aos={isRtl ? 'fade-right' : 'fade-left'} data-aos-duration="1000">
                                 <svg
@@ -385,29 +384,29 @@ const Career = () => {
                             <h4>We thrive to help our clients have global impact!</h4>
                         </div>
                         <p className="pb-10 text-lg font-semibold leading-[30px]">
-                           <ol>
-                            <li>
-                                <span className='text-primary'>Fostering Diversity and Inclusion: </span>
-                                At Gigatorb, we believe that diversity and inclusion are more than just words, they are the lifeblood of innovation, creativity, and success in the IT world.
-                            </li>
-                            <li>
-                            <span className='text-primary'>Inspiring Innovation Through Collaboration: </span>
-                            In the world of IT, innovation and collaboration are the driving forces behind every breakthrough, every solution, and every success story.
-                             At Gigatorb, we understand that the future of IT is built on these pillars.
-                            </li>
-                            <li>
-                            <span className='text-primary'>Build your career: </span>
-                            Are you ready to embark on a journey that will shape the future of technology? At Gigatorb, we're not just building software, we're building careers, innovators, 
-                            and the next generation of IT leaders.
-                            </li>
-                           </ol>
+                            <ol>
+                                <li>
+                                    <span className="text-primary">Fostering Diversity and Inclusion: </span>
+                                    At Gigatorb, we believe that diversity and inclusion are more than just words, they are the lifeblood of innovation,
+                                    creativity, and success in the IT world.
+                                </li>
+                                <li>
+                                    <span className="text-primary">Inspiring Innovation Through Collaboration: </span>
+                                    In the world of IT, innovation and collaboration are the driving forces behind every breakthrough, every solution, and every
+                                    success story. At Gigatorb, we understand that the future of IT is built on these pillars.
+                                </li>
+                                <li>
+                                    <span className="text-primary">Build your career: </span>
+                                    Are you ready to embark on a journey that will shape the future of technology? At Gigatorb, we're not just building
+                                    software, we're building careers, innovators, and the next generation of IT leaders.
+                                </li>
+                            </ol>
                         </p>
                         <Link href="/career" className="btn capitalize text-white">
                             Join Our Team
                         </Link>
                     </div>
                 </div>
-               
             </section>
 
             <section className="bg-gradient-to-t from-white/[54%] to-transparent py-14 dark:bg-none lg:py-[100px]">
@@ -416,11 +415,15 @@ const Career = () => {
                         <div className="order-2 md:order-1 md:col-span-2 lg:col-auto">
                             <div className="heading mb-5 text-center ltr:md:text-left rtl:md:text-right">
                                 <h6>Careers</h6>
-                                <h4>Join the <span className='text-primary'>Giga</span>Torb Family</h4>
+                                <h4>
+                                    Join the <span className="text-primary">Giga</span>Torb Family
+                                </h4>
                             </div>
                             <div className="text-center font-semibold ltr:md:text-left rtl:md:text-right">
                                 <p>
-                                We have embarked on a dynamic journey driven by passion, innovation, and a relentless commitment to technological excellence. Together, we've crafted innovative solutions, solved complex challenges, and fostered a culture of collaboration and growth.
+                                    We have embarked on a dynamic journey driven by passion, innovation, and a relentless commitment to technological
+                                    excellence. Together, we've crafted innovative solutions, solved complex challenges, and fostered a culture of collaboration
+                                    and growth.
                                 </p>
                                 <Link href="/career#open-position" className="btn mt-10 capitalize text-white">
                                     Open Positions
@@ -428,7 +431,7 @@ const Career = () => {
                             </div>
                         </div>
                         <img
-                            src="/assets/images/creative-agency.png"
+                            src="/Images/Employees/team1.jpg"
                             alt="creative-agency"
                             className="order-1 mx-auto rounded-[32px] md:order-2 md:mx-0"
                             data-aos={isRtl ? 'fade-right' : 'fade-left'}
@@ -437,8 +440,6 @@ const Career = () => {
                     </div>
                 </div>
             </section>
-           
-
 
             <section className="bg-gradient-to-t from-white/[54%] to-transparent py-14 dark:bg-none lg:py-[100px]">
                 <div className="container">
@@ -472,7 +473,7 @@ const Career = () => {
                                 }}
                             >
                                 <img
-                                    src="/assets/images/gallery-1.png"
+                                    src="\Images\gigatorb2.jpg"
                                     alt="gallery-1"
                                     className="h-full w-full rounded-[32px] object-cover transition duration-500 hover:rotate-12 hover:scale-125"
                                 />
@@ -487,7 +488,7 @@ const Career = () => {
                                 }}
                             >
                                 <img
-                                    src="/assets/images/gallery-2.png"
+                                    src="\Images\gigatorb3.jpg"
                                     alt="gallery-2"
                                     className="h-full w-full rounded-[32px] object-cover transition duration-500 hover:rotate-12 hover:scale-125"
                                 />
@@ -502,7 +503,7 @@ const Career = () => {
                                 }}
                             >
                                 <img
-                                    src="/assets/images/gallery-3.png"
+                                    src="\Images\gigatorb5.jpg"
                                     alt="gallery-3.png"
                                     className="h-full w-full rounded-[32px] object-cover transition duration-500 hover:rotate-12 hover:scale-125"
                                 />
@@ -519,7 +520,7 @@ const Career = () => {
                                 }}
                             >
                                 <img
-                                    src="/assets/images/gallery-4.png"
+                                    src="\Images\gigatorb7.jpg"
                                     alt="gallery-4"
                                     className="h-full w-full rounded-[32px] object-cover transition duration-500 hover:rotate-12 hover:scale-125"
                                 />
@@ -534,7 +535,7 @@ const Career = () => {
                                 }}
                             >
                                 <img
-                                    src="/assets/images/gallery-5.png"
+                                    src="\Images\gigatorb11.jpg"
                                     alt="gallery-5"
                                     className="h-full w-full rounded-[32px] object-cover transition duration-500 hover:rotate-12 hover:scale-125"
                                 />
@@ -548,11 +549,11 @@ const Career = () => {
                 <div className="container">
                     <div className="heading text-center">
                         <h6>Our Amazing Perks</h6>
-                        <h4>Great benefits of working at <span className="text-primary">Giga</span>Torb</h4>
+                        <h4>
+                            Great benefits of working at <span className="text-primary">Giga</span>Torb
+                        </h4>
                     </div>
                     <div className="grid gap-[30px] sm:grid-cols-2 lg:grid-cols-3">
-                      
-                      
                         <div data-aos="fade-up" data-aos-duration="1000">
                             <div className="flex items-center justify-start gap-3 rounded-[32px] border-2 border-white bg-white p-6 drop-shadow-[5px_10px_60px_rgba(119,128,161,0.08)] transition hover:border-secondary hover:bg-secondary/10 dark:border-gray-dark dark:bg-gray-dark dark:hover:border-secondary sm:justify-center md:p-10">
                                 <div>
@@ -733,133 +734,207 @@ const Career = () => {
                     </div>
                     <div className="pb-[50px]">
                         <ul className="filters portfolio-filter flex items-center gap-4 overflow-x-auto whitespace-nowrap pb-2.5 font-bold dark:text-white md:justify-between">
-                            <li className={`filter ${activeTab === 'all' ? 'active' : ''}`}>
+                            {/* <li className={`filter ${activeTab === 'all' ? 'active' : ''}`}> */}
+                            <li >
+
                                 <button
                                     type="button"
                                     onClick={() => setActiveTab('all')}
-                                    className="rounded-[10px] bg-gray/5 py-4 px-5 leading-5 transition hover:bg-secondary hover:text-white"
+                                    className="rounded-[10px] bg-gray/5 px-5 py-4 leading-5 transition hover:bg-secondary hover:text-white"
                                 >
                                     All Positions
                                 </button>
                             </li>
-                            <li className={`filter ${activeTab === 'design' ? 'active' : ''}`}>
+      {/* <li className={`filter ${activeTab === 'all' ? 'active' : ''}`}> */}
+      <li >
                                 <button
                                     type="button"
                                     onClick={() => setActiveTab('design')}
-                                    className="rounded-[10px] bg-gray/5 py-4 px-5 leading-5 transition hover:bg-secondary hover:text-white"
+                                    className="rounded-[10px] bg-gray/5 px-5 py-4 leading-5 transition hover:bg-secondary hover:text-white"
                                 >
                                     UI/UX Design
                                 </button>
                             </li>
-                            <li className={`filter ${activeTab === 'website' ? 'active' : ''}`}>
+      {/* <li className={`filter ${activeTab === 'all' ? 'active' : ''}`}> */}
+      <li >
                                 <button
                                     type="button"
                                     onClick={() => setActiveTab('website')}
-                                    className="rounded-[10px] bg-gray/5 py-4 px-5 leading-5 transition hover:bg-secondary hover:text-white"
+                                    className="rounded-[10px] bg-gray/5 px-5 py-4 leading-5 transition hover:bg-secondary hover:text-white"
                                 >
                                     Website Development
                                 </button>
                             </li>
-                            <li className={`filter ${activeTab === 'app' ? 'active' : ''}`}>
+      {/* <li className={`filter ${activeTab === 'all' ? 'active' : ''}`}> */}
+      <li >
                                 <button
                                     type="button"
                                     onClick={() => setActiveTab('app')}
-                                    className="rounded-[10px] bg-gray/5 py-4 px-5 leading-5 transition hover:bg-secondary hover:text-white"
+                                    className="rounded-[10px] bg-gray/5 px-5 py-4 leading-5 transition hover:bg-secondary hover:text-white"
                                 >
                                     Application Development
                                 </button>
                             </li>
-                          
                         </ul>
                     </div>
-              
                 </div>
             </section>
 
-            <section className="py-14 lg:py-[100px]">
+            <section className="py-8 lg:py-[20px]">
                 <div className="container">
                     <div className="heading text-center">
                         <h6>Meet Our Team</h6>
                         <h4>Creative Minds</h4>
                     </div>
                     <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                    <div className="group cursor-pointer text-center">
+                            <div className="relative h-[280px] rounded-3xl transition-all duration-500 group-hover:shadow-[0_0_25px_#979797]">
+  <img src="/Images/Employees/Neeraj Sharma.jpg"  alt="Developers"                                    
+                                    className="h-full w-full rounded-3xl object-cover object-top"
+                                />
+                            </div>
+                            <h4 className="pb-2 pt-5 text-xl font-extrabold text-black transition duration-500 group-hover:text-secondary dark:text-white">
+    Neeraj Sharma                        </h4>
+                        </div>   <div className="group cursor-pointer text-center">
+                            <div className="relative h-[280px] rounded-3xl transition-all duration-500 group-hover:shadow-[0_0_25px_#979797]">
+                            <img src="/Images/Employees/Keshav Sharma.jpg" alt="Developers" 
+                                    className="h-full w-full rounded-3xl object-cover object-top"
+                                />
+                            </div>
+                            <h4 className="pb-2 pt-5 text-xl font-extrabold text-black transition duration-500 group-hover:text-secondary dark:text-white">
+                            Keshav Sharma                            </h4>
+                        </div>   <div className="group cursor-pointer text-center">
+                            <div className="relative h-[280px] rounded-3xl transition-all duration-500 group-hover:shadow-[0_0_25px_#979797]">
+           <img src="/Images/Employees/Shashank Sohani.jpg"
+                                    alt="team-member-1"
+                                    className="h-full w-full rounded-3xl object-cover object-top"
+                                />
+                            </div>
+                            <h4 className="pb-2 pt-5 text-xl font-extrabold text-black transition duration-500 group-hover:text-secondary dark:text-white">
+                            Shashank Sohani                            </h4>
+                        </div>   <div className="group cursor-pointer text-center">
+                            <div className="relative h-[280px] rounded-3xl transition-all duration-500 group-hover:shadow-[0_0_25px_#979797]">
+                            <img src="/Images/Employees/Amar rathod.png" 
+                                    alt="team-member-1"
+                                    className="h-full w-full rounded-3xl object-cover object-top"
+                                />
+                            </div>
+                            <h4 className="pb-2 pt-5 text-xl font-extrabold text-black transition duration-500 group-hover:text-secondary dark:text-white">
+                            Amar Rathod                            </h4>
+                        </div>  
+                    
                         <div className="group cursor-pointer text-center">
                             <div className="relative h-[280px] rounded-3xl transition-all duration-500 group-hover:shadow-[0_0_25px_#979797]">
-                                <img src="/assets/images/team-member-1.png" alt="team-member-1" className="h-full w-full rounded-3xl object-cover object-top" />
+                                <img
+                                    src="/Images/Employees/Vaishali Parmar.jpg"
+                                    alt="team-member-1"
+                                    className="h-full w-full rounded-3xl object-cover object-top"
+                                />
                             </div>
-                            <h4 className="pt-5 pb-2 text-xl font-extrabold text-black transition duration-500 group-hover:text-secondary dark:text-white">
-                                Aditya Patel
+                            <h4 className="pb-2 pt-5 text-xl font-extrabold text-black transition duration-500 group-hover:text-secondary dark:text-white">
+                                Vaishali Parmar{' '}
                             </h4>
-                            <h6 className="text-sm font-bold">Chief Executive Officer</h6>
                         </div>
                         <div className="group cursor-pointer text-center">
                             <div className="relative h-[280px] rounded-3xl transition-all duration-500 group-hover:shadow-[0_0_25px_#979797]">
-                                <img src="/assets/images/team-member-2.png" alt="team-member-2" className="h-full w-full rounded-3xl object-cover object-top" />
+                                <img
+                                    src="/Images/Employees/Bhumika Malviya.jpg"
+                                    alt="team-member-2"
+                                    className="h-full w-full rounded-3xl object-cover object-top"
+                                />
                             </div>
-                            <h4 className="pt-5 pb-2 text-xl font-extrabold text-black transition duration-500 group-hover:text-secondary dark:text-white">
-                                Audrey Ramirez
+                            <h4 className="pb-2 pt-5 text-xl font-extrabold text-black transition duration-500 group-hover:text-secondary dark:text-white">
+                                Bhumika Malviya{' '}
                             </h4>
-                            <h6 className="text-sm font-bold">Chief Operating Officer</h6>
                         </div>
                         <div className="group cursor-pointer text-center">
                             <div className="relative h-[280px] rounded-3xl transition-all duration-500 group-hover:shadow-[0_0_25px_#979797]">
-                                <img src="/assets/images/team-member-3.png" alt="team-member-3" className="h-full w-full rounded-3xl object-cover object-top" />
+                                <img
+                                    src="/Images/Employees/Sankalp Nagale.jpg"
+                                    alt="team-member-3"
+                                    className="h-full w-full rounded-3xl object-cover object-top"
+                                />
                             </div>
-                            <h4 className="pt-5 pb-2 text-xl font-extrabold text-black transition duration-500 group-hover:text-secondary dark:text-white">
-                                James Robinson
+                            <h4 className="pb-2 pt-5 text-xl font-extrabold text-black transition duration-500 group-hover:text-secondary dark:text-white">
+                                Sankalp Nagle{' '}
                             </h4>
-                            <h6 className="text-sm font-bold">Chief Financial Officer</h6>
                         </div>
                         <div className="group cursor-pointer text-center">
                             <div className="relative h-[280px] rounded-3xl transition-all duration-500 group-hover:shadow-[0_0_25px_#979797]">
-                                <img src="/assets/images/team-member-4.png" alt="team-member-4" className="h-full w-full rounded-3xl object-cover object-top" />
+                                <img
+                                    src="/Images/Employees/Shubham Pandey.jpg"
+                                    alt="team-member-4"
+                                    className="h-full w-full rounded-3xl object-cover object-top"
+                                />
                             </div>
-                            <h4 className="pt-5 pb-2 text-xl font-extrabold text-black transition duration-500 group-hover:text-secondary dark:text-white">
-                                Daniel Allen
+                            <h4 className="pb-2 pt-5 text-xl font-extrabold text-black transition duration-500 group-hover:text-secondary dark:text-white">
+                                Shubham Pandey{' '}
                             </h4>
-                            <h6 className="text-sm font-bold">Chief Marketing Officer</h6>
                         </div>
                         <div className="group cursor-pointer text-center">
                             <div className="relative h-[280px] rounded-3xl transition-all duration-500 group-hover:shadow-[0_0_25px_#979797]">
-                                <img src="/assets/images/team-member-1.png" alt="team-member-1" className="h-full w-full rounded-3xl object-cover object-top" />
+                                <img
+                                    src="/Images/Employees/Ritu Ranabhat.jpg"
+                                    alt="team-member-1"
+                                    className="h-full w-full rounded-3xl object-cover object-top"
+                                />
                             </div>
-                            <h4 className="pt-5 pb-2 text-xl font-extrabold text-black transition duration-500 group-hover:text-secondary dark:text-white">
-                                Aditya Patel
+                            <h4 className="pb-2 pt-5 text-xl font-extrabold text-black transition duration-500 group-hover:text-secondary dark:text-white">
+                                Ritu Ranabhat{' '}
                             </h4>
-                            <h6 className="text-sm font-bold">Chief Executive Officer</h6>
                         </div>
                         <div className="group cursor-pointer text-center">
                             <div className="relative h-[280px] rounded-3xl transition-all duration-500 group-hover:shadow-[0_0_25px_#979797]">
-                                <img src="/assets/images/team-member-2.png" alt="team-member-2" className="h-full w-full rounded-3xl object-cover object-top" />
+                                <img
+                                    src="/Images/Employees/Jahnvi Dubey.jpg"
+                                    alt="team-member-2"
+                                    className="h-full w-full rounded-3xl object-cover object-top"
+                                />
                             </div>
-                            <h4 className="pt-5 pb-2 text-xl font-extrabold text-black transition duration-500 group-hover:text-secondary dark:text-white">
-                                Audrey Ramirez
+                            <h4 className="pb-2 pt-5 text-xl font-extrabold text-black transition duration-500 group-hover:text-secondary dark:text-white">
+                                Jahnvi Dubey{' '}
                             </h4>
-                            <h6 className="text-sm font-bold">Chief Operating Officer</h6>
                         </div>
                         <div className="group cursor-pointer text-center">
                             <div className="relative h-[280px] rounded-3xl transition-all duration-500 group-hover:shadow-[0_0_25px_#979797]">
-                                <img src="/assets/images/team-member-3.png" alt="team-member-3" className="h-full w-full rounded-3xl object-cover object-top" />
+                                <img
+                                    src="/Images/Employees/Sumit Andariya.jpg"
+                                    alt="team-member-3"
+                                    className="h-full w-full rounded-3xl object-cover object-top"
+                                />
                             </div>
-                            <h4 className="pt-5 pb-2 text-xl font-extrabold text-black transition duration-500 group-hover:text-secondary dark:text-white">
-                                James Robinson
+                            <h4 className="pb-2 pt-5 text-xl font-extrabold text-black transition duration-500 group-hover:text-secondary dark:text-white">
+                                Sumit Andariya{' '}
                             </h4>
-                            <h6 className="text-sm font-bold">Chief Financial Officer</h6>
                         </div>
                         <div className="group cursor-pointer text-center">
                             <div className="relative h-[280px] rounded-3xl transition-all duration-500 group-hover:shadow-[0_0_25px_#979797]">
-                                <img src="/assets/images/team-member-4.png" alt="team-member-4" className="h-full w-full rounded-3xl object-cover object-top" />
+                                <img src="/Images/Employees/Amit Yadav.jpg" alt="team-member-4" className="h-full w-full rounded-3xl object-cover object-top" />
                             </div>
-                            <h4 className="pt-5 pb-2 text-xl font-extrabold text-black transition duration-500 group-hover:text-secondary dark:text-white">
-                                Daniel Allen
+                            <h4 className="pb-2 pt-5 text-xl font-extrabold text-black transition duration-500 group-hover:text-secondary dark:text-white">
+                                Amit Yadav{' '}
                             </h4>
-                            <h6 className="text-sm font-bold">Chief Marketing Officer</h6>
+                        </div>
+                        <div className="group cursor-pointer text-center">
+                            <div className="relative h-[280px] rounded-3xl transition-all duration-500 group-hover:shadow-[0_0_25px_#979797]">
+                                <img src="/Images/Employees/Anushree.png" alt="team-member-4" className="h-full w-full rounded-3xl object-cover object-top" />
+                            </div>
+                            <h4 className="pb-2 pt-5 text-xl font-extrabold text-black transition duration-500 group-hover:text-secondary dark:text-white">
+                                Anushree Joshi{' '}
+                            </h4>
+                        </div>
+                        <div className="group cursor-pointer text-center">
+                            <div className="relative h-[280px] rounded-3xl transition-all duration-500 group-hover:shadow-[0_0_25px_#979797]">
+                                <img src="/Images/Employees/Anushr.png" alt="team-member-4" className="h-full w-full rounded-3xl object-cover object-top" />
+                            </div>
+                            <h4 className="pb-2 pt-5 text-xl font-extrabold text-black transition duration-500 group-hover:text-secondary dark:text-white">
+                                {' '}
+                                Shalu Patidar{' '}
+                            </h4>
                         </div>
                     </div>
                 </div>
             </section>
-
-         
 
             <Contactus />
         </div>

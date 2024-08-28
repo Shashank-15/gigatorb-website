@@ -10,15 +10,14 @@ const OfficeSwiper = () => {
     const isRtl = useSelector((state: IRootState) => state.themeConfig.direction) === 'rtl' ? true : false;
 
     return (
-        <section className="bg-[#e5f1ff] to-transparent py-14 dark:bg-none lg:py-[100px]">
+        <section className="bg-gradient-to-t from-white/[54%] to-transparent py-14 dark:bg-none lg:py-[100px]">
             <div className="container">
-            <div className="heading text-center">
-          <h6 style={{color :"black",fontSize:'28px'}}>Our Offices</h6>
-          <h4 style={{color :"#1759D4"}}>Come to visit our offices throughout the globe</h4>
-        </div>
                 <div className="flex flex-col items-center justify-center lg:flex-row lg:justify-between">
-         
-                    {/* <div className="flex items-center justify-end gap-4">
+                    <div className="heading text-center md:w-1/2 ltr:lg:text-left rtl:lg:text-right">
+                        <h6>Our Offices</h6>
+                        <h4>Come to visit our offices throughout the globe</h4>
+                    </div>
+                    <div className="flex items-center justify-end gap-4">
                         <Link
                             href="#"
                             className="text-sm font-extrabold text-black transition hover:text-secondary dark:text-white dark:hover:text-secondary"
@@ -65,10 +64,10 @@ const OfficeSwiper = () => {
                                 ></path>
                             </svg>
                         </button>
-                    </div> */}
+                    </div>
                 </div>
                 <div className="swiper ofc-slider rounded-[32px] drop-shadow-[5px_10px_80px_rgba(119,128,161,0.15)]  dark:drop-shadow-none">
-                    <div className="swiper-wrapper bg-[#e5f1ff] ">
+                    <div className="swiper-wrapper">
                         <Swiper
                             modules={[Navigation, Autoplay]}
                             slidesPerView="auto"
@@ -83,10 +82,13 @@ const OfficeSwiper = () => {
                             key={isRtl ? 'true' : 'false'}
                         >
                             <SwiperSlide>
-                                <div className="mt-10 rounded-[32px] bg-[#e5f1ff] dark:bg-gray-dark md:grid md:grid-cols-2 lg:mt-0">
-                                    
-                                    
-                                <div className="py-10 px-5 sm:px-8">
+                                <div className="mt-10 rounded-[32px] bg-white dark:bg-gray-dark md:grid md:grid-cols-2 lg:mt-0">
+                                    <img
+                                        src="\assets\images\ofc.png"
+                                        alt="ofc"
+                                        className="h-full w-full rounded-r-[32px] rounded-l-[32px] object-cover md:rounded-r-none"
+                                    />
+                                    <div className="py-10 px-5 sm:px-8">
                                         <div>
                                             <svg width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <g clipPath="url(#clip0_267_1200)">
@@ -126,7 +128,7 @@ const OfficeSwiper = () => {
                                                         />
                                                     </svg>
                                                 </div>
-                                                <a href="tel:+15193726595" className="text-sm font-bold hover:text-[#1759D4] sm:text-lg">
+                                                <a href="tel:+15193726595" className="text-sm font-bold hover:text-secondary sm:text-lg">
                                                 +1-2896339569
                                                 </a>
                                             </li>
@@ -141,24 +143,23 @@ const OfficeSwiper = () => {
                                                         />
                                                     </svg>
                                                 </div>
-                                                <a href="mailto:info@plurk.com" className="text-sm font-bold hover:text-[#1759D4] sm:text-lg">
+                                                <a href="mailto:info@plurk.com" className="text-sm font-bold hover:text-secondary sm:text-lg">
                                                     info@gigatorb.com
                                                 </a>
                                             </li>
                                          
                                         </ul>
                                     </div>
-                                    <img
-                                        src="\assets\images\ofc.png"
-                                        alt="ofc"
-                                        className="h-full w-full rounded-r-[32px] rounded-l-[32px] object-cover md:rounded-r-none"
-                                    />
-                                  
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="mt-10 rounded-[32px] bg-[#e5f1ff] dark:bg-gray-dark md:grid md:grid-cols-2 lg:mt-0">
-                                <div className="py-10 px-5 sm:px-8">
+                                <div className="mt-10 rounded-[32px] bg-white dark:bg-gray-dark md:grid md:grid-cols-2 lg:mt-0">
+                                    <img
+                                        src="/assets/images/Gallary\WhatsApp_India office.jpg"
+                                        alt="ofc"
+                                        className="h-full w-full rounded-r-[32px] rounded-l-[32px] object-cover md:rounded-r-none"
+                                    />
+                                    <div className="py-10 px-5 sm:px-8">
                                         <div>
                                        
  
@@ -190,7 +191,7 @@ const OfficeSwiper = () => {
                                                         />
                                                     </svg>
                                                 </div>
-                                                <div className="text-sm font-bold sm:text-lg">422, Alok Nagar, Kanadiya Main Road, Indore</div>
+                                                <div className="text-sm font-bold sm:text-lg">422, Kanadia Main Rd, opposite JMB, above Mamaji Namkeen, Alok Nagar, Indore, Madhya Pradesh 452016, India</div>
                                             </li>
                                             <li className="flex items-center gap-3">
                                                 <div>
@@ -201,7 +202,7 @@ const OfficeSwiper = () => {
                                                         />
                                                     </svg>
                                                 </div>
-                                                <a href="tel:+15193726595" className="text-sm font-bold hover:text-[#1759D4] sm:text-lg">
+                                                <a href="tel:+15193726595" className="text-sm font-bold hover:text-secondary sm:text-lg">
                                                 +91-9893339105
                                                 </a>
                                             </li>
@@ -216,77 +217,17 @@ const OfficeSwiper = () => {
                                                         />
                                                     </svg>
                                                 </div>
-                                                <a href="mailto:info@plurk.com" className="text-sm font-bold hover:text-[#1759D4] sm:text-lg">
+                                                <a href="mailto:info@plurk.com" className="text-sm font-bold hover:text-secondary sm:text-lg">
                                                     info@gigatorb.com
                                                 </a>
                                             </li>
                                         </ul>
                                     </div>
-                                   
-                                    <img
-                                        src="/assets/images/Gallary\WhatsApp_India office.jpg"
-                                        alt="ofc"
-                                        className="h-full w-full rounded-r-[32px] rounded-l-[32px] object-cover md:rounded-r-none"
-                                    />
-                                  
                                 </div>
                             </SwiperSlide>
                         </Swiper>
                     </div>
                 </div>
-
-                {/* <div className="flex mt-10 items-center justify-center gap-4">
-                      <div>
-
-                      <Link
-                            href="#"
-                            className="text-lg font-extrabold text-black transition hover:text-[#1759D4] dark:text-black dark:hover:text-[#1759D4]"
-                        >
-                            View All
-                        </Link>
-                      </div>
-                        <button
-                            type="button"
-                            className="ofc-slider-button-prev flex h-10 w-10 items-center justify-center rounded-full bg-white transition hover:bg-[#1759D4] dark:bg-white/5 dark:hover:bg-[#1759D4]"
-                        >
-                            <svg
-                                width="7"
-                                height="12"
-                                viewBox="0 0 7 12"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="text-black rtl:rotate-180 dark:text-white"
-                                
-                            >
-                                <path
-                                    d="M5.95007 1.2002L1.48924 5.3424C1.06317 5.73803 1.06317 6.41236 1.48924 6.80799L5.95007 10.9502"
-                                    stroke="#1759d4"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                ></path>
-                            </svg>
-                        </button>
-                        <button
-                            type="button"
-                            className="ofc-slider-button-next text-p flex h-10 w-10 items-center justify-center rounded-full bg-white transition hover:bg-[#1759D4] dark:bg-white/5 dark:hover:bg-[#1759D4]"
-                        >
-                            <svg
-                                width="7"
-                                height="12"
-                                viewBox="0 0 7 12"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="text-black rtl:rotate-180 dark:text-white"
-                            >
-                                <path
-                                    d="M1.05005 10.7998L5.51089 6.6576C5.93695 6.26197 5.93695 5.58764 5.51089 5.19201L1.05005 1.0498"
-                                    stroke="#1759d4"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                ></path>
-                            </svg>
-                        </button>
-                    </div> */}
             </div>
         </section>
     );

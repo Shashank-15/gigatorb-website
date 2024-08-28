@@ -180,7 +180,7 @@ const Crypto = (props: any) => {
             <Head>
                 <title>Web Developmant | GigaTorb</title>
             </Head>
-            <div className="overflow-hidden mt-24 mb-12 bg-black pt-[82px] lg:pt-[106px]">
+            <div className="overflow-hidden bg-black pt-[82px] lg:pt-[106px]">
                 <div className="relative">
                     <img src="/assets/images/banner-lefticon.png" alt="banner-lefticon" className="absolute left-0 top-20" />
                     <img src="/assets/images/banner-rightIcon.png" alt="banner-rightIcon" className="absolute right-0 -top-4" />
@@ -188,7 +188,7 @@ const Crypto = (props: any) => {
                         <div className="relative flex flex-col items-center bg-[url(/assets/images/world-map.png)] bg-cover bg-top bg-no-repeat lg:flex-row">
                             <div className="flex-1 py-10 text-center text-white ltr:lg:text-left rtl:lg:text-right">
                                 <h2 className="text-4xl font-extrabold leading-normal sm:text-5xl lg:text-[55px] lg:leading-[70px]">
-                                Expert  <br/><span className="italic text-primary"> Web Development</span> Services
+                                Expert Web <span className="italic text-primary">Development</span> Services
                                 </h2>
                             </div>
                             <div>
@@ -205,37 +205,20 @@ const Crypto = (props: any) => {
                 </div>
             </div>
 
-            <section className="pt-12 bg-[#e7f1ff] pb-32">
-                <div className="container ">
-                <div className=" mx-auto mb-10 w-full max-w-[610px] space-y-5 text-center" data-aos="fade-down" data-aos-duration="1000">
+            <section className="pt-12">
+                <div className="container">
+                <div className="mx-auto mb-10 w-full max-w-[610px] space-y-5 text-center" data-aos="fade-down" data-aos-duration="1000">
                         
-                        <h3 className=" mb-12 mt-12 font-extrabold text-primary dark:text-[#1759D4] lg:text-[40px] lg:leading-[60px]" style={{fontSize:'47px'}}>Why Choose Our Services</h3>
+                        <h3 className="text-3xl font-extrabold text-primary dark:text-primary lg:text-[40px] lg:leading-[60px]">Our Services</h3>
                     </div>
                     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
                         <div className="rounded-[18px] bg-white p-4 dark:bg-black" data-aos="fade-up" data-aos-duration="1000">
                             <div className="flex justify-between">
                                 <div className="flex items-center gap-2.5">
-                                     <div
-                                    className="flex h-[50px] w-[50px] mt-1 items-center justify-center rounded-full bg-white transition "
-                                    style={{
-                                        boxShadow: '0px 5px 5px rgba(180, 118, 229, 0.4)',
-                                    }}
-                                >
-                                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            opacity="0.5"
-                                            d="M14.2371 18.7087L18.7103 14.2366L21.4893 17.0156V21.4888H17.0172L14.2371 18.7087ZM5.2917 9.76334L2.3092 6.7819C2.21118 6.68399 2.13342 6.56771 2.08036 6.43973C2.02731 6.31174 2 6.17455 2 6.03601C2 5.89746 2.02731 5.76027 2.08036 5.63229C2.13342 5.5043 2.21118 5.38803 2.3092 5.29012L5.2917 2.30867C5.4894 2.11103 5.75751 2 6.03706 2C6.31662 2 6.58472 2.11103 6.78242 2.30867L9.76598 5.29012L5.2917 9.76334Z"
-                                            fill="#1759D4"
-                                        />
-                                        <path
-                                            d="M5.29177 12.7459L7.21895 14.6742L8.71179 13.1813L6.78249 11.2552L8.27321 9.76449L10.2015 11.6917L11.6922 10.201L9.76605 8.27271L11.2568 6.78199L13.1818 8.71128L14.6736 7.2195L12.7454 5.29232L15.7279 2.31087C15.9256 2.11323 16.1937 2.0022 16.4732 2.0022C16.7528 2.0022 17.0209 2.11323 17.2186 2.31087L21.6908 6.78304C21.8884 6.98074 21.9994 7.24885 21.9994 7.5284C21.9994 7.80795 21.8884 8.07606 21.6908 8.27376L8.27321 21.6913C8.07551 21.889 7.8074 22 7.52785 22C7.2483 22 6.98019 21.889 6.78249 21.6913L2.31032 17.2192C2.11268 17.0215 2.00165 16.7533 2.00165 16.4738C2.00165 16.1942 2.11268 15.9261 2.31032 15.7284L5.29177 12.7459Z"
-                                            fill="#1759D4"
-                                        />
-                                    </svg>
-
-                                </div>
-                                    
-                                    <h4 className="text-lg ml-2 mt-1 font-bold text-black dark:text-white">Expertise</h4>
+                                    <Link href="#" className="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-[#F7931A]">
+                                       
+                                    </Link>
+                                    <h4 className="text-lg font-bold text-black dark:text-white">Expertise</h4>
                                 </div>
                                 <div>
                                    
@@ -253,25 +236,10 @@ const Crypto = (props: any) => {
                         <div className="rounded-[18px] bg-white p-4 dark:bg-black" data-aos="fade-up" data-aos-duration="1000">
                             <div className="flex justify-between">
                                 <div className="flex items-center gap-2.5">
-                                     <div
-                                    className="flex h-[50px] w-[50px] mt-1 items-center justify-center rounded-full bg-white transition "
-                                    style={{
-                                        boxShadow: '0px 5px 5px rgba(180, 118, 229, 0.4)',
-                                    }}
-                                >
-                                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            opacity="0.5"
-                                            d="M6.21053 20H3.05263C2.77346 20 2.50572 19.8891 2.30831 19.6917C2.1109 19.4943 2 19.2265 2 18.9474V10.5263C2 10.2471 2.1109 9.97941 2.30831 9.782C2.50572 9.58459 2.77346 9.47369 3.05263 9.47369H6.21053C6.4897 9.47369 6.75744 9.58459 6.95485 9.782C7.15226 9.97941 7.26316 10.2471 7.26316 10.5263V18.9474C7.26316 19.2265 7.15226 19.4943 6.95485 19.6917C6.75744 19.8891 6.4897 20 6.21053 20ZM20.9474 20H17.7895C17.5103 20 17.2426 19.8891 17.0452 19.6917C16.8477 19.4943 16.7368 19.2265 16.7368 18.9474V7.36843C16.7368 7.08925 16.8477 6.82151 17.0452 6.6241C17.2426 6.4267 17.5103 6.3158 17.7895 6.3158H20.9474C21.2265 6.3158 21.4943 6.4267 21.6917 6.6241C21.8891 6.82151 22 7.08925 22 7.36843V18.9474C22 19.2265 21.8891 19.4943 21.6917 19.6917C21.4943 19.8891 21.2265 20 20.9474 20Z"
-                                            fill="#1759D4"
-                                        />
-                                        <path
-                                            d="M13.5789 20H10.421C10.1419 20 9.87412 19.8891 9.67672 19.6917C9.47931 19.4943 9.36841 19.2265 9.36841 18.9474V1.05263C9.36841 0.773456 9.47931 0.505715 9.67672 0.308309C9.87412 0.110902 10.1419 0 10.421 0H13.5789C13.8581 0 14.1259 0.110902 14.3233 0.308309C14.5207 0.505715 14.6316 0.773456 14.6316 1.05263V18.9474C14.6316 19.2265 14.5207 19.4943 14.3233 19.6917C14.1259 19.8891 13.8581 20 13.5789 20Z"
-                                            fill="#1759D4"
-                                        />
-                                    </svg>
-                                </div>
-                                    <h4 className="text-lg ml-2 mt-1 font-bold text-black dark:text-white">Custom Solutions</h4>
+                                    <Link href="#" className="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-[#345d9d]">
+                                       
+                                    </Link>
+                                    <h4 className="text-lg font-bold text-black dark:text-white">Custom Solutions</h4>
                                    
                                 </div>
                               
@@ -290,25 +258,10 @@ const Crypto = (props: any) => {
                         <div className="rounded-[18px] bg-white p-4 dark:bg-black" data-aos="fade-up" data-aos-duration="1000">
                             <div className="flex justify-between">
                                 <div className="flex items-center gap-2.5">
-                                     <div
-                                    className="flex h-[50px] w-[50px] mt-1 items-center justify-center rounded-full bg-white transition "
-                                    style={{
-                                        boxShadow: '0px 5px 5px rgba(180, 118, 229, 0.4)',
-                                    }}
-                                >
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            opacity="0.5"
-                                            d="M6.21053 20H3.05263C2.77346 20 2.50572 19.8891 2.30831 19.6917C2.1109 19.4943 2 19.2265 2 18.9474V10.5263C2 10.2471 2.1109 9.97941 2.30831 9.782C2.50572 9.58459 2.77346 9.47369 3.05263 9.47369H6.21053C6.4897 9.47369 6.75744 9.58459 6.95485 9.782C7.15226 9.97941 7.26316 10.2471 7.26316 10.5263V18.9474C7.26316 19.2265 7.15226 19.4943 6.95485 19.6917C6.75744 19.8891 6.4897 20 6.21053 20ZM20.9474 20H17.7895C17.5103 20 17.2426 19.8891 17.0452 19.6917C16.8477 19.4943 16.7368 19.2265 16.7368 18.9474V7.36843C16.7368 7.08925 16.8477 6.82151 17.0452 6.6241C17.2426 6.4267 17.5103 6.3158 17.7895 6.3158H20.9474C21.2265 6.3158 21.4943 6.4267 21.6917 6.6241C21.8891 6.82151 22 7.08925 22 7.36843V18.9474C22 19.2265 21.8891 19.4943 21.6917 19.6917C21.4943 19.8891 21.2265 20 20.9474 20Z"
-                                            fill="#1759D4"
-                                        />
-                                        <path
-                                            d="M13.5789 20H10.421C10.1419 20 9.87412 19.8891 9.67672 19.6917C9.47931 19.4943 9.36841 19.2265 9.36841 18.9474V1.05263C9.36841 0.773456 9.47931 0.505715 9.67672 0.308309C9.87412 0.110902 10.1419 0 10.421 0H13.5789C13.8581 0 14.1259 0.110902 14.3233 0.308309C14.5207 0.505715 14.6316 0.773456 14.6316 1.05263V18.9474C14.6316 19.2265 14.5207 19.4943 14.3233 19.6917C14.1259 19.8891 13.8581 20 13.5789 20Z"
-                                            fill="#1759D4"
-                                        />
-                                    </svg>
-                                </div>
-                                    <h4 className="text-lg ml-2 mt-1 font-bold text-black dark:text-white">Responsive Design</h4>
+                                    <Link href="#" className="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-[#F3BA2F]">
+                                      
+                                    </Link>
+                                    <h4 className="text-lg font-bold text-black dark:text-white">Responsive Design</h4>
                                    
                                 </div>
                                 <div>
@@ -327,26 +280,10 @@ const Crypto = (props: any) => {
                         <div className="rounded-[18px] bg-white p-4 dark:bg-black" data-aos="fade-up" data-aos-duration="1000">
                             <div className="flex justify-between">
                                 <div className="flex items-center gap-2.5">
-                                     <div
-                                    className="flex h-[50px] w-[50px] mt-1 items-center justify-center rounded-full bg-white transition "
-                                    style={{
-                                        boxShadow: '0px 5px 5px rgba(180, 118, 229, 0.4)',
-                                    }}
-                                >
-                                
-                                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            opacity="0.5"
-                                            d="M10.1658 20C10.5862 20 10.9617 19.7371 11.1054 19.342L15.8374 6.34204C16.0749 5.68981 15.5919 5 14.8978 5H13.8341C13.4137 5 13.0382 5.26292 12.8945 5.65796L8.16245 18.658C7.92504 19.3102 8.40804 20 9.10214 20H10.1658Z"
-                                            fill="#1759D4"
-                                        />
-                                        <path
-                                            d="M17.9889 17.0964C18.3794 17.4871 19.0127 17.4873 19.4034 17.0966L23.2929 13.2071C23.6834 12.8166 23.6834 12.1834 23.2929 11.7929L19.4036 7.90359C19.0129 7.51287 18.3793 7.5131 17.9889 7.90409L17.2814 8.61254C16.8913 9.00328 16.8916 9.63632 17.2823 10.0266L19.0501 11.7927C19.441 12.1832 19.441 12.8168 19.0502 13.2074L17.2822 14.9746C16.8916 15.365 16.8914 15.9981 17.2818 16.3888L17.9889 17.0964ZM4.94994 13.2073C4.55904 12.8167 4.55896 12.1832 4.94977 11.7925L6.71781 10.0253C7.10839 9.63494 7.10858 9.00184 6.71823 8.61121L6.01111 7.90359C5.62062 7.51283 4.98726 7.51272 4.59664 7.90334L0.707106 11.7929C0.316582 12.1834 0.316582 12.8166 0.707107 13.2071L4.59639 17.0964C4.98711 17.4871 5.62066 17.4869 6.01111 17.0959L6.71856 16.3874C7.10874 15.9967 7.10837 15.3637 6.71773 14.9734L4.94994 13.2073Z"
-                                            fill="#1759D4"
-                                        />
-                                    </svg>
-                                </div>
-                                    <h4 className="text-lg ml-2 mt-1 font-bold text-black dark:text-white">E-Commerce Solutions</h4>
+                                    <Link href="#" className="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-[#53ae94]">
+                                      
+                                    </Link>
+                                    <h4 className="text-lg font-bold text-black dark:text-white">E-Commerce Solutions</h4>
                                   
                                 </div>
                                 <div>
@@ -366,13 +303,36 @@ const Crypto = (props: any) => {
                 </div>
             </section>
 
-            
+            <section className="pt-12 lg:pt-24">
+                <div className="container">
+                    <div className="flex flex-col items-center justify-between gap-10 md:flex-row md:gap-0">
+                        <div className="text-center ltr:md:text-left rtl:md:text-right">
+                            <h6 className="mb-3 text-lg font-extrabold text-primary sm:mb-4">ABOUT US</h6>
+                           
+                            <p className="mt-[18px] max-w-[522px] text-lg font-semibold">
+                            Welcome to <span className=" text-primary">Giga</span>Torb, your trusted partner in web development solutions. With years of experience and a passion for innovation, we specialize in crafting stunning and functional websites that meet your unique needs
+                            </p>
+                            <button type="button" className="btn mt-7 text-white">
+                                Get Started
+                            </button>
+                        </div>
+                        <div>
+                            <img src="\assets\images\Gallary\534-5348813_software-development-company-png-transparent-png.png" className="w-full max-w-[550px] rtl:rotate-y-180" alt="crypto-about-img" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+          
+
+        
+
             <section className="bg-black py-12 lg:py-24">
                 <div className="bg-[url(/assets/images/crypto/background-img.png)] bg-cover bg-center bg-no-repeat">
                     <div className="container">
-                        <div className="heading text-center ">
-                            <h6 style={{fontSize:'40px'}}>Our Process</h6><br/>
-                            <h4  className="!text-white">You do the business, we’ll handle the money.</h4>
+                        <div className="heading text-center">
+                            <h6>Our Process</h6>
+                            <h4 className="!text-white">You do the business, we’ll handle the money.</h4>
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                             <div
@@ -545,22 +505,156 @@ const Crypto = (props: any) => {
                     </div>
                 </div>
             </section>
+            {/* <section className="py-14 uppercase italic dark:bg-gray-dark md:py-20">
+                <div className="container">
+                    <div className="font-semibold">
+                        <h2 className="mb-3 -mt-6 text-4xl font-black md:-mt-10 md:text-6xl md:leading-normal">
+                            <span className="text-black dark:text-white">OUR </span>
+                            <span className="text-border-gray tracking-wider">Web</span>
+                            <span className="bg-gradient-to-r from-secondary to-primary bg-clip-text pr-4 text-transparent">Developers</span>
+                        </h2>
+                      
+                    </div>
+                    <div className="mt-12 grid gap-7 sm:grid-cols-2 lg:grid-cols-4">
+                        <div
+                            className="group relative flex h-[300px] items-end justify-center overflow-hidden bg-[rgba(119,128,161,0.1)] px-4 pt-6"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        >
+                            <img src="/Images/Employees/Neeraj Sharma.jpg"  alt="Developers" className="h-full object-cover object-top transition group-hover:scale-105" />
+                            <div className="absolute bottom-0  bg-black py-2.5 px-5 ltr:left-0 rtl:right-0">
+                                <h3 className="font-black text-white">Neeraj Sharma</h3>
+                                <span className="text-sm font-bold">Full Stack (MERN)</span>
+                            </div>
+                        </div>
+                        <div
+                            className="group relative flex h-[300px] items-end justify-center overflow-hidden bg-[rgba(119,128,161,0.1)] px-4 pt-6"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        >
+                            <img src="/Images/Employees/Keshav Sharma.jpg" alt="Developers" className="h-full object-cover object-top transition group-hover:scale-105" />
+                            <div className="absolute bottom-0  bg-black py-2.5 px-5 ltr:left-0 rtl:right-0">
+                                <h3 className="font-black text-white">Keshav Sharma</h3>
+                                <span className="text-sm font-bold">Full Stack (MEAN)</span>
+                            </div>
+                        </div>
+                        <div
+                            className="group relative flex h-[300px] items-end justify-center overflow-hidden bg-[rgba(119,128,161,0.1)] px-4 pt-6"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        >
+                            <img src="/Images/Employees/Shashank Sohani.jpg" alt="Developers" className="h-full object-cover object-top transition group-hover:scale-105" />
+                            <div className="absolute bottom-0  bg-black py-2.5 px-5 ltr:left-0 rtl:right-0">
+                                <h3 className="font-black text-white"></h3>
+                                <h3 className="font-black text-white">Shashank Sohani</h3>
+                                <span className="text-sm font-bold">Full Stack & DevOps</span>
+                            </div>
+                        </div>
+                        <div
+                            className="group relative flex h-[300px] items-end justify-center overflow-hidden bg-[rgba(119,128,161,0.1)] px-4 pt-6"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        >
+                            <img src="/Images/Employees/Amar rathod.png"  alt="Developers" className="h-full object-cover object-top transition group-hover:scale-105" />
+                            <div className="absolute bottom-0  bg-black py-2.5 px-5 ltr:left-0 rtl:right-0">
+                                <h3 className="font-black text-white">Amar Rathod</h3>
+                                <span className="text-sm font-bold">Backend Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> */}
+              <section className="py-10 md:py-20">
+                <div className="container">
+                    <div className="mx-auto mb-10 w-full max-w-[610px] space-y-5 text-center" data-aos="fade-down" data-aos-duration="1000">
+                        
+                        <h3 className="text-3xl font-extrabold text-primary dark:text-primary lg:text-[40px] lg:leading-[60px]">Our <span className='text-secondary'>Services</span></h3>
+                    </div>
+                    <div className="grid gap-[30px] sm:grid-cols-2 lg:grid-cols-4">
+                        <div className="grid grid-cols-1 gap-5 text-center" data-aos="fade-right" data-aos-duration="1000">
+                            <div className="mx-auto grid h-20 w-20 place-content-center">
+                            <svg className="mx-auto h-[42px] w-[42px] sm:mx-0" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.9054 8.10138H14.833C10.6615 8.10138 8.0459 11.0547 8.0459 15.2357V26.5146C8.0459 30.6957 10.6492 33.6491 14.833 33.6491H26.8038C30.9889 33.6491 33.5922 30.6957 33.5922 26.5146V21.0502"
+                                        stroke="#47BDFF"
+                                        strokeWidth="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                    />
+                                    <path
+                                        fillRule="evenodd"
+                                        clipRule="evenodd"
+                                        d="M16.2906 19.1332L26.4286 8.99531C27.6917 7.73366 29.7387 7.73366 31.0018 8.99531L32.6528 10.6463C33.9157 11.9093 33.9157 13.9578 32.6528 15.2194L22.466 25.4062C21.9138 25.9583 21.165 26.269 20.3835 26.269H15.3018L15.4292 21.141C15.4482 20.3867 15.7562 19.6678 16.2906 19.1332Z"
+                                        stroke="#47BDFF"
+                                        strokeWidth="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                    />
+                                    <path d="M24.888 10.5616L31.0823 16.7559" stroke="#47BDFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </div>
+                            <div className="space-y-2.5">
+                            <h4 className="text-lg font-bold text-primary">Website Design and Development</h4>
+                                    <p className="mt-2.5 font-semibold">We create visually stunning and highly functional websites tailored to your business needs.</p>
+                                 </div>
+                        </div>
+                        <div className="grid grid-cols-1 gap-5 text-center" data-aos="fade-left" data-aos-duration="1000">
+                            <div className="mx-auto grid h-20 w-20 place-content-center">
+                                <img src="/assets/images/online-payments/work-icon3.svg" alt="" />
+                            </div>
+                            <div className="space-y-2.5">
+                            <h4 className="text-lg font-bold text-secondary ">Web Application Development</h4>
+                                    <p className="mt-2.5 font-semibold">Need a custom web application? We have the skills to turn your ideas into reality..</p>
+                                </div>
+                        </div>
+                        <div className="grid grid-cols-1 gap-5 text-center" data-aos="fade-right" data-aos-duration="1000">
+                            <div className="mx-auto grid h-20 w-20 place-content-center">
+                                <img src="/assets/images/online-payments/work-icon2.svg" alt="" />
+                            </div>
+                            <div className="space-y-2.5">
+                            <h4 className="text-lg font-bold text-primary ">E-Commerce Design and Development</h4>
+                                    <p className="mt-2.5 font-semibold">We specialize in building secure and scalable e-commerce websites that drive sales and enhance user experiences</p>
+                              </div>
+                        </div>
+                      
+                        <div className="grid grid-cols-1 gap-5 text-center" data-aos="fade-left" data-aos-duration="1000">
+                            <div className="mx-auto grid h-20 w-20 place-content-center">
+                            <svg className="mx-auto h-[42px] w-[42px] sm:mx-0" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        fillRule="evenodd"
+                                        clipRule="evenodd"
+                                        d="M34.258 14.4234L33.3153 12.7876C32.5178 11.4033 30.7504 10.9259 29.3644 11.72C28.7046 12.1087 27.9173 12.219 27.1761 12.0265C26.435 11.8342 25.8008 11.3547 25.4135 10.6942C25.1643 10.2744 25.0303 9.79614 25.0253 9.30792C25.0477 8.52519 24.7525 7.76669 24.2066 7.2052C23.6608 6.64372 22.911 6.32707 22.1279 6.32739H20.2287C19.4615 6.32738 18.726 6.63308 18.1848 7.17684C17.6437 7.72061 17.3415 8.4576 17.3453 9.22474C17.3225 10.8086 16.0319 12.0807 14.4479 12.0805C13.9596 12.0755 13.4815 11.9416 13.0616 11.6923C11.6755 10.8981 9.90813 11.3756 9.11062 12.7598L8.09863 14.4234C7.30208 15.8058 7.77309 17.572 9.15221 18.3743C10.0487 18.8918 10.6009 19.8484 10.6009 20.8835C10.6009 21.9186 10.0487 22.8751 9.15221 23.3927C7.77484 24.1895 7.30332 25.9515 8.09863 27.3297L9.05517 28.9794C9.42884 29.6537 10.0558 30.1512 10.7972 30.3619C11.5387 30.5727 12.3337 30.4792 13.0061 30.1023C13.6671 29.7166 14.4548 29.611 15.1942 29.8088C15.9335 30.0066 16.5631 30.4916 16.9432 31.1559C17.1924 31.5757 17.3262 32.054 17.3314 32.5422C17.3314 34.1424 18.6286 35.4395 20.2287 35.4395H22.1279C23.7226 35.4395 25.0176 34.1508 25.0253 32.556C25.0216 31.7865 25.3257 31.0474 25.8698 30.5033C26.414 29.959 27.1531 29.655 27.9226 29.6587C28.4096 29.6718 28.8859 29.8051 29.309 30.0468C30.6914 30.8434 32.4576 30.3724 33.2599 28.9933L34.258 27.3297C34.6443 26.6666 34.7504 25.8768 34.5527 25.1352C34.3548 24.3936 33.8696 23.7615 33.2043 23.3788C32.5392 22.9961 32.054 22.364 31.8561 21.6224C31.6584 20.8809 31.7645 20.091 32.1508 19.4279C32.402 18.9892 32.7658 18.6256 33.2043 18.3743C34.5752 17.5725 35.0451 15.8165 34.258 14.4372V14.4234Z"
+                                        stroke="#B476E5"
+                                        strokeWidth="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                    />
+                                    <path
+                                        d="M21.1852 24.876C23.3902 24.876 25.1777 23.0885 25.1777 20.8835C25.1777 18.6784 23.3902 16.8909 21.1852 16.8909C18.9802 16.8909 17.1927 18.6784 17.1927 20.8835C17.1927 23.0885 18.9802 24.876 21.1852 24.876Z"
+                                        stroke="#B476E5"
+                                        strokeWidth="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                            <div className="space-y-2.5">
+                            <h4 className="text-lg font-bold text-secondary ">Maintenance and Support</h4>
+                                    <p className="mt-2.5 font-semibold">We offer ongoing support and maintenance services to ensure your website remains up-to-date and secure.</p>
+                                 </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <Testimonial type="marketing" feedbacks={feedbacks} />
 
-           
 
-        
-
-           
-            
-            
-           
-
-            {/* <section className="py-12 dark:bg-[#e7f1ff] lg:py-24">
+            <section className="py-12 dark:bg-gray-dark lg:py-24">
                 <div className="container">
                     <div className="relative z-10 lg:flex">
                         <div className="heading text-center lg:mb-0 lg:w-1/3 ltr:lg:pr-10 ltr:lg:text-left rtl:lg:pl-10 rtl:lg:text-right">
-                            <h6 style={{fontSize:'40px'}}>Get In Touch.</h6>
-                            <h4 className="sm:!leading-[50px]" style={{color:'#101626'}}>Ready to Get Started?</h4>
+                            <h6>Get In Touch.</h6>
+                            <h4 className="sm:!leading-[50px]">Ready to Get Started?</h4>
                             <img
                                 src="/assets/images/form-img.png"
                                 alt="form-img"
@@ -726,7 +820,7 @@ const Crypto = (props: any) => {
                         </form>
                     </div>
                 </div>
-            </section> */}
+            </section>
         </div>
     );
 };

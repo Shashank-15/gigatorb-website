@@ -20,41 +20,50 @@ const Company = () => {
             <Head>
                 <title>Company </title>
             </Head>
-            <div className="bg-[url(/assets/images/inner-page-hero-bg.png)] bg-cover bg-bottom bg-no-repeat pt-[82px] lg:pt-[106px]">
+            <div className="overflow-hidden bg-black pt-[82px] sm:-mx-[250px] sm:rounded-b-[50%] lg:-mx-[150px] ">
                 <div className="relative">
-                    <div className="container">
-                        <div className="items-center justify-between py-10 md:flex md:h-[400px] md:py-0">
-                            <div className=" heading relative mb-0 text-center ltr:md:text-left rtl:md:text-right">
-                               
-                            <h2 className="text-4xl font-extrabold leading-normal sm:text-5xl lg:text-[70px] lg:leading-[90px] text-primary">
-                            Giga
-                          <span className="!text-white ">Torb</span></h2>
-                                <div>
-                                <h6 className="!text-white " >
-                                At Gigatorb , our purpose extends beyond technology. We are committed to making a positive impact on society. Through innovation and ethical practices,
-                                 we strive to create solutions that address real-world challenges and contribute to a better future for all.
-                                </h6>
-                                </div>
-                            </div>
+                    <img src="/assets/images/banner-lefticon.png" alt="banner-lefticon" className="absolute left-0 top-20 sm:left-[250px] lg:left-[150px]" />
+                    <img
+                        src="/assets/images/banner-rightIcon.png"
+                        alt="banner-rightIcon"
+                        className="absolute right-0 -top-4 sm:right-[250px] lg:right-[150px]"
+                    />
+                </div>
+                <div className="container relative bg-[url(/assets/images/world-map.png)] bg-cover">
+                    <div className="flex flex-col items-center gap-7 lg:flex-row">
+                        <div className="flex-1 pb-14 pt-14 text-white ltr:text-center rtl:text-center lg:max-w-[558px] lg:pb-52 ltr:lg:text-left rtl:lg:text-right xl:pt-36">
+                            <h2 className="text-3xl font-extrabold sm:text-5xl lg:text-[70px] lg:leading-[89px] animate-pulse">
+                            Giga<span className="text-primary">Torb</span>
+                              
+                            </h2>
+                            <p className="mt-7 text-lg font-semibold"
+                             data-aos={isRtl ? 'fade-left' : 'fade-right'}
+                             data-aos-duration="1000">
+                             At Gigatorb , our purpose extends beyond technology. We are committed to making a positive impact on society. Through innovation and ethical practices,
+                                 we strive to create solutions that address real-world challenges and contribute to a better future for all.</p>
+                          
+                        </div>
+                        <div className="mb-10 w-full max-w-[500px] flex-none lg:mb-0" data-aos="fade-left" data-aos-duration="1000">
+                            <img src="\assets\images\Gallary\compimg.png" className="rtl:rotate-y-180 xl:ml-[100px]" alt="" />
                         </div>
                     </div>
                 </div>
             </div>
-            <section className="overflow-x-hidden bg-gradient-to-t from-white/[55%] to-transparent dark:bg-none md:py-14 lg:pb-[100px] lg:pt-[130px]">
+
+          
+           
+            {/* <section className="overflow-x-hidden bg-gradient-to-t from-white/[55%] to-transparent dark:bg-none md:py-14 ">
                 <div className="relative bg-center">
-                    <img
-                        src="/assets/images/how-we-do-it_.png"
-                        alt="how-we-do-it"
-                        className="absolute inset-x-0 bottom-[93%] mx-auto hidden md:block xl:bottom-[91%]"
-                    />
                     <img
                         src="\assets\images\Gallary\critical_technologies.png"
                         alt="service-video-bg"
-                        className="relative z-[1] h-[200px] w-full object-cover object-top sm:h-[500px] lg:h-[400 px]"
+                        className="relative z-[1]  w-full object-cover object-top sm:h-[500px] "
                     />
                     <div className="absolute -inset-x-4 bottom-0 h-12 -rotate-[2deg] bg-[#7780A1]/10 xl:bottom-3"></div>
                     <div className="absolute top-1/2 z-[1] -translate-y-1/2 ltr:left-5 ltr:pr-5 rtl:right-5 rtl:pl-5 ltr:lg:left-[10%] rtl:lg:right-[10%] ">
-                        <p className="pb-8 text-sm font-extrabold text-white sm:text-4xl sm:leading-[50px]">
+                        <p className="pb-8 text-sm font-extrabold text-white sm:text-4xl sm:leading-[50px]"
+                           data-aos={isRtl ? 'fade-left' : 'fade-right'}
+                           data-aos-duration="1000">
                             Core<span className='text-primary'> Values</span> 
                            <ul className='text-lg'>
                             <li><span className='text-primary'> Integrity:</span>  Committed to upholding promises and honouring commitments. </li>
@@ -67,23 +76,21 @@ const Company = () => {
                     
                     </div>
                 </div>
-            </section>
-            <section className="overflow-x-hidden bg-gradient-to-t from-white/[55%] to-transparent dark:bg-none md:py-14 lg:pb-[100px] lg:pt-[130px]">
+            </section> */}
+            <section className="overflow-x-hidden bg-gradient-to-t from-white/[55%] to-transparent dark:bg-none md:py-14  ">
                 <div className="relative bg-center">
+                  
                     <img
-                        src="/assets/images/how-we-do-it_.png"
-                        alt="how-we-do-it"
-                        className="absolute inset-x-0 bottom-[93%] mx-auto hidden md:block xl:bottom-[91%]"
-                    />
-                    <img
-                        src="\assets\images\Gallary\vision.jpg"
+                        src="\assets\images\Gallary\vision.jpeg"
                         alt="service-video-bg"
-                        className="relative z-[1] h-[400px] w-full object-cover object-top sm:h-[500px] lg:h-[400px]"
+                        className="relative z-[1] w-full object-cover object-top sm:h-[500px] "
                     />
                     <div className="absolute -inset-x-4 bottom-0 h-12 -rotate-[2deg] bg-[#7780A1]/10 xl:bottom-3"></div>
                     <div className="absolute top-1/2 z-[1]   -translate-y-1/2 ltr:left-5 ltr:pr-5 rtl:right-5 rtl:pl-5 ltr:lg:left-[10%] rtl:lg:right-[10%] xl:w-[620px] ">
-                        <p className="pb-8 text-sm font-extrabold text-white sm:text-4xl sm:leading-[50px]">
-                          <span className='text-primary'> Vision</span> 
+                        <p className="pb-8 text-sm font-extrabold text-white sm:text-4xl sm:leading-[50px]"
+                           data-aos={isRtl ? 'fade-left' : 'fade-right'}
+                           data-aos-duration="1000">
+                                 <span className='text-primary '>Vision</span> 
                           <h6 className='text-lg'> 
                           To excel as a top-tier IT company, prioritizing customer growth, delivering high-quality work, 
                           and being recognized as a reliable and innovative service provider that contributes to societal betterment.
@@ -93,21 +100,19 @@ const Company = () => {
                     </div>
                 </div>
             </section>
-            <section className="overflow-x-hidden bg-gradient-to-t from-white/[55%] to-transparent dark:bg-none md:py-14 lg:pb-[100px] lg:pt-[130px]">
+            <section className="overflow-x-hidden bg-gradient-to-t from-white/[55%] to-transparent dark:bg-none md:py-14 ">
                 <div className="relative bg-center">
-                    <img
-                        src="/assets/images/how-we-do-it_.png"
-                        alt="how-we-do-it"
-                        className="absolute inset-x-0 bottom-[93%] mx-auto hidden md:block xl:bottom-[91%]"
-                    />
+                  
                     <img
                         src="\assets\images\Gallary\mission.jpeg"
                         alt="service-video-bg"
-                        className="relative z-[1] h-[400px] w-full object-cover object-top sm:h-[500px] lg:h-[400px]"
+                        className="relative z-[1]  w-full object-cover object-top sm:h-[500px] "
                     />
                     <div className="absolute -inset-x-4 bottom-0 h-12 -rotate-[2deg] bg-[#7780A1]/10 xl:bottom-3"></div>
-                    <div className="absolute  top-1/2 z-[1] -translate-y-1/2 ltr:left-5 ltr:pr-5 rtl:right-5 rtl:pl-5 ltr:lg:left-[50%] rtl:lg:right-[10%] xl:w-[620px]">
-                        <p className="pb-8 text-sm font-extrabold text-white sm:text-4xl sm:leading-[50px]">
+                    <div className="absolute top-1/2 z-[1]   -translate-y-1/2 ltr:left-5 ltr:pr-5 rtl:right-5 rtl:pl-5 ltr:lg:left-[10%] rtl:lg:right-[10%] xl:w-[620px] ">
+                        <p className="pb-8 text-sm font-extrabold text-white sm:text-4xl sm:leading-[50px]"
+                          data-aos={isRtl ? 'fade-left' : 'fade-right'}
+                          data-aos-duration="1000">
                            <span className='text-primary '>Mission</span> 
                            <h6 className='text-lg'>
                            We aim to surpass client expectations by delivering web solutions that transform data into actionable knowledge, empowering them to solve their challenges effectively.
@@ -301,14 +306,56 @@ const Company = () => {
                                         />
                                     </svg>
                                 </div>
+                                <span className="text-xl font-bold text-black dark:text-white">Portnex</span>
+                            </Link>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Link href="#" className="flex items-center gap-3">
+                                <div>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.7705 5.24752C16.7705 3.4509 18.9554 2.56542 20.2062 3.85514L29.1466 13.0738C29.5085 13.4469 29.7109 13.9463 29.7109 14.4661V25.0644C29.7109 26.861 27.526 27.7465 26.2752 26.4568L17.3348 17.2381C16.9729 16.865 16.7705 16.3656 16.7705 15.8457V5.24752Z"
+                                            fill="#47BDFF"
+                                        />
+                                        <path
+                                            d="M8.75098 4.93502C8.75098 3.1384 10.9359 2.25292 12.1867 3.54264L21.1271 12.7613C21.489 13.1344 21.6914 13.6338 21.6914 14.1536V24.7519C21.6914 26.5485 19.5064 27.434 18.2556 26.1443L9.31526 16.9256C8.95337 16.5525 8.75098 16.0531 8.75098 15.5332V4.93502Z"
+                                            fill="#FFBD11"
+                                        />
+                                        <path
+                                            d="M1 5.24752C1 3.4509 3.18492 2.56542 4.43571 3.85514L13.3761 13.0738C13.738 13.4469 13.9404 13.9463 13.9404 14.4661V25.0644C13.9404 26.861 11.7555 27.7465 10.5047 26.4568L1.56429 17.2381C1.20239 16.865 1 16.3656 1 15.8457V5.24752Z"
+                                            fill="#B476E5"
+                                        />
+                                    </svg>
+                                </div>
                                 <span className="text-xl font-bold text-black dark:text-white">myndriven</span>
+                            </Link>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Link href="#" className="flex items-center gap-3">
+                                <div>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.7705 5.24752C16.7705 3.4509 18.9554 2.56542 20.2062 3.85514L29.1466 13.0738C29.5085 13.4469 29.7109 13.9463 29.7109 14.4661V25.0644C29.7109 26.861 27.526 27.7465 26.2752 26.4568L17.3348 17.2381C16.9729 16.865 16.7705 16.3656 16.7705 15.8457V5.24752Z"
+                                            fill="#47BDFF"
+                                        />
+                                        <path
+                                            d="M8.75098 4.93502C8.75098 3.1384 10.9359 2.25292 12.1867 3.54264L21.1271 12.7613C21.489 13.1344 21.6914 13.6338 21.6914 14.1536V24.7519C21.6914 26.5485 19.5064 27.434 18.2556 26.1443L9.31526 16.9256C8.95337 16.5525 8.75098 16.0531 8.75098 15.5332V4.93502Z"
+                                            fill="#FFBD11"
+                                        />
+                                        <path
+                                            d="M1 5.24752C1 3.4509 3.18492 2.56542 4.43571 3.85514L13.3761 13.0738C13.738 13.4469 13.9404 13.9463 13.9404 14.4661V25.0644C13.9404 26.861 11.7555 27.7465 10.5047 26.4568L1.56429 17.2381C1.20239 16.865 1 16.3656 1 15.8457V5.24752Z"
+                                            fill="#B476E5"
+                                        />
+                                    </svg>
+                                </div>
+                                <span className="text-xl font-bold text-black dark:text-white">Twn</span>
                             </Link>
                         </SwiperSlide>
                     </Swiper>
                 </div>
             </section>
 
-            <Testimonial />
+            {/* <Testimonial /> */}
 
             <section className="relative overflow-x-hidden border-t-2 border-transparent px-4 py-14 dark:border-gray/20 lg:py-[100px]">
                 <div className="items-center justify-center gap-10 lg:flex">

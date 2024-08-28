@@ -90,21 +90,21 @@ const ModernSaas = () => {
                 <title>Azure DevOps Services | Gigatorb </title>
             </Head>
             <div className="overflow-x-hidden">
-                <section className="bg-black mt-20 pb-20 bg-[url(/assets/images/modern-saas/banner-bg.png)] bg-cover bg-top bg-no-repeat pt-[82px] lg:pt-[106px]">
+                <section className="bg-black bg-[url(/assets/images/modern-saas/banner-bg.png)] bg-cover bg-top bg-no-repeat pt-[82px] lg:pt-[106px]">
                     <div className="container lg:pt-7">
                         <div className="relative">
                             <div className="pt-14 pb-8 text-center text-white lg:w-3/5 lg:py-20 ltr:lg:text-left rtl:lg:text-right">
                                
                                 <h2 className="text-3xl font-extrabold leading-normal sm:text-5xl lg:text-[70px] lg:leading-[90px]">
-                                    <span className="text-[#e7f1ff]">Azure  </span>
-                                    <span className="text-[#1759D4]">DevOps Services</span>
+                                    <span className="text-secondary">Azure  </span>
+                                    <span className="text-primary">DevOps Services</span>
                                 </h2>
                                 <p className="my-8 text-lg lg:w-3/4">
-                                Welcome to <span className='text-[#1759D4]'>Giga</span>Torb, your trusted partner for Azure DevOps services</p>
+                                Welcome to <span className='text-primary'>Giga</span>Torb, your trusted partner for Azure DevOps services                                </p>
                               
                             </div>
                             <div
-                                className="top-[70px] w-[70%] mr-18 pb-7 ltr:right-0 rtl:left-0 rtl:right-auto lg:absolute lg:max-w-[630px] lg:pb-0 xl:ltr:-right-52 xl:rtl:-left-52"
+                                className="top-[70px] w-full pb-7 ltr:right-0 rtl:left-0 rtl:right-auto lg:absolute lg:max-w-[630px] lg:pb-0 xl:ltr:-right-52 xl:rtl:-left-52"
                                 data-aos={isRtl ? 'fade-right' : 'fade-left'}
                                 data-aos-duration="1000"
                             >
@@ -114,13 +114,13 @@ const ModernSaas = () => {
                     </div>
                 </section>
 
-                <section className="bg-white pt-5 from-white/[55%] to-transparent py-14 dark:bg-[#e7f1ff] lg:py-20">
+                <section className="bg-gradient-to-b from-white/[55%] to-transparent py-14 dark:bg-none lg:py-20">
                     <div className="container">
                         <div className="lg:w-1/2">
                             <div className="heading mb-5 text-center ltr:lg:text-left rtl:lg:text-right">
-                                <h6 className="!text-[#1759D4] " style={{fontSize:'35px'}}>Our Azure DevOps Services:</h6>
-                                <p className="mt-4 text-lg font-semibold text-black">
-                                We offer a range of solutions to streamline your software development and deployment processes using Microsoft's Azure DevOps platform</p>
+                                <h6 className="!text-secondary">Our Azure DevOps Services:</h6>
+                                <p className="mt-4 text-lg font-semibold">
+                                We offer a range of solutions to streamline your software development and deployment processes using Microsoft's Azure DevOps platform                                </p>
                             </div>
                         </div>
                         <div className="mt-16 grid gap-x-7 gap-y-12 text-lg font-semibold sm:grid-cols-2 lg:grid-cols-3 lg:gap-y-20">
@@ -142,8 +142,8 @@ const ModernSaas = () => {
                                     </svg>
                                 </div>
                                 <div className="flex-1">
-                                    <h3 className="mb-6 text-[22px] font-extrabold text-black dark:text-[#1759D4]">Azure DevOps Setup</h3>
-                                    <p className="line-clamp-4 text-black">We help you get started with Azure DevOps, configuring your projects, repositories, boards, and pipelines for optimal productivity.</p>
+                                    <h3 className="mb-6 text-[22px] font-extrabold text-black dark:text-white">Azure DevOps Setup</h3>
+                                    <p className="line-clamp-3">We help you get started with Azure DevOps, configuring your projects, repositories, boards, and pipelines for optimal productivity</p>
                                 </div>
                             </div>
                             <div className="flex gap-5" data-aos="fade-up" data-aos-duration="1000">
@@ -169,8 +169,8 @@ const ModernSaas = () => {
                                     </svg>
                                 </div>
                                 <div className="flex-1">
-                                    <h3 className="mb-6 text-[22px] font-extrabold text-black dark:text-[#1759D4]">Continuous Integration (CI)</h3>
-                                    <p className="line-clamp-3 text-black">Automate code builds and testing to catch issues early in the development process.</p>
+                                    <h3 className="mb-6 text-[22px] font-extrabold text-black dark:text-white">Continuous Integration (CI)</h3>
+                                    <p className="line-clamp-3">Automate code builds and testing to catch issues early in the development process.</p>
                                 </div>
                             </div>
                             <div className="flex gap-5" data-aos="fade-up" data-aos-duration="1000">
@@ -197,9 +197,9 @@ const ModernSaas = () => {
                                     </svg>
                                 </div>
                                 <div className="flex-1">
-                                    <h3 className="mb-6 text-[22px] font-extrabold text-black dark:text-[#1759D4]">Continuous Deployment</h3>
-                                    <p className="line-clamp-4 text-black">
-                                    Streamline the deployment of your applications to Azure environments with our CD pipeline setups.
+                                    <h3 className="mb-6 text-[22px] font-extrabold text-black dark:text-white">Continuous Deployment (CD)</h3>
+                                    <p className="line-clamp-3">
+                                    Streamline the deployment of your applications to Azure environments with our CD pipeline setups
                                     </p>
                                 </div>
                             </div>
@@ -217,8 +217,8 @@ const ModernSaas = () => {
                                     </svg>
                                 </div>
                                 <div className="flex-1">
-                                    <h3 className="mb-6 text-[22px] font-extrabold text-black dark:text-[#1759D4]">Infrastructure as Code</h3>
-                                    <p className="line-clamp-4 text-black">Implement Infrastructure as Code practices to manage and scale your Azure resources efficiently.</p>
+                                    <h3 className="mb-6 text-[22px] font-extrabold text-black dark:text-white">Infrastructure as Code (IaC)</h3>
+                                    <p className="line-clamp-3">Implement Infrastructure as Code practices to manage and scale your Azure resources efficiently.</p>
                                 </div>
                             </div>
                             <div className="flex gap-5" data-aos="fade-up" data-aos-duration="1000">
@@ -241,8 +241,8 @@ const ModernSaas = () => {
                                     </svg>
                                 </div>
                                 <div className="flex-1">
-                                    <h3 className="mb-6 text-[22px] font-extrabold text-black dark:text-[#1759D4]">Security and Compliance</h3>
-                                    <p className="line-clamp-4 text-black">Enhance the security of your Azure environment and ensure compliance with industry standards.</p>
+                                    <h3 className="mb-6 text-[22px] font-extrabold text-black dark:text-white">Security and Compliance</h3>
+                                    <p className="line-clamp-3">Enhance the security of your Azure environment and ensure compliance with industry standards.</p>
                                 </div>
                             </div>
                             <div className="flex gap-5" data-aos="fade-up" data-aos-duration="1000">
@@ -269,9 +269,9 @@ const ModernSaas = () => {
                                     </svg>
                                 </div>
                                 <div className="flex-1">
-                                    <h3 className="mb-6 text-[22px] font-extrabold text-black dark:text-[#1759D4]">Azure DevOps Automation</h3>
-                                    <p className="text-lg font-semibold line-clamp-4 text-black">
-                                    Our Azure automation simplifies development & deployment by automating tasks, from code testing to resource scaling.</p>
+                                    <h3 className="mb-6 text-[22px] font-extrabold text-black dark:text-white">Azure DevOps Automation</h3>
+                                    <p className="text-lg font-semibold line-clamp-3">
+                                    Our Azure DevOps automation simplifies development and deployment by automating tasks, from code testing to resource scaling. Reduce errors, save time, and ensure workflow consistency with tailored strategies for efficient operations                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -288,7 +288,7 @@ const ModernSaas = () => {
                                 <div className="grid gap-4 lg:grid-cols-2">
                                     <div className="pt-28 lg:pb-10 lg:pt-0">
                                         <div className="heading mb-12 ltr:lg:text-left rtl:lg:text-right">
-                                            <h6 className="!text-[#1759D4] " style={{fontSize:'40px'}}>Our Process</h6>
+                                            <h6 className="!text-secondary">Our Process</h6>
                                             <h4 className="pb-4 leading-normal !text-white lg:!leading-[50px]">Increase your performance</h4>
                                             <p className="text-lg font-semibold xl:w-11/12">
                                                 We take step wise for your every platform. We helping to client with our talented expert.
@@ -296,18 +296,18 @@ const ModernSaas = () => {
                                         </div>
                                         <ul className="space-y-8 text-lg font-semibold text-white">
                                             <li className="flex items-center gap-3.5">
-                                                <div className="flex h-5 w-5 items-center justify-center rounded-full bg-[#e7f1ff]">
+                                                <div className="flex h-5 w-5 items-center justify-center rounded-full bg-primary">
                                                     <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path
                                                             d="M4.60002 5.79922L2.42502 3.62422C2.24169 3.44089 2.01669 3.34922 1.75002 3.34922C1.48336 3.34922 1.25002 3.44922 1.05002 3.64922C0.866691 3.83255 0.775024 4.06589 0.775024 4.34922C0.775024 4.63255 0.866691 4.86589 1.05002 5.04922L3.90002 7.89922C4.08336 8.08255 4.31669 8.17422 4.60002 8.17422C4.88336 8.17422 5.11669 8.08255 5.30002 7.89922L10.975 2.22422C11.1584 2.04089 11.25 1.81589 11.25 1.54922C11.25 1.28255 11.15 1.04922 10.95 0.849219C10.7667 0.665886 10.5334 0.574219 10.25 0.574219C9.96669 0.574219 9.73336 0.665886 9.55002 0.849219L4.60002 5.79922Z"
-                                                            fill="black"
+                                                            fill="white"
                                                         />
                                                     </svg>
                                                 </div>
                                                 <p>Assessment</p>
                                             </li>
                                             <li className="flex items-center gap-3.5">
-                                                <div className="flex h-5 w-5 items-center justify-center rounded-full bg-[#1759D4]">
+                                                <div className="flex h-5 w-5 items-center justify-center rounded-full bg-secondary">
                                                     <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path
                                                             d="M4.60002 5.79922L2.42502 3.62422C2.24169 3.44089 2.01669 3.34922 1.75002 3.34922C1.48336 3.34922 1.25002 3.44922 1.05002 3.64922C0.866691 3.83255 0.775024 4.06589 0.775024 4.34922C0.775024 4.63255 0.866691 4.86589 1.05002 5.04922L3.90002 7.89922C4.08336 8.08255 4.31669 8.17422 4.60002 8.17422C4.88336 8.17422 5.11669 8.08255 5.30002 7.89922L10.975 2.22422C11.1584 2.04089 11.25 1.81589 11.25 1.54922C11.25 1.28255 11.15 1.04922 10.95 0.849219C10.7667 0.665886 10.5334 0.574219 10.25 0.574219C9.96669 0.574219 9.73336 0.665886 9.55002 0.849219L4.60002 5.79922Z"
@@ -318,18 +318,18 @@ const ModernSaas = () => {
                                                 <p>Planning</p>
                                             </li>
                                             <li className="flex items-center gap-3.5">
-                                                <div className="flex h-5 w-5 items-center justify-center rounded-full bg-[#e7f1ff]">
+                                                <div className="flex h-5 w-5 items-center justify-center rounded-full bg-primary">
                                                     <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path
                                                             d="M4.60002 5.79922L2.42502 3.62422C2.24169 3.44089 2.01669 3.34922 1.75002 3.34922C1.48336 3.34922 1.25002 3.44922 1.05002 3.64922C0.866691 3.83255 0.775024 4.06589 0.775024 4.34922C0.775024 4.63255 0.866691 4.86589 1.05002 5.04922L3.90002 7.89922C4.08336 8.08255 4.31669 8.17422 4.60002 8.17422C4.88336 8.17422 5.11669 8.08255 5.30002 7.89922L10.975 2.22422C11.1584 2.04089 11.25 1.81589 11.25 1.54922C11.25 1.28255 11.15 1.04922 10.95 0.849219C10.7667 0.665886 10.5334 0.574219 10.25 0.574219C9.96669 0.574219 9.73336 0.665886 9.55002 0.849219L4.60002 5.79922Z"
-                                                            fill="black"
+                                                            fill="white"
                                                         />
                                                     </svg>
                                                 </div>
                                                 <p>Implementation</p>
                                             </li>
                                             <li className="flex items-center gap-3.5">
-                                                <div className="flex h-5 w-5 items-center justify-center rounded-full bg-[#1759D4]">
+                                                <div className="flex h-5 w-5 items-center justify-center rounded-full bg-secondary">
                                                     <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path
                                                             d="M4.60002 5.79922L2.42502 3.62422C2.24169 3.44089 2.01669 3.34922 1.75002 3.34922C1.48336 3.34922 1.25002 3.44922 1.05002 3.64922C0.866691 3.83255 0.775024 4.06589 0.775024 4.34922C0.775024 4.63255 0.866691 4.86589 1.05002 5.04922L3.90002 7.89922C4.08336 8.08255 4.31669 8.17422 4.60002 8.17422C4.88336 8.17422 5.11669 8.08255 5.30002 7.89922L10.975 2.22422C11.1584 2.04089 11.25 1.81589 11.25 1.54922C11.25 1.28255 11.15 1.04922 10.95 0.849219C10.7667 0.665886 10.5334 0.574219 10.25 0.574219C9.96669 0.574219 9.73336 0.665886 9.55002 0.849219L4.60002 5.79922Z"
@@ -357,45 +357,101 @@ const ModernSaas = () => {
 
             
 
-                <section className="py-14 text-center lg:py-20 bg-[#e7f1ff]">
+                <section className="py-14 text-center lg:py-20">
                     <div className="container">
                         <div className="heading mb-12 lg:mb-20">
-                            <h6 className="!text-[#1759D4]"style={{fontSize:'30px'}}>Our Services</h6>
-                            <h4 className="!text-black " style={{fontSize:'32px'}}>The Best Solutions For You</h4>
+                            <h6 className="!text-secondary">Our Services</h6>
+                            <h4 className="">The Best Solutions For You</h4>
                         </div>
                         <div className="grid gap-14 sm:grid-cols-2 lg:grid-cols-3">
                             <div data-aos="fade-up" data-aos-duration="1000">
                                 <div className="mb-10">
                                     <img src="/assets/images/modern-saas/modern-design.svg" alt="" className="mx-auto w-24" />
                                 </div>
-                                <h4 className="text-[22px] font-extrabold text-black dark:text-[#1759D4]">Azure Expertise</h4><br/>
-                                <p className="mt-6 mb-8 text-md text-black font-semibold line-clamp-4">
-                                Our team of Azure is well-versed in Azure DevOps tools & services, ensuring seamless integration into your development workflows.</p>
+                                <h4 className="text-[22px] font-extrabold text-black dark:text-white">Azure Expertise</h4>
+                                <p className="mt-6 mb-8 text-lg font-semibold line-clamp-4">
+                                Our team of Azure experts is well-versed in Azure DevOps tools and services, ensuring seamless integration into your development workflows                                </p>
                                
                             </div>
                             <div data-aos="fade-up" data-aos-duration="1000">
                                 <div className="mb-10">
                                     <img src="/assets/images/modern-saas/magic-pagebuilder.svg" alt="" className="mx-auto w-24" />
                                 </div>
-                                <h4 className="text-[22px] font-extrabold text-black dark:text-[#1759D4]">Continuous Integration and Deployment (CI/CD)</h4>
-                                <p className="mt-6 mb-8 text-md text-black font-semibold line-clamp-4">
-                                Accelerate your development cycles with our CI/CD pipeline setup and automation, ensuring rapid and reliable software releases.</p>
+                                <h4 className="text-[22px] font-extrabold text-black dark:text-white">Continuous Integration and Deployment (CI/CD)</h4>
+                                <p className="mt-6 mb-8 text-lg font-semibold line-clamp-4">
+                                Accelerate your development cycles with our CI/CD pipeline setup and automation, ensuring rapid and reliable software releases                                </p>
                             
                             </div>
                             <div data-aos="fade-up" data-aos-duration="1000">
                                 <div className="mb-10">
                                     <img src="/assets/images/modern-saas/support-icon.svg" alt="" className="mx-auto w-24" />
                                 </div>
-                                <h4 className="text-[22px] font-extrabold text-black dark:text-[#1759D4]">Monitoring and Reporting</h4>
-                                <br/><p className="mt-6 mb-8 text-md text-black font-semibold line-clamp-4">
-                                Stay informed about the health and performance of your applications with our monitoring and reporting solutions, powered by Azure DevOps.</p>
+                                <h4 className="text-[22px] font-extrabold text-black dark:text-white">Monitoring and Reporting</h4>
+                                <p className="mt-6 mb-8 text-lg font-semibold line-clamp-4">
+                                Stay informed about the health and performance of your applications with our monitoring and reporting solutions, powered by Azure DevOps                                </p>
                               
                             </div>
                         </div>
                     </div>
                 </section>
 
-              
+                <section className="py-[60px] dark:bg-gray-dark px-5">
+                    <Testimonial
+                        className="mx-auto max-w-[1440px] py-14 dark:!bg-black md:py-20 rounded-[32px]"
+                        showTitle={true}
+                        type="modern-saas"
+                        feedbacks={feedbacks}
+                    />
+                </section>
+
+                <section className="relative bg-black py-14 lg:py-24">
+                    <img src="/assets/images/modern-saas/newsletter.svg" alt="" className="absolute right-0 bottom-0 hidden xl:inline-block" />
+                    <img src="/assets/images/modern-saas/email.svg" alt="" className="absolute left-40 bottom-0 hidden md:left-1/2 xl:inline-block" />
+                    <div className="container">
+                        <div className="flex flex-col justify-between gap-5 md:flex-row">
+                            <div className="relative text-center md:w-1/2 ltr:md:text-left rtl:md:text-right xl:pr-12">
+                                <img src="/assets/images/modern-saas/icon-1.svg" alt="" className="absolute -left-12 -top-12" />
+                                <h2 className="relative mb-3 text-3xl font-black text-white md:text-4xl xl:text-6xl">
+                                    Email Newsletter
+                                    <img src="/assets/images/modern-saas/icon-2.svg" alt="" className="absolute right-8 -bottom-5" />
+                                </h2>
+                                <p className="text-2xl font-semibold">get updates & more</p>
+                                <form className="relative mt-14">
+                                    <div className="absolute top-1/2 -translate-y-1/2 ltr:pl-4 rtl:pr-4">
+                                        <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M24 10.4091C24 14.8446 24 17.0623 22.6527 18.4403C21.3054 19.8182 19.1369 19.8182 14.8 19.8182H10.2C5.86308 19.8182 3.69462 19.8182 2.34731 18.4403C1 17.0623 1 14.8446 1 10.4091C1 5.9736 1 3.75586 2.34731 2.37793C3.69462 1 5.86308 1 10.2 1H14.8C19.1369 1 21.3054 1 22.6527 2.37793C23.4038 3.14616 23.7362 4.17543 23.8833 5.70455"
+                                                stroke="#08111F"
+                                                strokeWidth="2"
+                                                strokeLinecap="square"
+                                            />
+                                            <path
+                                                d="M19.3999 5.70508L16.9172 7.82104C14.8051 9.62115 13.749 10.5212 12.4999 10.5212C11.7532 10.5212 11.0755 10.1996 10.1999 9.55627M5.59991 5.70508L6.63491 6.58718L7.66991 7.46928"
+                                                stroke="#08111F"
+                                                strokeWidth="2"
+                                                strokeLinecap="square"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <input
+                                        type="email"
+                                        placeholder="your email"
+                                        className="w-full rounded-xl py-4 font-semibold outline-0 ltr:pl-14 ltr:pr-32 rtl:pr-14 rtl:pl-32 lg:py-6 lg:text-lg"
+                                    />
+                                    <button
+                                        type="button"
+                                        className="absolute top-1/2 -translate-y-1/2 rounded-md bg-secondary px-3 py-1.5 font-bold text-white transition hover:bg-primary ltr:right-4 rtl:left-4 lg:py-2 lg:text-lg"
+                                    >
+                                        subscribe
+                                    </button>
+                                </form>
+                            </div>
+                            <div data-aos={isRtl ? 'fade-right' : 'fade-left'} data-aos-duration="1000">
+                                <img src="/assets/images/modern-saas/oc-target.svg" alt="" className="mx-auto w-52 rtl:rotate-y-180 lg:w-80" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     );

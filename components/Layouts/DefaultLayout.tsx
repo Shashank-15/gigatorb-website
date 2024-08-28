@@ -107,11 +107,8 @@ const DefaultLayout = ({ children }: PropsWithChildren) => {
                     </div>
                 )}
 
-                <div className="flex min-h-screen flex-col bg-[#0f172a] font-mulish text-base font-normal text-gray ">
-                    {/* <Header  className={showTopButton ? 'sticky-header' : ''} /> */}
-                    <div className={showTopButton ? 'sticky-header' : ''}>
-                        <Header />
-                    </div>
+                <div className="flex min-h-screen flex-col bg-white bg-gradient-to-r from-[#FCF1F4] to-[#EDFBF9] font-mulish text-base font-normal text-gray antialiased dark:bg-[#101926] dark:from-transparent dark:to-transparent">
+                    <Header className={showTopButton ? 'sticky-header' : ''} />
 
                     <div className="-mt-[82px] flex-grow overflow-x-hidden lg:-mt-[106px]">{children}</div>
                     <Footer />
